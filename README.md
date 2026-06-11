@@ -2,6 +2,27 @@
 
 A study guide + UI practice tool for learning succession Maegu in Black Desert Online (PvE and PvP).
 
+## Running the app
+
+```sh
+npm install     # once
+npm run dev     # dev server at http://localhost:5173
+```
+
+Other commands:
+
+```sh
+npm run build      # typecheck + production build to dist/
+npm run preview    # serve the production build
+npm run validate   # data referential-integrity check (python scripts/validate_data.py)
+node scripts/smoke.mjs       # headless render check of every route (needs Chrome/Edge; dev server running)
+node scripts/drill-test.mjs  # headless end-to-end run of the PvE drill
+```
+
+The app is fully static (Vite + React + TypeScript, no backend): the study guide (PvE / AOS /
+Setup / Combos) and the practice tool (per-mode section layouts + flashcard combo drills) render
+straight from `data/*.json`. A data refresh (see `HANDOFF.md` §1) needs no code changes.
+
 ## 👉 Start here
 **Read [`BRIEF.md`](./BRIEF.md) first.** It's the shared context for every Claude instance and
 contains a router that tells you which phase you're in and which document to read next.
@@ -23,6 +44,11 @@ BRIEF.md              Shared context + router (read first)
 PHASE-1-RESEARCH.md   Phase 1 charter
 HANDOFF.md            Phase 1 → Phase 2 contract
 PHASE-2-BUILD.md      Phase 2 charter
+data/                 Canonical dataset (abilities, dps, combos, cancels, setup)
+app/                  The app (Vite + React + TS; vite.config.ts/tsconfig at repo root)
+docs/adr/             Architecture decision records (binding)
+CONTEXT.md            Domain glossary (canonical terms + Avoid lists)
+scripts/              Data build/validation + headless verification scripts
 sources/              Ingested source material (PvE = source of truth)
   ├── video-guide.md + video-screenshots/   Guide video (transcribed)
   ├── dps-data.md + dps-sheet-raw.csv        Per-ability DPS
