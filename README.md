@@ -29,14 +29,15 @@ contains a router that tells you which phase you're in and which document to rea
 
 This project is built across multiple Claude instances in phases:
 
-| Phase | Doc | What happens |
+| Phase | Doc | Status |
 |---|---|---|
-| **1 — Research & Docs** | [`PHASE-1-RESEARCH.md`](./PHASE-1-RESEARCH.md) | Research + build the canonical dataset + domain docs. No app code. |
-| **Handoff** | [`HANDOFF.md`](./HANDOFF.md) | The contract Phase 1 fills in for Phase 2. (TODOs left = Phase 1 unfinished.) |
-| **2 — Build** | [`PHASE-2-BUILD.md`](./PHASE-2-BUILD.md) | Build the app from the canonical data + docs. |
+| **1 — Research & Docs** | [`PHASE-1-RESEARCH.md`](./PHASE-1-RESEARCH.md) | ✅ Done — canonical dataset (`data/`), glossary (`CONTEXT.md`), ADRs (`docs/adr/`) |
+| **Handoff** | [`HANDOFF.md`](./HANDOFF.md) | ✅ Filled in (the Phase 1 → 2 contract) |
+| **2 — Build** | [`PHASE-2-BUILD.md`](./PHASE-2-BUILD.md) | ✅ Done — working, verified app in `app/` |
+| **3 — Design** | [`PHASE-3-DESIGN.md`](./PHASE-3-DESIGN.md) | 👈 **Current.** Visual/UX pass; current-state screenshots in `docs/screenshots/` |
 
-**Which phase am I in?** If `HANDOFF.md` still has `TODO` markers → Phase 1. If it's fully filled
-in → Phase 2.
+**Which phase am I in?** `HANDOFF.md` has `TODO`s → Phase 1; otherwise `app/` missing → Phase 2,
+present → Phase 3 (design).
 
 ## Layout
 ```
@@ -44,9 +45,11 @@ BRIEF.md              Shared context + router (read first)
 PHASE-1-RESEARCH.md   Phase 1 charter
 HANDOFF.md            Phase 1 → Phase 2 contract
 PHASE-2-BUILD.md      Phase 2 charter
+PHASE-3-DESIGN.md     Phase 3 charter (design pass: constraints + file map)
 data/                 Canonical dataset (abilities, dps, combos, cancels, setup)
 app/                  The app (Vite + React + TS; vite.config.ts/tsconfig at repo root)
 docs/adr/             Architecture decision records (binding)
+docs/screenshots/     Full-page screenshots of the current app (node scripts/shoot.mjs)
 CONTEXT.md            Domain glossary (canonical terms + Avoid lists)
 scripts/              Data build/validation + headless verification scripts
 sources/              Ingested source material (PvE = source of truth)

@@ -10,9 +10,10 @@ This project runs across multiple Claude instances, in phases. Locate yourself:
 | If... | You are | Read next | Your job |
 |---|---|---|---|
 | `HANDOFF.md` still contains unfilled `TODO` markers (or doesn't exist) | **Phase 1 — Research & Docs** | `PHASE-1-RESEARCH.md` | Produce canonical content + domain docs, then fill `HANDOFF.md`. **Write no app code.** |
-| `HANDOFF.md` is fully filled in (no `TODO`s) | **Phase 2 — Build** | `HANDOFF.md`, then `PHASE-2-BUILD.md` | Build the app from the canonical data + docs. |
+| `HANDOFF.md` is fully filled in (no `TODO`s) and `app/` does not exist | **Phase 2 — Build** | `HANDOFF.md`, then `PHASE-2-BUILD.md` | Build the app from the canonical data + docs. |
+| `app/` exists (the app is built and verified) | **Phase 3 — Design** | `PHASE-3-DESIGN.md` | Visual/UX design pass within the domain rules. |
 
-When in doubt, open `HANDOFF.md` and check for `TODO`. That single check tells you your phase.
+When in doubt: `HANDOFF.md` has `TODO`s → Phase 1; otherwise `app/` missing → Phase 2, present → Phase 3.
 
 ---
 
