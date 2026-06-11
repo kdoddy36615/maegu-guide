@@ -21,7 +21,9 @@ The Succession-enhanced version of a main-weapon skill ("Prime:" prefix in game)
 Maegu takes all Prime skills.
 
 **Pre-awakening skill** (preawk):
-A skill shared with the pre-56 kit, used at its Absolute rank where one exists.
+A skill shared with the pre-56 kit, used at its Absolute rank where one exists. UI displays this
+kind as **"Absolute skill"** — in a Succession guide "Pre-awakening" reads as if the whole kit
+qualifies; the Absolute rank is the distinguishing fact (user decision, 2026-06-11 Phase 3).
 
 **Rabam**:
 A level 56/57/58 skill enhancement where you pick one of two skills. Picks are per loadout:

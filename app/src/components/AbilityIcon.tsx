@@ -14,7 +14,8 @@ export default function AbilityIcon({
   size = "sm",
 }: {
   id: string;
-  size?: "sm" | "lg" | "xl";
+  /** sm = inline links/entries (17px), row = ledger rows (22px), xl = combo strip (58px). */
+  size?: "sm" | "row" | "xl";
 }) {
   const url = iconUrl(id);
   if (!url) return null;

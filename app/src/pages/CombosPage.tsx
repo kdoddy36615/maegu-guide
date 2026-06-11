@@ -1,37 +1,36 @@
-import type { Combo } from "../data/types";
-import { IDEAL_COMBOS, cancels, combos, combosFile, dps } from "../data";
+import type { Combo, Mode } from "../data/types";
+import { COMBO_FAMILIES, IDEAL_COMBOS, cancels, combos, combosFile, dps } from "../data";
 import ComboSteps from "../components/ComboSteps";
 import PriorityPanel from "../components/PriorityPanel";
 import { AbilityLink } from "../components/badges";
-
-/** PvP combo families (CONTEXT.md: opener + situation). Order matters: Flower Shroud first = the ideal family. */
-const FAMILIES: { prefix: string; name: string; situation: string }[] = [
-  { prefix: "pvp-flower-shroud", name: "Flower Shroud", situation: "isolated burst" },
-  { prefix: "pvp-bristling", name: "Bristling", situation: "stay-in-SA" },
-  { prefix: "pvp-hanpuri", name: "Hanpuri", situation: "backpedal CC" },
-  { prefix: "pvp-stiff-foxflare", name: "Stiff/Foxflare", situation: "off a stiff or clone bait" },
-];
+import { Callout, PageHeader, Section, Staleness } from "../components/Section";
 
 function ComboCard({ combo }: { combo: Combo }) {
   const drilled = IDEAL_COMBOS[combo.mode].includes(combo.id);
   const theIdeal = combo.id === "pvp-flower-shroud-1" || combo.id === "pve-infinite";
   return (
     <div className="combo-card" id={combo.id}>
-      <h3 style={{ margin: "0 0 2px" }}>
+      <h3>
         {combo.name}{" "}
-        {theIdeal && <span className="badge tier-top" title="The ideal combo for this mode">Ideal</span>}{" "}
+        {theIdeal && (
+          <span className="badge tier-top" title="The ideal combo for this mode">
+            Ideal
+          </span>
+        )}{" "}
         {drilled && !theIdeal && (
-          <span className="badge tier-core" title="Drilled in the practice tool">Drilled</span>
+          <span className="badge tier-core" title="Drilled in the practice tool">
+            Drilled
+          </span>
         )}
       </h3>
-      <p className="small dim" style={{ margin: 0 }}>
+      <p className="combo-meta">
         {combo.stage && <>Stage: {combo.stage}. </>}
         {combo.credit && <>Credit: {combo.credit}. </>}
         {combo.sources.join(", ")}
       </p>
       <ComboSteps steps={combo.steps} mode={combo.mode} />
       {combo.notes && combo.notes.length > 0 && (
-        <ul className="notes small">
+        <ul className="notes">
           {combo.notes.map((n, i) => (
             <li key={i}>{n}</li>
           ))}
@@ -41,103 +40,118 @@ function ComboCard({ combo }: { combo: Combo }) {
   );
 }
 
-export default function CombosPage() {
-  const pveCombos = combos.filter((c) => c.mode === "pve");
+export default function CombosPage({ mode }: { mode: Mode }) {
+  const modeCombos = combos.filter((c) => c.mode === mode);
   const fmt = (v: number) => v.toLocaleString("en-US", { maximumFractionDigits: 0 });
   const rules = cancels.general_rules;
 
   return (
     <div>
-      <h1>Combos</h1>
-      <p className="page-sub">
-        All {combos.length} combos from the locked sources — PvE first, then the AOS (Bantalope)
-        combos by family. Dashed steps are optional.
-      </p>
+      <PageHeader title="Combos" mode={mode}>
+        {mode === "pve" ? (
+          <>All {modeCombos.length} PvE combos from the locked sources. Dashed steps are optional.</>
+        ) : (
+          <>The AOS (Bantalope) combos by family. Dashed steps are optional.</>
+        )}
+      </PageHeader>
 
-      <h2>PvE</h2>
-      <p className="section-desc">{combosFile._meta.pve_truth} — locked truth.</p>
-      {pveCombos.map((c) => (
-        <ComboCard key={c.id} combo={c} />
-      ))}
+      {mode === "pvp" && <Staleness />}
 
-      <div className="callout">
-        <b>Sheet combo summaries</b> (locked DPS data, same stat assumptions as the ability rows):{" "}
-        {dps.combo_summaries.map((s, i) => (
-          <span key={s.name}>
-            {i > 0 && " · "}
-            {s.name}: {fmt(s.pve_dps_non_bsr)} DPS ({fmt(s.pve_dps_bsr)} in BSR)
-          </span>
-        ))}
-      </div>
-
-      <h2>AOS (PvP)</h2>
-      <div className="callout warn">
-        <b>Staleness disclaimer:</b> {combosFile._meta.pvp_caveat}
-      </div>
-      {FAMILIES.map((fam) => (
-        <div key={fam.prefix}>
-          <h3>
-            {fam.name} family <span className="dim small">— {fam.situation}</span>
-          </h3>
-          {combos
-            .filter((c) => c.id.startsWith(fam.prefix))
-            .map((c) => (
-              <ComboCard key={c.id} combo={c} />
-            ))}
-        </div>
-      ))}
-
-      <h2>Cancel fundamentals</h2>
-      <p className="section-desc">
-        General rules from the cancels sheet — per-ability cancels live on each ability card in the
-        study guide.
-      </p>
-      <div className="setup-grid">
-        <div className="setup-card">
-          <b>Instant flows from everything</b>
-          <p className="small">
-            {rules.instant_flows_from_everything.map((id, i) => (
-              <span key={id}>
-                {i > 0 && ", "}
-                <AbilityLink id={id} />
+      {mode === "pve" ? (
+        <Section
+          id="sec-combos"
+          title="PvE combos"
+          count={modeCombos.length}
+          desc={`${combosFile._meta.pve_truth} — locked truth.`}
+        >
+          {modeCombos.map((c) => (
+            <ComboCard key={c.id} combo={c} />
+          ))}
+          <Callout tag="SHEET">
+            Combo summaries (locked DPS data, same stat assumptions as the ability rows):{" "}
+            {dps.combo_summaries.map((sum, i) => (
+              <span key={sum.name}>
+                {i > 0 && " · "}
+                {sum.name}: <span className="mono">{fmt(sum.pve_dps_non_bsr)}</span> DPS (
+                <span className="mono">{fmt(sum.pve_dps_bsr)}</span> in BSR)
               </span>
             ))}
-          </p>
-        </div>
-        <div className="setup-card">
-          <b>Fast recovery cancellers</b>
-          <p className="small">
-            {rules.fast_recovery_cancellers.map((id, i) => (
-              <span key={id}>
-                {i > 0 && ", "}
-                <AbilityLink id={id} />
-              </span>
-            ))}
-          </p>
-        </div>
-        <div className="setup-card">
-          <b>Spirit Step vs Chain: Spirit Step</b>
-          <p className="small">{rules.spirit_step_vs_chain}</p>
-        </div>
-        <div className="setup-card">
-          <b>Clone swap</b>
-          <p className="small">{rules.clone_mechanic}</p>
-        </div>
-      </div>
-      <p className="small dim">
-        {cancels._meta.color_caveat} Full sheet:{" "}
-        <a href={cancels._meta.sheet_url} target="_blank" rel="noreferrer">
-          cancels reference sheet
-        </a>
-        .
-      </p>
+          </Callout>
+        </Section>
+      ) : (
+        COMBO_FAMILIES.map((fam) => {
+          const famCombos = combos.filter((c) => c.id.startsWith(fam.prefix));
+          return (
+            <Section
+              key={fam.prefix}
+              id={`fam-${fam.prefix}`}
+              title={`${fam.name} family`}
+              count={famCombos.length}
+              desc={fam.situation}
+            >
+              {famCombos.map((c) => (
+                <ComboCard key={c.id} combo={c} />
+              ))}
+            </Section>
+          );
+        })
+      )}
 
-      <h2>DPS Priority List — video freestyle variant</h2>
-      <p className="section-desc">
-        The Discord list (the canonical one) lives on the Study → PvE page; this is the guide video's
-        freestyle variant for comparison.
-      </p>
-      <PriorityPanel list={combosFile.priority_lists.pve_video_freestyle} mode="pve" />
+      <Section
+        id="sec-cancels"
+        title="Cancel fundamentals"
+        desc="General rules from the cancels sheet — per-ability cancels live in each ability's expanded row."
+      >
+        <div className="cards">
+          <div className="card">
+            <h3>Instant flows from everything</h3>
+            <p>
+              {rules.instant_flows_from_everything.map((id, i) => (
+                <span key={id}>
+                  {i > 0 && ", "}
+                  <AbilityLink id={id} />
+                </span>
+              ))}
+            </p>
+          </div>
+          <div className="card">
+            <h3>Fast recovery cancellers</h3>
+            <p>
+              {rules.fast_recovery_cancellers.map((id, i) => (
+                <span key={id}>
+                  {i > 0 && ", "}
+                  <AbilityLink id={id} />
+                </span>
+              ))}
+            </p>
+          </div>
+          <div className="card">
+            <h3>Spirit Step vs Chain: Spirit Step</h3>
+            <p>{rules.spirit_step_vs_chain}</p>
+          </div>
+          <div className="card">
+            <h3>Clone swap</h3>
+            <p>{rules.clone_mechanic}</p>
+          </div>
+        </div>
+        <p className="note">
+          {cancels._meta.color_caveat} Full sheet:{" "}
+          <a href={cancels._meta.sheet_url} target="_blank" rel="noreferrer">
+            cancels reference sheet
+          </a>
+          .
+        </p>
+      </Section>
+
+      {mode === "pve" && (
+        <Section
+          id="sec-priority-video"
+          title="DPS Priority List — video freestyle variant"
+          desc="The canonical Discord list lives on the Abilities page; this is the guide video's variant."
+        >
+          <PriorityPanel list={combosFile.priority_lists.pve_video_freestyle} mode="pve" />
+        </Section>
+      )}
     </div>
   );
 }

@@ -72,6 +72,31 @@ export function protectionIn(a: Ability, mode: Mode): Protection | null {
   return a.protection[mode];
 }
 
+/** Graded fill counts for the 4-dot protection meter (design spec: i-frame 4 … none 1). */
+export const PROT_RANK: Record<Protection, number> = {
+  iframe: 4,
+  super_armor: 3,
+  frontal_guard: 2,
+  none: 1,
+};
+
+/** Mono micro-labels for the protection meter cell. */
+export const PROT_SHORT: Record<Protection, string> = {
+  iframe: "IFRAME",
+  super_armor: "SA",
+  frontal_guard: "FG",
+  none: "UNPROT",
+};
+
+/** DPS-bar fill percentage. PvE scale is a fixed 100k; AOS scales to the sheet's max PvP DPS. */
+const PVP_DPS_MAX = Math.max(...dps.rows.map((r) => r.pvp_dps ?? 0));
+export function dpsBarPct(abilityId: string, mode: Mode): number | null {
+  const v = bestDps(abilityId, mode);
+  if (v == null) return null;
+  const scale = mode === "pve" ? 100000 : PVP_DPS_MAX;
+  return Math.min(100, (v / scale) * 100);
+}
+
 // ---- CC badges (KD / Stun / Float / Stiff / Bound — CONTEXT.md) ----
 
 export interface CcBadge {
@@ -223,19 +248,28 @@ for (const tier of combosFile.priority_lists.pve_discord.tiers) {
 export const combos: Combo[] = combosFile.combos;
 export const comboById = new Map(combos.map((c) => [c.id, c]));
 
-/** Ideal combos per HANDOFF §5: PvE = the Infinite Combo; AOS = one drill per family. */
+/** Ideal combos (CONTEXT.md): PvE = the Infinite Combo; AOS = one drill per family. */
 export const IDEAL_COMBOS: Record<Mode, string[]> = {
   pve: ["pve-infinite"],
   pvp: ["pvp-flower-shroud-1", "pvp-bristling-1", "pvp-hanpuri-1", "pvp-stiff-foxflare-1"],
 };
 
+/** PvP combo families (CONTEXT.md: opener + situation). Order matters: Flower Shroud first = the ideal family. */
+export const COMBO_FAMILIES: { prefix: string; name: string; situation: string }[] = [
+  { prefix: "pvp-flower-shroud", name: "Flower Shroud", situation: "isolated burst" },
+  { prefix: "pvp-bristling", name: "Bristling", situation: "stay-in-SA" },
+  { prefix: "pvp-hanpuri", name: "Hanpuri", situation: "backpedal CC" },
+  { prefix: "pvp-stiff-foxflare", name: "Stiff/Foxflare", situation: "off a stiff or clone bait" },
+];
+
 // ---- Cancels lookup for ability detail views ----
 
 export interface AbilityCancelInfo {
-  fasterAfter?: { faster_after: string[]; note?: string };
+  /** Notable PvE cancel entry — faster_after, faster_into, or note-only shape. */
+  notable?: { faster_after?: string[]; faster_into?: string[]; note?: string };
   slowCast?: string;
   inputTrap?: string;
-  pvp?: { cancelled_into_from: string[]; note?: string };
+  pvp?: { cancelled_into_from?: string[]; cancelled_out_into?: string[]; note?: string };
   sheetBlock?: CancelsFile["sheet_blocks"][number];
 }
 
@@ -243,7 +277,7 @@ export function cancelInfo(abilityId: string): AbilityCancelInfo {
   const info: AbilityCancelInfo = {};
   const n = cancels.notable_cancels_pve;
   const entry = n.entries.find((e) => e.skill === abilityId);
-  if (entry) info.fasterAfter = entry;
+  if (entry) info.notable = entry;
   info.slowCast = n.slow_casts.find((e) => e.skill === abilityId)?.note;
   info.inputTrap = n.input_traps.find((e) => e.skill === abilityId)?.note;
   const pvp = cancels.primary_cancels_pvp.entries.find((e) => e.skill === abilityId);

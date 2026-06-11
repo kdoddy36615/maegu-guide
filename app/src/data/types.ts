@@ -155,14 +155,21 @@ export interface CancelsFile {
   };
   notable_cancels_pve: {
     sources: string[];
-    entries: { skill: string; faster_after: string[]; note?: string }[];
+    /** Entries come in three shapes: faster_after, faster_into, or note-only. */
+    entries: { skill: string; faster_after?: string[]; faster_into?: string[]; note?: string }[];
     slow_casts: { skill: string; note: string }[];
     input_traps: { skill: string; note: string }[];
   };
   primary_cancels_pvp: {
     sources: string[];
     caveat: string;
-    entries: { skill: string; cancelled_into_from: string[]; note?: string }[];
+    /** Entries come in two shapes: cancelled_into_from or cancelled_out_into. */
+    entries: {
+      skill: string;
+      cancelled_into_from?: string[];
+      cancelled_out_into?: string[];
+      note?: string;
+    }[];
     note?: string;
   };
   general_rules: {

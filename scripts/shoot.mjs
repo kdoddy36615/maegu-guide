@@ -8,12 +8,14 @@ import puppeteer from "puppeteer-core";
 
 const base = process.argv[2] ?? "http://localhost:5173";
 const routes = [
-  ["study-pve", "/#/study/pve"],
-  ["study-aos", "/#/study/aos"],
-  ["setup", "/#/study/setup"],
-  ["combos", "/#/study/combos"],
-  ["practice-pve", "/#/practice/pve"],
-  ["practice-aos", "/#/practice/aos"],
+  ["abilities-pve", "/#/pve/abilities"],
+  ["abilities-pvp", "/#/pvp/abilities"],
+  ["setup-pve", "/#/pve/setup"],
+  ["setup-pvp", "/#/pvp/setup"],
+  ["combos-pve", "/#/pve/combos"],
+  ["combos-pvp", "/#/pvp/combos"],
+  ["practice-pve", "/#/pve/practice"],
+  ["practice-pvp", "/#/pvp/practice"],
 ];
 const candidates = [
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",

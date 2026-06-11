@@ -1,23 +1,14 @@
 import { useState } from "react";
 import type { Ability, Mode } from "../data/types";
-import {
-  IDEAL_COMBOS,
-  ccBadges,
-  comboById,
-  combos,
-  combosFile,
-  loadouts,
-  sectionsFor,
-  setup,
-} from "../data";
-import { CcBadges, Kbd, ProtBadge } from "../components/badges";
+import { IDEAL_COMBOS, ccBadges, comboById, combos, loadouts, sectionsFor, setup } from "../data";
+import { CcBadges, Kbd, ProtMeter } from "../components/badges";
 import AbilityIcon from "../components/AbilityIcon";
 import ComboStrip from "../components/ComboStrip";
-
-const MODE_TITLE: Record<Mode, string> = { pve: "Practice — PvE", pvp: "Practice — AOS" };
+import { PageHeader, Section, Staleness } from "../components/Section";
 
 function Slot({ a, mode, section }: { a: Ability; mode: Mode; section: string }) {
   const unknownRabam = loadouts[mode].unknownRabamIds.has(a.id);
+  const prot = a.protection[mode];
   return (
     <div className={`hotbar-slot sec-${section}`}>
       <span className="slot-name">
@@ -28,9 +19,9 @@ function Slot({ a, mode, section }: { a: Ability; mode: Mode; section: string })
         <Kbd key={inp}>{inp}</Kbd>
       ))}
       <span className="slot-badges">
-        <ProtBadge prot={a.protection[mode]} />
+        {prot && <ProtMeter prot={prot} title={a.protection.tooltip_lines.join("; ")} />}
         <CcBadges badges={ccBadges(a, mode)} />
-        {unknownRabam && <span className="badge unknown">pick unknown</span>}
+        {unknownRabam && <span className="badge unknown">Unknown</span>}
       </span>
     </div>
   );
@@ -45,60 +36,56 @@ export default function PracticePage({ mode }: { mode: Mode }) {
 
   return (
     <div>
-      <h1>{MODE_TITLE[mode]}</h1>
-      <p className="page-sub">
+      <PageHeader title="Practice" mode={mode}>
         Pick a combo and keep the strip up next to the game while you practice — input above, skill
         icon below, skill after skill. It never captures key input; the keys happen in-game.
-      </p>
+      </PageHeader>
 
-      {mode === "pvp" && (
-        <div className="callout warn">
-          <b>Staleness disclaimer:</b> {combosFile._meta.pvp_caveat}
-        </div>
-      )}
+      {mode === "pvp" && <Staleness />}
 
-      <h2>Combos</h2>
-      <div className="drill-select">
-        {modeCombos.map((c) => (
-          <button
-            key={c.id}
-            className={c.id === comboId ? "active" : ""}
-            onClick={() => setComboId(c.id)}
-          >
-            {c.name}
-            {c.id === ideal[0] && <span className="badge tier-top" style={{ marginLeft: 6 }}>Ideal</span>}
-          </button>
-        ))}
-      </div>
-      <ComboStrip combo={combo} />
-
-      <h2>Section layout</h2>
-      <p className="section-desc">{setup.ui_reference.scheme}</p>
-
-      <div className="hotbar-section">
-        <h3>Movement & utility</h3>
-        <div className="hotbar-row">
-          {sections.movement.map((a) => (
-            <Slot key={a.id} a={a} mode={mode} section="movement" />
+      <Section id="sec-combos" title="Combos" count={modeCombos.length}>
+        <div className="drill-select">
+          {modeCombos.map((c) => (
+            <button
+              key={c.id}
+              className={c.id === comboId ? "active" : ""}
+              onClick={() => setComboId(c.id)}
+            >
+              {c.name}
+              {ideal.includes(c.id) && <span className="ideal mono">IDEAL</span>}
+            </button>
           ))}
         </div>
-      </div>
-      <div className="hotbar-section">
-        <h3>Protected DPS</h3>
-        <div className="hotbar-row">
-          {sections.protected.map((a) => (
-            <Slot key={a.id} a={a} mode={mode} section="protected" />
-          ))}
+        <ComboStrip combo={combo} />
+      </Section>
+
+      <Section id="sec-layout" title="Section layout">
+        <p className="note">{setup.ui_reference.scheme}</p>
+        <div className="hotbar-section">
+          <h4 className="micro">Movement &amp; utility</h4>
+          <div className="hotbar-row">
+            {sections.movement.map((a) => (
+              <Slot key={a.id} a={a} mode={mode} section="movement" />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="hotbar-section">
-        <h3>Unprotected DPS</h3>
-        <div className="hotbar-row">
-          {sections.unprotected.map((a) => (
-            <Slot key={a.id} a={a} mode={mode} section="unprotected" />
-          ))}
+        <div className="hotbar-section">
+          <h4 className="micro">Protected DPS</h4>
+          <div className="hotbar-row">
+            {sections.protected.map((a) => (
+              <Slot key={a.id} a={a} mode={mode} section="protected" />
+            ))}
+          </div>
         </div>
-      </div>
+        <div className="hotbar-section">
+          <h4 className="micro">Unprotected DPS</h4>
+          <div className="hotbar-row">
+            {sections.unprotected.map((a) => (
+              <Slot key={a.id} a={a} mode={mode} section="unprotected" />
+            ))}
+          </div>
+        </div>
+      </Section>
     </div>
   );
 }

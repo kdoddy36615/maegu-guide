@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import type { Combo, ComboStep } from "../data/types";
 import { ability } from "../data";
 import AbilityIcon from "./AbilityIcon";
@@ -5,13 +6,16 @@ import AbilityIcon from "./AbilityIcon";
 /**
  * In-game-style combo reference: input above icon, skill after skill, "or" stacks
  * for choice steps, OPTIONAL captions — meant to be pulled up next to the game
- * while practicing (mirrors the guide author's hotbar strip look).
+ * while practicing. Glanceable, never denser (ADR 0003 amendment).
  */
 
-function StripIcon({ id }: { id: string }) {
+function Choice({ id, input }: { id: string; input?: string }) {
   return (
-    <span title={ability(id).short_name}>
-      <AbilityIcon id={id} size="xl" />
+    <span className="strip-choice">
+      {input && <span className="strip-input">{input}</span>}
+      <span title={ability(id).short_name}>
+        <AbilityIcon id={id} size="xl" />
+      </span>
     </span>
   );
 }
@@ -24,24 +28,20 @@ function Step({ step }: { step: ComboStep }) {
     const labels = parts.length === step.choices.length ? parts : null;
     return (
       <div className="strip-step" title={title}>
-        <span className="strip-input">{labels ? labels[0] : step.input}</span>
-        <StripIcon id={step.choices[0]} />
-        <span className="strip-or">or</span>
-        {step.choices.slice(1).map((id, i) => (
-          <span key={id} className="strip-choice">
-            <StripIcon id={id} />
-            {labels && <span className="strip-input">{labels[i + 1]}</span>}
-          </span>
+        {step.choices.map((id, j) => (
+          <Fragment key={id}>
+            {j > 0 && <span className="strip-or">OR</span>}
+            <Choice id={id} input={labels ? labels[j] : j === 0 ? step.input : undefined} />
+          </Fragment>
         ))}
-        {step.optional && <span className="strip-optional">optional</span>}
+        {step.optional && <span className="strip-optional">OPTIONAL</span>}
       </div>
     );
   }
   return (
     <div className="strip-step" title={title}>
-      <span className="strip-input">{step.input}</span>
-      <StripIcon id={step.ability!} />
-      {step.optional && <span className="strip-optional">optional</span>}
+      <Choice id={step.ability!} input={step.input} />
+      {step.optional && <span className="strip-optional">OPTIONAL</span>}
     </div>
   );
 }
@@ -55,7 +55,7 @@ export default function ComboStrip({ combo }: { combo: Combo }) {
         ))}
       </div>
       {combo.notes && combo.notes.length > 0 && (
-        <ul className="notes small">
+        <ul className="notes strip-notes">
           {combo.notes.map((n, i) => (
             <li key={i}>{n}</li>
           ))}
