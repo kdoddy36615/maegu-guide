@@ -1,0 +1,113 @@
+{
+  "_meta": {
+    "curated": "2026-06-11",
+    "pve_truth": "sources/discord-pve.md, sources/video-guide.md (locked)",
+    "pvp_caveat": "AOS addon guidance from sources/discord-pvp.md (currency uncertain). AOS (capped) scope only."
+  },
+  "skill_choices": {
+    "sources": ["sources/video-guide.md#setup", "sources/discord-pve.md#abilities"],
+    "general": "Take all Prime skills — the stronger Succession variants.",
+    "locked": [
+      { "ability": "petalblast", "reason": "Mostly useless; it is the only Bound in the kit — unlock only if a fight needs Bound (e.g. Pig King)." },
+      { "ability": "evasion", "reason": "Unnecessary (video); locked in Discord list too." },
+      { "ability": null, "name": "Rage Transfer", "reason": "Common BSR skill on X — can input-conflict with Shift+X (Heavenly Return / Spirit Parade) and would transfer 50% of your Black Spirit's Rage to another player. Identified by user in grill (2026-06-11); BDO Codex skill id 91." }
+    ],
+    "do_not_learn": [
+      { "ability": "foxflare-fling", "reason": "Magnus skill: useless in PvE (inconsistent line multihit; 1–2 hits are bad). Leaving it unlearned keeps Soulflame (E) usable. PvP combos that use it require learning it — trade-off to settle in grill." }
+    ],
+    "quickslot": [
+      { "ability": "foxspirit-form", "reason": "Can only be used from quickslot (slot 0 in author's setup)." },
+      { "ability": "soul-charm", "reason": "If taken (rabam 58 alternative) — quickslot only." }
+    ]
+  },
+  "rabams": {
+    "sources": ["sources/discord-pve.md#skill-enhancements-aka-rabams", "sources/video-guide.md#rabams-skill-enhancements"],
+    "image": "sources/discord-images/pve/rabams-lv56-58.png",
+    "choices": [
+      { "level": 56, "pve_pick": "heavenly-return", "alternative": "spirit-parade",
+        "rationale": "Heavenly Return: fast, decent damage, quick backstep; unprotected but fast enough that it rarely matters in PvE. Spirit Parade: less damage, longer animation, but Super Armor — the protected option, and the PvP pick (all Bantalope combos use it)." },
+      { "level": 57, "pve_pick": "constricting-charm", "alternative": "petal-snare",
+        "rationale": "Constricting Charm: decent filler with very high attack speed; flows into Spirit Sparks. Petal Snare: long animation, low DPS." },
+      { "level": 58, "pve_pick": "spirit-sparks", "alternative": "soul-charm",
+        "rationale": "Spirit Sparks: weak alone but decent follow-up from Constricting Charm. Soul Charm: not useful in PvE (small HP recovery, costs stamina, out-of-combat)." }
+    ],
+    "tree": "Lv56 from Soulflame III; Lv57 from Spirit Swirl IV; Lv58 from Bristling Sparks IV."
+  },
+  "addons": {
+    "pve_general": {
+      "sources": ["sources/discord-pve.md#general-purpose-addons-new-031025", "sources/video-guide.md#general-purpose-addons"],
+      "image": "sources/discord-images/pve/addons-pve.png",
+      "image_caveat": "Low resolution — read the image directly for exact values; do not trust transcriptions.",
+      "skills_with_addons": ["foxspirit-tag", "spirit-swirl", "bristling-sparks", "spirited-away", "heavenward-dance", "nukduri-dance"],
+      "notes": [
+        "Several options are flexible; Nukduri Dance could be swapped (author keeps Special Attack on it from habit of using it early as the AP buff).",
+        "Movement speed can be swapped at tower spots (e.g. HP on hit).",
+        "Down attack matters at spots like Star's End — can replace back attack or DR where movement speed stays valuable.",
+        "Midgame (more -DP wanted): Spirited Away → Foxflare with -DR/Attack Speed; Bristling Sparks +DR → Crit Dmg; Nukduri Dance → Petal Play with -DR/Crit Dmg."
+      ]
+    },
+    "aos": {
+      "sources": ["sources/discord-pvp.md#pvp---addons"],
+      "image": "sources/discord-images/pvp/addons-aos-eva-vs-dr.png",
+      "caveat": "Currency uncertain. Read image for exact per-skill values (Evasion build vs DR build columns).",
+      "notes": [
+        "Addons are subjective/playstyle-dependent; these cover as many combos as possible.",
+        "DR build: addons on Spirited Away fill combos from Foxflare that skip Bared Claws.",
+        "Evasion build: HP regen on Nukduri Dance is a big chunk (it already regens and hits 10 targets); eva setups rotating SA exploit it better than DR setups.",
+        "Capped modes: self buffs/debuffs count against caps — upkeeping DR/evasion/accuracy and applying DP debuffs matters more than before.",
+        "Standalone DR / Evasion / Capped profiles exist but are intentionally out of scope (user plays AOS only)."
+      ]
+    }
+  },
+  "reforge_stones": {
+    "sources": ["sources/video-guide.md#reforge-stones"],
+    "typical": ["BSR Recovery", "AP", "Crit Rate", "Crit Dmg", "Back Dmg"],
+    "rules": [
+      "BSR Recovery — always take.",
+      "AP — take unless >10 over AP cap.",
+      "Crit Rate — take; extremely high BSR uptime.",
+      "Down Dmg — only for down-attack spots like Star's End.",
+      "Crit Dmg — always good but lower value.",
+      "Back Dmg — usually good for tanky mobs.",
+      "DR — comfort if needed, or free slot; if you can't drop AP/Crit Rate for it, swap Crit Dmg."
+    ]
+  },
+  "buffs_debuffs": {
+    "sources": ["sources/discord-pve.md#buffs", "sources/video-guide.md#buffs-and-debuffs"],
+    "image": "sources/video-screenshots/buffs-and-debuffs.png",
+    "buffs": [
+      { "effect": "+20 AP", "abilities": ["charmed", "nukduri-dance", "nether-river"],
+        "note": "These do not stack with each other. Nukduri Dance is strongest but long CD; Charmed is the backup; Nether River rarely, buffs with frontal guard." },
+      { "effect": "+25 AP (+ defensive stats)", "abilities": ["foxspirit-form"],
+        "note": "3-min CD; overwrites the +20 AP buffs → effectively +5 over them. Weak vs other classes' 3-min buffs." }
+    ],
+    "debuffs": [
+      { "effect": "-20 DP", "abilities": ["foxspirit-tag"],
+        "note": "The only one you have; stacks with addon -DR. Apply at the start of fights." }
+    ]
+  },
+  "bsr": {
+    "sources": ["sources/video-guide.md#tips--resources", "sources/dps-data.md"],
+    "notes": [
+      "100% BSR Heavenward Dance is lower DPS than normal Heavenward Dance but larger AoE.",
+      "Z absorb typically preferred — absorb animation is fast.",
+      "Sheet attack speed assumptions: 37% before BSR, 62% in BSR.",
+      "Rage Transfer (common skill, X) is locked — it would send 50% of your rage to another player on a Shift+X misfire.",
+      "Study guide should include a short BSR explainer (user is unfamiliar with the BSR abilities): Z = absorb rage for the buff, W+RMB at 100% = BSR Heavenward Dance, X = Rage Transfer (locked)."
+    ]
+  },
+  "earlygame": {
+    "sources": ["sources/discord-pve.md#earlygame-1-shot-spots"],
+    "summary": "Move and aim to hit many monsters; use ranged skills between packs.",
+    "ranged": ["foxflare", "spirited-away", "petal-play", "flower-shroud", "bared-claws"],
+    "big_frontal_aoe": ["foxspirit-tag", "bristling-sparks"],
+    "close_aoe": ["spirit-swirl", "nukduri-dance", "heavenward-dance"],
+    "between_packs": ["soul-tear", "path-of-petals"],
+    "advanced_between_packs": ["hanpuri", "lurking-claws"]
+  },
+  "ui_reference": {
+    "sources": ["sources/discord-pve.md#example-skill-ui"],
+    "images": ["sources/discord-images/pve/ui-setup-example.png", "sources/discord-images/pve/quickslot-setup.png", "sources/discord-images/pve/ui-ability-row.png"],
+    "scheme": "Movement/utility in the top 8 hotbar slots; DPS abilities in DPS-priority order in the bottom 12 (left→right, top→bottom). Quickslot: Foxspirit Form slot 0, MouseFunction slot 5."
+  }
+}

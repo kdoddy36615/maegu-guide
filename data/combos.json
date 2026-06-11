@@ -1,0 +1,405 @@
+{
+  "_meta": {
+    "schema": "step = { ability: <id> | choices: [<id>...], input, optional?, annotation? }. ability ids reference data/abilities.json.",
+    "pve_truth": "sources/discord-pve.md, sources/video-guide.md (locked)",
+    "pvp_caveat": "PvP combos are from sources/discord-pvp.md (courtesy Bantalope); currency uncertain — treat as strong starting point, not locked truth. AOS (capped) scope only.",
+    "curated": "2026-06-11"
+  },
+  "combos": [
+    {
+      "id": "pve-short-tag-burst",
+      "mode": "pve",
+      "name": "Short combo: Tag burst",
+      "stage": "midgame",
+      "sources": ["sources/discord-pve.md#short-combos-for-midgame"],
+      "steps": [
+        { "choices": ["flower-shroud", "bared-claws"], "input": "W/S+E or A/D+LMB", "annotation": "reposition; accelerates Tag" },
+        { "ability": "foxspirit-tag", "input": "RMB", "annotation": "-20 DP" },
+        { "ability": "spirited-away", "input": "S+LMB" },
+        { "ability": "petal-play", "input": "Shift+LMB", "annotation": "cancelled — fast after Spirited Away" }
+      ],
+      "notes": [
+        "Bared Claws → Tag is a non-symmetrical cancel (D+LMB after attack 1, A+LMB after attack 2)."
+      ]
+    },
+    {
+      "id": "pve-short-heavenward",
+      "mode": "pve",
+      "name": "Short combo: Heavenward chain",
+      "stage": "midgame",
+      "sources": ["sources/discord-pve.md#short-combos-for-midgame"],
+      "steps": [
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C", "annotation": "+20 AP" },
+        { "ability": "spirit-swirl", "input": "Shift+F" }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pve-short-bristling",
+      "mode": "pve",
+      "name": "Short combo: Bristling burst",
+      "stage": "midgame",
+      "sources": ["sources/discord-pve.md#short-combos-for-midgame"],
+      "steps": [
+        { "choices": ["flower-shroud", "bared-claws"], "input": "W/S+E or A/D+LMB", "annotation": "reposition; accelerates Tag" },
+        { "ability": "foxspirit-tag", "input": "RMB", "annotation": "-20 DP" },
+        { "ability": "bristling-sparks", "input": "Shift+RMB" }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pve-infinite",
+      "mode": "pve",
+      "name": "Infinite combo (lazy / beginner loop)",
+      "stage": "endgame / tanky spots / semi-AFK",
+      "sources": [
+        "sources/discord-pve.md#combo-for-lazy-grindtanky-mobsendgame",
+        "sources/video-guide.md#infinite-combo (slide combo-infinite-breakdown.png)"
+      ],
+      "steps": [
+        { "choices": ["flower-shroud", "bared-claws"], "input": "W/S+E or A/D+LMB", "annotation": "reposition; movement choice — similar DPS; both accelerate Tag" },
+        { "ability": "foxspirit-tag", "input": "RMB", "annotation": "-20 DP, apply early" },
+        { "choices": ["nukduri-dance", "charmed"], "input": "Shift+C or Space", "annotation": "+20 AP; skippable if over AP cap (Nukduri still good DPS)" },
+        { "ability": "spirited-away", "input": "S+LMB" },
+        { "ability": "petal-play", "input": "Shift+LMB", "annotation": "cancelled — do NOT put anything between S+LMB and Shift+LMB" },
+        { "ability": "heavenly-return", "input": "Shift+X", "optional": true, "annotation": "add with high attack speed (BSR / Shai buffs); reposition" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "foxflare", "input": "Shift+Q", "optional": true, "annotation": "add with high attack speed (BSR / Shai buffs)" },
+        { "choices": ["spirit-swirl", "bristling-sparks"], "input": "Shift+F or Shift+RMB" }
+      ],
+      "notes": [
+        "Loopable. If you still run out of skills: Constricting Charm → Spirit Sparks (Shift+Z → LMB).",
+        "Lurking Claws (S+F) can be inserted anywhere EXCEPT between Spirited Away → Petal Play, to reposition for back attacks.",
+        "Shift+X and W+RMB can be moved around within the combo if needed (video).",
+        "Inflexible by design — a combo tuned to the spot or the DPS priority list outperforms it (both sources)."
+      ]
+    },
+    {
+      "id": "pve-movement-long-discord",
+      "mode": "pve",
+      "name": "Long-range movement combo (Discord)",
+      "stage": "any",
+      "sources": ["sources/discord-pve.md#movement"],
+      "steps": [
+        { "ability": "chain-spirit-step", "input": "Shift+W" },
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "soul-tear", "input": "W+Q" },
+        { "ability": "path-of-petals", "input": "W+F" },
+        { "ability": "chain-spirit-step", "input": "Shift+W" },
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "soul-tear", "input": "W+Q" }
+      ],
+      "notes": [
+        "Ghost Bomb and Flower Shroud can be added for slightly more distance."
+      ]
+    },
+    {
+      "id": "pve-movement-long-video",
+      "mode": "pve",
+      "name": "Long-distance movement combo (video)",
+      "stage": "any",
+      "sources": ["sources/video-guide.md#movement (slide movement-combo-longdistance.png)"],
+      "steps": [
+        { "ability": "chain-spirit-step", "input": "W+Shift" },
+        { "ability": "soul-tear", "input": "W+Q" },
+        { "ability": "chain-spirit-step", "input": "W+Shift" },
+        { "ability": "ghost-bomb", "input": "D+RMB" },
+        { "ability": "path-of-petals", "input": "W+F" },
+        { "ability": "chain-spirit-step", "input": "W+Shift x2" },
+        { "ability": "soul-tear", "input": "W+Q" },
+        { "ability": "ghost-bomb", "input": "D+RMB" },
+        { "ability": "chain-spirit-step", "input": "W+Shift" },
+        { "ability": "flower-shroud", "input": "W+E" }
+      ],
+      "notes": [
+        "Targeted teleports for speed between packs: Lurking Claws (S+F, hold F on target), Hanpuri (E after E / F / A/D+RMB — best after Ghost Bomb)."
+      ]
+    },
+    {
+      "id": "pvp-flower-shroud-1",
+      "mode": "pvp",
+      "name": "Flower Shroud combo (Foxflare Fling)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#flower-shroud-combos"],
+      "steps": [
+        { "ability": "flower-shroud", "input": "W/S+E", "annotation": "stun; can start from hit 2 if hit 1 drags" },
+        { "ability": "lurking-claws", "input": "S+F" },
+        { "ability": "bared-claws", "input": "D+LMB" },
+        { "ability": "foxspirit-tag", "input": "RMB" },
+        { "ability": "foxflare-fling", "input": "E", "annotation": "higher damage than Charmed but no verticality" },
+        { "ability": "foxflare", "input": "Shift+Q", "annotation": "knockdown" },
+        { "ability": "spirit-parade", "input": "Shift+X", "annotation": "can move behind for 100% back attacks on Heavenward Dance" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "spirit-swirl", "input": "Shift+F" }
+      ],
+      "notes": [
+        "Isolated / small-scale: re-CC gap during the Charmed/Fling → Foxflare portion; among the highest single-target burst available.",
+        "Variations referenced but clips not collected: Magnus, Charmed, Spirited Away."
+      ]
+    },
+    {
+      "id": "pvp-flower-shroud-2",
+      "mode": "pvp",
+      "name": "Flower Shroud combo (Charmed)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#flower-shroud-combos"],
+      "steps": [
+        { "ability": "flower-shroud", "input": "W/S+E" },
+        { "ability": "lurking-claws", "input": "S+F" },
+        { "ability": "bared-claws", "input": "D+LMB" },
+        { "ability": "foxspirit-tag", "input": "RMB" },
+        { "ability": "charmed", "input": "SPACE", "annotation": "use over Fling on uneven terrain" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "spirit-parade", "input": "Shift+X" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "spirit-swirl", "input": "Shift+F" }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pvp-flower-shroud-3",
+      "mode": "pvp",
+      "name": "Flower Shroud combo (Spirited Away, large-scale)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#flower-shroud-combos"],
+      "steps": [
+        { "ability": "flower-shroud", "input": "W/S+E" },
+        { "ability": "spirited-away", "input": "S+LMB" },
+        { "ability": "foxflare-fling", "input": "E" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "lurking-claws", "input": "S+F" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "spirit-swirl", "input": "Shift+F" }
+      ],
+      "notes": [
+        "Fits large-scale: post engage the source claims you stay 'fully SA' until you leave — note the protection data says Spirited Away itself is Forward Guard; the SA refers to the combo tail (Lurking/Nukduri/Heavenward/Swirl are SA). Flagged in research/source-decisions.md."
+      ]
+    },
+    {
+      "id": "pvp-bristling-1",
+      "mode": "pvp",
+      "name": "Bristling combo (Heavenward finish)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#bristling-combos"],
+      "steps": [
+        { "ability": "bristling-sparks", "input": "Shift+RMB", "annotation": "short-midrange CC (stun), SA" },
+        { "ability": "bared-claws", "input": "D+LMB" },
+        { "ability": "foxspirit-tag", "input": "RMB" },
+        { "choices": ["charmed", "foxflare-fling"], "input": "SPACE / E" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "spirit-swirl", "input": "Shift+F" }
+      ],
+      "notes": [
+        "Bristling combos focus on staying in SA, or distancing (Flower Shroud variant). Always decide whether full-committing kills you — pick the safest option.",
+        "Charmed and Fling interchangeable; prefer Fling for damage except after Flower Shroud (lasts slightly longer → more risk)."
+      ]
+    },
+    {
+      "id": "pvp-bristling-2",
+      "mode": "pvp",
+      "name": "Bristling combo (Lurking mid)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#bristling-combos"],
+      "steps": [
+        { "ability": "bristling-sparks", "input": "Shift+RMB" },
+        { "ability": "bared-claws", "input": "D+LMB" },
+        { "ability": "foxspirit-tag", "input": "RMB" },
+        { "choices": ["charmed", "foxflare-fling"], "input": "SPACE / E" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "lurking-claws", "input": "S+F" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "heavenward-dance", "input": "W+RMB" }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pvp-bristling-3",
+      "mode": "pvp",
+      "name": "Bristling combo (Flower Shroud disengage)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#bristling-combos"],
+      "steps": [
+        { "ability": "bristling-sparks", "input": "Shift+RMB" },
+        { "ability": "bared-claws", "input": "D+LMB" },
+        { "ability": "foxspirit-tag", "input": "RMB" },
+        { "ability": "charmed", "input": "SPACE" },
+        { "ability": "flower-shroud", "input": "S+E" },
+        { "ability": "spirited-away", "input": "S+LMB" },
+        { "ability": "petal-play", "input": "Shift+LMB" }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pvp-hanpuri-1",
+      "mode": "pvp",
+      "name": "Hanpuri combo (full)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#hanpuri-combos"],
+      "steps": [
+        { "ability": "flower-shroud", "input": "W/S+E" },
+        { "ability": "soulsnare", "input": "F (hold)" },
+        { "ability": "hanpuri", "input": "(flow)" },
+        { "ability": "spirit-parade", "input": "(flow)", "annotation": "used over Heavenly Return for protection" },
+        { "ability": "charmed", "input": "SPACE", "annotation": "must be Charmed — Fling NOT interchangeable after Hanpuri → Spirit Parade" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "lurking-claws", "input": "S+F" },
+        { "ability": "bared-claws", "input": "D+LMB" },
+        { "ability": "foxspirit-tag", "input": "RMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "heavenward-dance", "input": "W+RMB" }
+      ],
+      "notes": [
+        "Great backpedal CC; can be shortened for full protection when an ally re-CCs for you — then go Heavenward Dance or Lurking Claws immediately after Spirit Parade.",
+        "Variations referenced (clips not collected): Lurking, Heavenward."
+      ]
+    },
+    {
+      "id": "pvp-hanpuri-2",
+      "mode": "pvp",
+      "name": "Hanpuri combo (Swirl finish)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#hanpuri-combos"],
+      "steps": [
+        { "ability": "flower-shroud", "input": "W/S+E" },
+        { "ability": "soulsnare", "input": "F (hold)" },
+        { "ability": "hanpuri", "input": "(flow)" },
+        { "ability": "spirit-parade", "input": "(flow)" },
+        { "ability": "charmed", "input": "SPACE" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "spirit-swirl", "input": "Shift+F" }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pvp-stiff-foxflare-1",
+      "mode": "pvp",
+      "name": "Stiff/Foxflare combo (Lurking)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#stifffoxflare-combos"],
+      "steps": [
+        { "ability": "charmed", "input": "SPACE", "optional": true, "annotation": "stiff opener" },
+        { "ability": "foxflare", "input": "Shift+Q", "annotation": "KD — only reliable re-CC after it is Petal Play" },
+        { "ability": "spirited-away", "input": "S+LMB" },
+        { "ability": "petal-play", "input": "Shift+LMB", "annotation": "the re-CC" },
+        { "ability": "lurking-claws", "input": "S+F" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "heavenward-dance", "input": "W+RMB" }
+      ],
+      "notes": [
+        "All Stiff/Foxflare combos start from a Charmed stiff or a Soul Tear clone bait.",
+        "Large scale: often only partial combos are used — know when to abort and escape with Spirit Step, Ghost Bomb, Soul Tear / Path of Petals.",
+        "Variations referenced (clips not collected): Lurking, Hanpuri, Petal Play."
+      ]
+    },
+    {
+      "id": "pvp-stiff-foxflare-2",
+      "mode": "pvp",
+      "name": "Stiff/Foxflare combo (Hanpuri extension)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#stifffoxflare-combos"],
+      "steps": [
+        { "ability": "charmed", "input": "SPACE", "optional": true },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "spirited-away", "input": "S+LMB" },
+        { "ability": "petal-play", "input": "Shift+LMB" },
+        { "ability": "soulsnare", "input": "F (hold)" },
+        { "ability": "hanpuri", "input": "(flow)" },
+        { "ability": "spirit-parade", "input": "(flow)" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C" }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pvp-stiff-foxflare-3",
+      "mode": "pvp",
+      "name": "Stiff/Foxflare combo (Soul Tear bait)",
+      "credit": "Bantalope",
+      "sources": ["sources/discord-pvp.md#stifffoxflare-combos"],
+      "steps": [
+        { "choices": ["soul-tear", "charmed"], "input": "W+Q / SPACE", "optional": true, "annotation": "Soul Tear clone bait for a back stiff" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "lurking-claws", "input": "S+F" },
+        { "ability": "bared-claws", "input": "D+LMB" },
+        { "ability": "petal-play", "input": "Shift+LMB" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "spirit-swirl", "input": "Shift+F" }
+      ],
+      "notes": []
+    }
+  ],
+  "priority_lists": {
+    "pve_discord": {
+      "sources": ["sources/discord-pve.md#dps-priority-list"],
+      "instruction": "Prioritise higher tiers as they come off cooldown; apply -DP at the beginning; consider AoE; AP buffs only matter below AP cap.",
+      "tiers": [
+        { "tier": "buffs_debuffs", "entries": [
+          { "ability": "foxspirit-tag", "note": "-20 DP — apply first" },
+          { "ability": "nukduri-dance", "note": "+AP primary" },
+          { "ability": "charmed", "note": "+AP backup" }
+        ]},
+        { "tier": "top", "entries": [
+          { "ability": "heavenward-dance" },
+          { "sequence": ["spirited-away", "petal-play"] },
+          { "ability": "spirit-swirl" }
+        ]},
+        { "tier": "core", "entries": [
+          { "ability": "foxflare" },
+          { "ability": "nukduri-dance" },
+          { "ability": "lurking-claws" },
+          { "ability": "bristling-sparks" },
+          { "sequence": ["flower-shroud|bared-claws", "foxspirit-tag"], "note": "top priority when applying -DP" },
+          { "ability": "flower-shroud" }
+        ]},
+        { "tier": "filler", "entries": [
+          { "ability": "heavenly-return" },
+          { "sequence": ["constricting-charm", "spirit-sparks"] },
+          { "sequence": ["soulflame", "hanpuri"] },
+          { "sequence": ["soulsnare", "hanpuri"] }
+        ]}
+      ]
+    },
+    "pve_video_freestyle": {
+      "sources": ["sources/video-guide.md#priority-list--freestyle (slide priority-freestyle.png)"],
+      "instruction": "Apply -DR first. Tuned-to-spot combos beat freestyling when a spot fits a combo perfectly (e.g. Tungrad Ruins).",
+      "tiers": [
+        { "tier": "buffs_debuffs", "entries": [
+          { "ability": "foxspirit-tag", "note": "-DR, important → RMB" },
+          { "ability": "nukduri-dance", "note": "+AP (important under cap)" },
+          { "ability": "charmed" },
+          { "ability": "nether-river" },
+          { "ability": "foxspirit-form", "note": "quickslot" }
+        ]},
+        { "tier": "top", "entries": [
+          { "ability": "heavenward-dance" },
+          { "ability": "spirited-away" },
+          { "ability": "petal-play" },
+          { "ability": "spirit-swirl" }
+        ]},
+        { "tier": "core", "entries": [
+          { "ability": "foxflare" },
+          { "ability": "nukduri-dance" },
+          { "ability": "lurking-claws" },
+          { "ability": "bristling-sparks" },
+          { "ability": "bared-claws" },
+          { "ability": "foxspirit-tag" }
+        ]},
+        { "tier": "filler", "entries": [
+          { "ability": "heavenly-return" },
+          { "ability": "constricting-charm" },
+          { "ability": "soulflame" },
+          { "ability": "soulsnare" }
+        ]}
+      ]
+    }
+  }
+}

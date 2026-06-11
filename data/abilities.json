@@ -1,0 +1,2057 @@
+{
+  "_meta": {
+    "generated_by": "scripts/build_abilities.py",
+    "live_facts_source": "BDO Codex (mirrors live in-game skill text)",
+    "live_facts_pulled": "2026-06-11",
+    "protection_enum": [
+      "iframe",
+      "super_armor",
+      "frontal_guard",
+      "none"
+    ],
+    "pve_truth": "sources/ (locked)"
+  },
+  "abilities": [
+    {
+      "id": "spirited-away",
+      "name": "Prime: Spirited Away",
+      "short_name": "Spirited Away",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Spirited_Away:"
+      ],
+      "inputs": [
+        "S+LMB"
+      ],
+      "roles": [
+        "dps",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "frontal_guard",
+        "pvp": "frontal_guard",
+        "tooltip_lines": [
+          "Forward Guard during the skill"
+        ],
+        "notes": "Tooltip says Forward Guard; discord-pvp loosely calls the Spirited Away engage 'fully SA' — read as the combo tail being SA, flagged for grill.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7285/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance], [Spirited Away IV]\nCast an incantation that charms the soul, then engulfs them in a path of flames.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7285/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7285,
+        "name_kr": "강 : 혼비백산",
+        "input_text": "↓ + LMB",
+        "required_level": 58,
+        "mp_cost": "90",
+        "cooldown": "7s",
+        "effects": [
+          "Attack 1 damage 5033% x1, max 5 hits",
+          "Attack 2 damage 4194% x2",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "Recover 51 HP per hit",
+          "Forward Guard during the skill",
+          "Down Attack",
+          "17.84% damage in PvP only",
+          "Damage -10% per each additional target hit from target 2 onward. (Max damage -50%.) (PvP only)"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 2,
+      "notes": []
+    },
+    {
+      "id": "heavenward-dance",
+      "name": "Prime: Heavenward Dance",
+      "short_name": "Heavenward Dance",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Heavenward_Dance:"
+      ],
+      "inputs": [
+        "W+RMB"
+      ],
+      "roles": [
+        "dps",
+        "repositioning"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7280/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance], [Heavenward Dance IV]\nSpread out and explode your charms all at once, like flowers in bloom, to deal damage over a large area.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7280/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7280,
+        "name_kr": "강 : 천도의 춤",
+        "input_text": "↑ + RMB\nCan be added to a Quick Slot",
+        "required_level": 59,
+        "mp_cost": "80",
+        "cooldown": "7s",
+        "effects": [
+          "Attack 1 damage 3573% x1, max 5 hits",
+          "Attack 2 damage 5360% x2",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "Super Armor during the skill",
+          "No collision while moving",
+          "Down Attack",
+          "36.74% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 1,
+      "notes": []
+    },
+    {
+      "id": "spirit-swirl",
+      "name": "Prime: Spirit Swirl III",
+      "short_name": "Spirit Swirl III",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Spirit_Swirl:"
+      ],
+      "inputs": [
+        "Shift+F"
+      ],
+      "roles": [
+        "dps"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7306/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Cast an incantation that burns wandering souls to their core, thereby guiding them to the afterlife.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7306/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7306,
+        "name_kr": "강 : 귀신회오리 III",
+        "input_text": "SHIFT + F\nCan be added to a Quick Slot",
+        "required_level": 60,
+        "mp_cost": "150",
+        "cooldown": "13s",
+        "effects": [
+          "Attack 1 damage 7080% x1, max 6 hits",
+          "Attack 2 damage 5794% x2",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "Super Armor during the skill",
+          "Down Attack",
+          "28.25% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "Slow when cast from idle — use anything before it (discord-pve).",
+        "All skills flow into it instantly (cancels sheet)."
+      ]
+    },
+    {
+      "id": "foxflare",
+      "name": "Prime: Foxflare IV",
+      "short_name": "Foxflare IV",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Foxflare:"
+      ],
+      "inputs": [
+        "Shift+Q"
+      ],
+      "roles": [
+        "dps",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7293/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Concentrate your Do power, then explode it as a raging storm over a certain area.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7293/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7293,
+        "name_kr": "강 : 화구 IV",
+        "input_text": "SHIFT + Q\nCan be added to a Quick Slot",
+        "required_level": 59,
+        "mp_cost": "100",
+        "cooldown": "8s",
+        "effects": [
+          "Attack damage 10054% x2",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "Knockdown on hits",
+          "Down Attack",
+          "35.36% damage in PvP only",
+          "Damage -20% per each additional target hit from target 2 onward. (Max damage -20%.) (PvP only)"
+        ],
+        "cc_lines": [
+          "Knockdown on hits"
+        ]
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "Knockdown in PvP — the only reliable re-CC after it is Petal Play (discord-pvp)."
+      ]
+    },
+    {
+      "id": "petal-play",
+      "name": "Prime: Petal Play III",
+      "short_name": "Petal Play III",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Petal_Play:"
+      ],
+      "inputs": [
+        "Shift+LMB"
+      ],
+      "roles": [
+        "dps",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7303/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Gradually amplify your Do power until all enemies in front are swept away.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7303/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7303,
+        "name_kr": "강 : 꽃놀이패 III",
+        "input_text": "SHIFT + LMB",
+        "required_level": 60,
+        "mp_cost": "70",
+        "cooldown": "7s",
+        "effects": [
+          "Attack damage 9110% x2",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "Floating on hits",
+          "Down Attack",
+          "38.75% damage in PvP only",
+          "Damage -20% per each additional target hit from target 2 onward. (Max damage -20%.) (PvP only)"
+        ],
+        "cc_lines": [
+          "Floating on hits"
+        ]
+      },
+      "dps_row_count": 4,
+      "notes": [
+        "Much faster (cancelled) after Spirited Away or Bared Claws — see cancels."
+      ]
+    },
+    {
+      "id": "nukduri-dance",
+      "name": "Prime: Nukduri Dance",
+      "short_name": "Nukduri Dance",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Nukduri_Dance:"
+      ],
+      "inputs": [
+        "Shift+C"
+      ],
+      "roles": [
+        "dps",
+        "buff"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7252/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance]\nEngage in a dance to appease spirits roaming the earth.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7252/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7252,
+        "name_kr": "강 : 넋두리",
+        "input_text": "SHIFT + C\nCan be added to a Quick Slot",
+        "required_level": 60,
+        "mp_cost": "60",
+        "cooldown": "12s",
+        "effects": [
+          "Attack damage 6581% x3",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "All AP +20 for 10 sec when using the skill",
+          "Recover 167 HP per hit",
+          "Recover 30 MP per hit",
+          "Super Armor during the skill",
+          "40.91% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "+20 AP buff (does not stack with Charmed / Nether River).",
+        "HP-regen addon notably strong on evasion AOS builds (discord-pvp)."
+      ]
+    },
+    {
+      "id": "bristling-sparks",
+      "name": "Prime: Bristling Sparks IV",
+      "short_name": "Bristling Sparks IV",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Bristling_Sparks:"
+      ],
+      "inputs": [
+        "Shift+RMB"
+      ],
+      "roles": [
+        "dps",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7289/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Burn a charm to manifest a wall of spirit charms which deal damage over time. Stab the charms with your binyeo knife to deal great damage.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7289/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7289,
+        "name_kr": "강 : 초롱불 IV",
+        "input_text": "SHIFT + RMB\nCan be added to a Quick Slot",
+        "required_level": 59,
+        "mp_cost": "100",
+        "cooldown": "11s",
+        "effects": [
+          "Attack 1 damage 6588% x1",
+          "Attack 2 damage 6588% x1, max 4 hits",
+          "Attack 3 damage 7796% x2",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "Super Armor during the skill",
+          "Stun on attack 1 hits",
+          "Down Attack",
+          "23.93% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Stun on attack 1 hits"
+        ]
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "Big frontal AoE; short-midrange CC in PvP.",
+        "All skills flow into it instantly (cancels sheet)."
+      ]
+    },
+    {
+      "id": "lurking-claws",
+      "name": "Prime: Lurking Claws",
+      "short_name": "Lurking Claws",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Lurking_Claws:"
+      ],
+      "inputs": [
+        "S+F"
+      ],
+      "roles": [
+        "dps",
+        "movement",
+        "repositioning"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7282/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance], [Lurking Claws IV]\nToss your charm to mark your target, then take them down from behind with your binyeo knife.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7282/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7282,
+        "name_kr": "강 : 발톱긋기",
+        "input_text": "↓ + F\nF after attack 2 hits to move and perform attack 3 behind the target",
+        "required_level": 56,
+        "mp_cost": "60",
+        "cooldown": "9s",
+        "effects": [
+          "Attack 1 damage 1814% x2",
+          "Attack 2 damage 1814% x2",
+          "Attack 3 damage 3626% x2",
+          "Critical Hit Rate +30%",
+          "Maximum 10 targets",
+          "Recover 100 HP per hit",
+          "Super Armor during the skill",
+          "Down Attack",
+          "46.45% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "Targeted teleport behind target on hit 2 — hold the input until you teleport (input trap).",
+        "DPS sheet names it 'Lurking Claw' (singular); official name is plural."
+      ]
+    },
+    {
+      "id": "foxspirit-tag",
+      "name": "Prime: Foxspirit: Tag",
+      "short_name": "Foxspirit: Tag",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Foxspirit_Tag:"
+      ],
+      "inputs": [
+        "RMB"
+      ],
+      "roles": [
+        "dps",
+        "debuff"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7284/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance], [Foxspirit: Tag III]\nScatter your charms in front, then explode them over a large area to deal damage.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7284/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7284,
+        "name_kr": "강 : 여우신령 : 놀음",
+        "input_text": "RMB\nCan be added to a Quick Slot",
+        "required_level": 56,
+        "mp_cost": "80",
+        "cooldown": "5s",
+        "effects": [
+          "Attack damage 6517% x2",
+          "Critical Hit Rate +30%",
+          "Maximum 10 targets",
+          "All Damage Reduction -20 for 10 sec on hits",
+          "Super Armor during the skill",
+          "Floating on hits (PvE only)",
+          "Down Attack",
+          "Air Attack",
+          "39% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Floating on hits (PvE only)"
+        ]
+      },
+      "dps_row_count": 5,
+      "notes": [
+        "-20 DP debuff — apply at the start of fights (stacks with addon -DR)."
+      ]
+    },
+    {
+      "id": "flower-shroud",
+      "name": "Prime: Flower Shroud IV",
+      "short_name": "Flower Shroud IV",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Flower_Shroud:",
+        ":Flower_Shroud:"
+      ],
+      "inputs": [
+        "W+E",
+        "S+E"
+      ],
+      "roles": [
+        "dps",
+        "repositioning",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "frontal_guard",
+        "pvp": "frontal_guard",
+        "tooltip_lines": [
+          "Forward Guard"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7297/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Cast an incantation that establishes a forbidden zone from which no soul can escape.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7297/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7297,
+        "name_kr": "강 : 꽃자욱 IV",
+        "input_text": "↑ + E to perform forward attacks\n↓ + E to perform backward attacks",
+        "required_level": 59,
+        "mp_cost": null,
+        "cooldown": "6.5s",
+        "effects": [
+          "Attack 1 damage 2584% x1, max 3 hits",
+          "Attack 2 damage 5167% x2",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "Forward Guard",
+          "Stun on hits",
+          "No collision while moving",
+          "Down Attack",
+          "Air Attack",
+          "20.45% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Stun on hits"
+        ]
+      },
+      "dps_row_count": 5,
+      "notes": [
+        "Only W+E places a clone; S+E does not (video + cancels sheet).",
+        "First hit can whiff if dragged onto the enemy — PvP combos can start from hit 2 (discord-pvp)."
+      ]
+    },
+    {
+      "id": "bared-claws",
+      "name": "Prime: Bared Claws",
+      "short_name": "Bared Claws",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Bared_Claws:"
+      ],
+      "inputs": [
+        "A+LMB",
+        "D+LMB"
+      ],
+      "roles": [
+        "dps",
+        "repositioning"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "frontal_guard",
+        "pvp": "frontal_guard",
+        "tooltip_lines": [
+          "Forward Guard (Nullified during cooldown)"
+        ],
+        "notes": "Forward Guard is nullified during cooldown.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7281/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance], [Bared Claws III]\nMove with spirit-like reflexes to cast a powerful incantation in front.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7281/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7281,
+        "name_kr": "강 : 발톱빗",
+        "input_text": "→ or ← + LMB \nPerform from attack 1 when using this skill backward after attack 1",
+        "required_level": 56,
+        "mp_cost": null,
+        "cooldown": "4s",
+        "effects": [
+          "Attack 1 damage 1470% x2",
+          "Attack 2 damage 2940% x1, max 2 hits",
+          "Critical Hit Rate +50% (Nullified during cooldown)",
+          "Maximum 10 targets",
+          "Recover 38 MP per hit",
+          "Forward Guard (Nullified during cooldown)",
+          "All Evasion -12 for 10 sec on hits (Nullified during cooldown)",
+          "Stiffness on attack 2 hits (PvE only) (Nullified during cooldown)",
+          "77.41% damage in PvP only",
+          "Damage -10% per each additional target hit from target 2 onward. (Max damage -50%.) (PvP only)",
+          "Consume 100 Stamina per attack"
+        ],
+        "cc_lines": [
+          "Stiffness on attack 2 hits (PvE only) (Nullified during cooldown)"
+        ]
+      },
+      "dps_row_count": 6,
+      "notes": [
+        "Asymmetrical cancel: D+LMB cancels after attack 1, A+LMB after attack 2.",
+        "Spawns a clone to the side. Eats stamina if spammed."
+      ]
+    },
+    {
+      "id": "ghost-bomb",
+      "name": "Prime: Ghost Bomb",
+      "short_name": "Ghost Bomb",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Ghost_Bomb:"
+      ],
+      "inputs": [
+        "A+RMB",
+        "D+RMB"
+      ],
+      "roles": [
+        "dps",
+        "movement"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "iframe",
+        "pvp": "iframe",
+        "tooltip_lines": [
+          "Invincible while moving"
+        ],
+        "notes": "Invincible while moving (the dash portion).",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7283/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance], [Ghost Bomb IV]\nQuickly evade to the side, then toss a charm that explodes after a certain period of time.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7283/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7283,
+        "name_kr": "강 : 신령 던지기",
+        "input_text": "→ or ← + RMB",
+        "required_level": 58,
+        "mp_cost": null,
+        "cooldown": "5s",
+        "effects": [
+          "Attack damage 3639% x2",
+          "Critical Hit Rate +40%",
+          "Maximum 10 targets",
+          "Invincible while moving",
+          "Down Attack",
+          "77.3% damage in PvP only",
+          "Foxspirit charm's explosion damage 2686% x2",
+          "Maximum 10 targets",
+          "58.38% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "Short side dash; best Hanpuri entry for movement."
+      ]
+    },
+    {
+      "id": "soul-tear",
+      "name": "Prime: Soul Tear III",
+      "short_name": "Soul Tear III",
+      "kind": "prime",
+      "shortcodes": [
+        ":P_Soul_Tear:"
+      ],
+      "inputs": [
+        "W+Q"
+      ],
+      "roles": [
+        "dps",
+        "movement",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor before the attack hits"
+        ],
+        "notes": "Super Armor before the attack hits (not the full animation).",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7300/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Become possessed by a spirit, then quickly dash forward to attack enemies in front.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7300/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7300,
+        "name_kr": "강 : 섬돌뚫기 III",
+        "input_text": "↑ + Q\nCan be added to a Quick Slot",
+        "required_level": 60,
+        "mp_cost": null,
+        "cooldown": "5s",
+        "effects": [
+          "Attack damage 5059% x2",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "Super Armor before the attack hits",
+          "Stiffness on hits",
+          "Down Attack",
+          "50.39% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Stiffness on hits"
+        ]
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "Fastest, most stamina-efficient medium-distance movement in the kit.",
+        "Spawns a clone behind you. Used as clone bait in PvP."
+      ]
+    },
+    {
+      "id": "fan-of-flames",
+      "name": "Prime: Fan of Flames",
+      "short_name": "Fan of Flames",
+      "kind": "prime",
+      "shortcodes": [],
+      "inputs": [
+        "W+C"
+      ],
+      "roles": [
+        "utility"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7251/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance]\nUnleash several fox spirit charms with a powerful wind, spreading them out in the shape of a fan.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7251/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7251,
+        "name_kr": "강 : 화선",
+        "input_text": "↑ + C\nCan be added to a Quick Slot",
+        "required_level": 59,
+        "mp_cost": "100",
+        "cooldown": "8s",
+        "effects": [
+          "Attack 1 damage 1442% x1, max 3 hits",
+          "Critical Hit Rate +30%",
+          "Maximum 10 targets",
+          "Movement Speed -15% for 5 sec on hits",
+          "Stiffness on center hits (PvE only)",
+          "Down Attack",
+          "79.89% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Stiffness on center hits (PvE only)"
+        ]
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "Appears in no source rotation; cancels sheet only lists ways to cancel its recovery."
+      ]
+    },
+    {
+      "id": "soulflame",
+      "name": "Absolute: Soulflame",
+      "short_name": "Soulflame",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Soulflame:"
+      ],
+      "inputs": [
+        "E"
+      ],
+      "roles": [
+        "dps"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7234/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Soulflame III]\nQuickly lower your stance and toss a charm that burns your target over time.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7234/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7234,
+        "name_kr": null,
+        "input_text": "E\nCan be added to a Quick Slot\n\nOnly available via Quick Slot after learning Foxflare Fling",
+        "required_level": 56,
+        "mp_cost": "50",
+        "cooldown": "4s",
+        "effects": [
+          "Attack damage 1983% x2",
+          "Flow: Hanpuri's damage 3966%",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "130 burn damage every 3 sec for 18 sec on hits",
+          "70.27% damage in PvP only",
+          "Foxspirit charm's explosion damage 2149% x2",
+          "Maximum 7 targets",
+          "58.38% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 2,
+      "notes": [
+        "Kept usable by leaving the Magnus skill unlearned (discord-pve)."
+      ]
+    },
+    {
+      "id": "soulsnare",
+      "name": "Absolute: Soulsnare",
+      "short_name": "Soulsnare",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Soulsnare:"
+      ],
+      "inputs": [
+        "F"
+      ],
+      "roles": [
+        "dps"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7238/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Soulsnare III]\nSpin forward while throwing your charm to disrupt your target's movements.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7238/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7238,
+        "name_kr": null,
+        "input_text": "F\nCan be added to a Quick Slot",
+        "required_level": 57,
+        "mp_cost": "50",
+        "cooldown": "5s",
+        "effects": [
+          "Attack damage 1649% x2",
+          "Critical Hit Rate +30%",
+          "Maximum 10 targets",
+          "Movement Speed -10% for 5 sec on hits",
+          "75.68% damage in PvP only",
+          "Foxspirit charm's explosion damage 2686% x2",
+          "Maximum 7 targets",
+          "58.38% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 4,
+      "notes": [
+        "Fast into Bared Claws or Flow: Hanpuri (discord-pve)."
+      ]
+    },
+    {
+      "id": "hanpuri",
+      "name": "Flow: Hanpuri",
+      "short_name": "Hanpuri",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Flow_Hanpuri:"
+      ],
+      "inputs": [
+        "E (flow)",
+        "F (flow)"
+      ],
+      "roles": [
+        "dps",
+        "movement"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7228/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Soulflame II]\nInstantly approach a target and stab them with your binyeo knife.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7228/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7228,
+        "name_kr": null,
+        "input_text": "E during Soulflame\nF during Soulsnare\nE during Ghost Bomb",
+        "required_level": 25,
+        "mp_cost": null,
+        "cooldown": "6s",
+        "effects": [
+          "All damage applies Soulflame's level damage x2",
+          "Super Armor",
+          "Stiffness on hits (PvE only)"
+        ],
+        "cc_lines": [
+          "Stiffness on hits (PvE only)"
+        ]
+      },
+      "dps_row_count": 4,
+      "notes": [
+        "Flow after Soulflame (E), Soulsnare (F) or Ghost Bomb (A/D+RMB): targeted teleport to target.",
+        "Flows into Heavenly Return / Spirit Parade via Shift+X or E/F (cancels sheet)."
+      ]
+    },
+    {
+      "id": "charmed",
+      "name": "Absolute: Charmed",
+      "short_name": "Charmed",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Charmed:"
+      ],
+      "inputs": [
+        "Space"
+      ],
+      "roles": [
+        "dps",
+        "buff",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7217/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Charmed]\nToss your charm forward, then toss your binyeo knife through the previous charm to nail your foe.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7217/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7217,
+        "name_kr": null,
+        "input_text": "↓ + SPACE \nSPACE during other skills",
+        "required_level": 56,
+        "mp_cost": "50",
+        "cooldown": "7s",
+        "effects": [
+          "Attack damage 2640% x2",
+          "Maximum 10 targets",
+          "All AP +20 for 10 sec when using the skill (Nullified during cooldown)",
+          "Recover 125 MP per hit (Nullified during cooldown)",
+          "Stiffness on hits (Nullified during cooldown)",
+          "75.68% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Stiffness on hits (Nullified during cooldown)"
+        ]
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "+20 AP backup buff (does not stack with Nukduri Dance / Nether River).",
+        "Input trap: Space without a preceding skill makes you jump.",
+        "PvP: stiffness opener; interchangeable with Foxflare Fling except after Hanpuri (discord-pvp)."
+      ]
+    },
+    {
+      "id": "nether-river",
+      "name": "Flow: Nether River",
+      "short_name": "Nether River",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Flow_Nether_River:"
+      ],
+      "inputs": [
+        "LMB (flow)"
+      ],
+      "roles": [
+        "dps",
+        "buff"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "frontal_guard",
+        "pvp": "frontal_guard",
+        "tooltip_lines": [
+          "Forward Guard during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7215/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Bared Claws II]\nQuickly leap to the side as you toss your charm.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7215/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7215,
+        "name_kr": null,
+        "input_text": "LMB during lateral Chain: Spirit Step\nLMB during lateral Spirit Step\nLMB during Bared Claws",
+        "required_level": 30,
+        "mp_cost": null,
+        "cooldown": "5s",
+        "effects": [
+          "Attack damage 3033% x2",
+          "Maximum 10 targets",
+          "All AP +20 for 10 sec when using the skill",
+          "Forward Guard during the skill",
+          "No collision while moving",
+          "86.49% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "+AP buff with frontal guard — rarely useful but protected (video)."
+      ]
+    },
+    {
+      "id": "foxflare-fling",
+      "name": "Foxflare Fling",
+      "short_name": "Foxflare Fling",
+      "kind": "preawk",
+      "shortcodes": [
+        ":foxflare_fling:"
+      ],
+      "inputs": [
+        "E (Magnus)"
+      ],
+      "roles": [
+        "dps",
+        "cc"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "frontal_guard",
+        "pvp": "frontal_guard",
+        "tooltip_lines": [
+          "Forward Guard at the start of the skill"
+        ],
+        "notes": "Forward Guard only at the start (the windup).",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7388/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Prerequisite: Use the [Secret Book] Abyssal Legacy ([The Magnus] Abyssal Revelation quest reward)\nScatter your charms into the air, then send them flying towards one point in front.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7388/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7388,
+        "name_kr": null,
+        "input_text": "E\nCan be added to a Quick Slot\nCan be used via a Quick slot with your foxtail fans\n\nSoulflame only available via a Quick Slot after learning this skill",
+        "required_level": 60,
+        "mp_cost": "80",
+        "cooldown": "7s",
+        "effects": [
+          "Attack damage 4757% x1, max 3 hits",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "Forward Guard at the start of the skill",
+          "Stiffness on hits"
+        ],
+        "cc_lines": [
+          "Stiffness on hits"
+        ]
+      },
+      "dps_row_count": 9,
+      "notes": [
+        "Magnus skill. LEAVE UNLEARNED for PvE — inconsistent multi-hit, and learning it replaces Soulflame use (discord-pve, video).",
+        "Used in PvP combos (higher damage than Charmed, but no verticality — use Charmed on uneven terrain)."
+      ]
+    },
+    {
+      "id": "petalblast",
+      "name": "Absolute: Petalblast",
+      "short_name": "Petalblast",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Petal_Blast:"
+      ],
+      "inputs": [
+        "S+RMB"
+      ],
+      "roles": [
+        "dps",
+        "cc"
+      ],
+      "locked": true,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7178/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Petalblast III]\nScatter your charms while gently moving backward, then explode them to damage your foes.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7178/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7178,
+        "name_kr": null,
+        "input_text": "↓ + RMB\nCan be added to a Quick Slot",
+        "required_level": 58,
+        "mp_cost": "70",
+        "cooldown": "6s",
+        "effects": [
+          "Attack damage 3118% x2",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "Super Armor during the skill",
+          "Bound on hits (PvE only)",
+          "Down Attack",
+          "58.38% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Bound on hits (PvE only)"
+        ]
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "LOCKED (both sources). Only Bound in kit (PvE only) — unlock if a fight needs Bound, e.g. Pig King (video)."
+      ]
+    },
+    {
+      "id": "spirit-step",
+      "name": "Spirit Step II",
+      "short_name": "Spirit Step II",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Spirit_Step:"
+      ],
+      "inputs": [
+        "Shift+A",
+        "Shift+S",
+        "Shift+D"
+      ],
+      "roles": [
+        "movement"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "iframe",
+        "pvp": "iframe",
+        "tooltip_lines": [
+          "Invincible -> Super Armor (Nullified during cooldown)",
+          "Invincible during the skill (PvE only)"
+        ],
+        "notes": "PvP: Invincible -> Super Armor, nullified during cooldown. PvE: invincible during the skill.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7213/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Move faster than an untrained eye can see.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7213/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7213,
+        "name_kr": null,
+        "input_text": "SHIFT + ←/ ↓/ →\nSHIFT + ↑ after the skill or when Chain: Spirit Step cannot be used\nSHIFT + ↑ during the skill\nCan be used with your foxtail fans",
+        "required_level": 31,
+        "mp_cost": null,
+        "cooldown": "1.5s",
+        "effects": [
+          "Invincible -> Super Armor (Nullified during cooldown)",
+          "Invincible during the skill (PvE only)",
+          "No collision while moving"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "iFrame into standing SA recovery; recovery fully cancellable — better protection than Chain: Spirit Step (cancels sheet)."
+      ]
+    },
+    {
+      "id": "chain-spirit-step",
+      "name": "Chain: Spirit Step",
+      "short_name": "Chain: Spirit Step",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Chain_Spirit_Step:"
+      ],
+      "inputs": [
+        "Shift+W"
+      ],
+      "roles": [
+        "movement"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "iframe",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor",
+          "Invincible when character disappears",
+          "Invincible during the skill (PvE only)"
+        ],
+        "notes": "SA into iframe while vanished, rolling SA recovery; very long lingering SA if not cancelled (cancels sheet). PvE: invincible during the skill.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7214/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Quickly spin your body to evade at ungodly speeds.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7214/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7214,
+        "name_kr": null,
+        "input_text": "SHIFT + ↑ while moving or standing\nSHIFT + ←/ ↓/ → after Spirit Step\nCan be used with your foxtail fans\nCannot be used backward with your foxtail fans",
+        "required_level": 10,
+        "mp_cost": null,
+        "cooldown": "2.5s",
+        "effects": [
+          "Super Armor",
+          "Invincible when character disappears",
+          "Invincible during the skill (PvE only)",
+          "No collision while moving"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "More distance than Spirit Step but always has a rolling SA recovery."
+      ]
+    },
+    {
+      "id": "path-of-petals",
+      "name": "Absolute: Path of Petals",
+      "short_name": "Path of Petals",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Path_Of_Petals:"
+      ],
+      "inputs": [
+        "W+F"
+      ],
+      "roles": [
+        "movement"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7230/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Path of Petals]\nDash forward as lithe as a fox.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7230/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7230,
+        "name_kr": null,
+        "input_text": "↑ + F\nHold F to continue the skill",
+        "required_level": 56,
+        "mp_cost": null,
+        "cooldown": "13s",
+        "effects": [
+          "Super Armor during the skill",
+          "No collision while moving",
+          "Consumes 150 Stamina to continue the skill, then 100 Stamina to continue it once again."
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "Good long-distance movement; descends ledges without the fall animation.",
+        "Can cancel most things; Soul Tear / Ghost Bomb can cancel any point of it."
+      ]
+    },
+    {
+      "id": "evasion",
+      "name": "Evasion",
+      "short_name": "Evasion",
+      "kind": "preawk",
+      "shortcodes": [
+        ":Evasion:"
+      ],
+      "inputs": [
+        "W+W",
+        "Shift+A/S/D (shared)"
+      ],
+      "roles": [
+        "movement"
+      ],
+      "locked": true,
+      "rabam": null,
+      "protection": {
+        "pve": "iframe",
+        "pvp": "none",
+        "tooltip_lines": [
+          "Invincible during the skill (PvE only)"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7155/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Can evade in any direction.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7155/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7155,
+        "name_kr": null,
+        "input_text": "↑ + ↑\nSHIFT + ←\nSHIFT + ↓\nSHIFT + →\nCan be used with your foxtail fans",
+        "required_level": 1,
+        "mp_cost": null,
+        "cooldown": null,
+        "effects": [
+          "Invincible during the skill (PvE only)"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "LOCKED (both sources; video: 'Unnecessary'). Invincible is PvE-only."
+      ]
+    },
+    {
+      "id": "heavenly-return",
+      "name": "Heavenly Return",
+      "short_name": "Heavenly Return",
+      "kind": "rabam",
+      "shortcodes": [
+        ":Heavenly_Return:"
+      ],
+      "inputs": [
+        "Shift+X",
+        "E/F during Flow: Hanpuri"
+      ],
+      "roles": [
+        "dps",
+        "cc",
+        "repositioning"
+      ],
+      "locked": false,
+      "rabam": {
+        "level": 56,
+        "alternative": "spirit-parade"
+      },
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7245/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Flow: Hanpuri]\nPreceding Skill: [Soulflame III]\nSend forth a soul-burning charm and send souls to the afterlife.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7245/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7245,
+        "name_kr": null,
+        "input_text": "SHIFT + X\nE or F during Flow: Hanpuri\nCan be added to a Quick Slot",
+        "required_level": 56,
+        "mp_cost": "70",
+        "cooldown": "7s",
+        "effects": [
+          "Attack damage 5486% x2",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "Stun on hits",
+          "Down Attack",
+          "49.73% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Stun on hits"
+        ]
+      },
+      "dps_row_count": 2,
+      "notes": [
+        "PvE pick at 56: fast, decent damage, quick backstep; fast enough that no protection is rarely an issue (discord-pve).",
+        "Slightly faster into Heavenward Dance (cancels a small linger)."
+      ]
+    },
+    {
+      "id": "spirit-parade",
+      "name": "Spirit Parade",
+      "short_name": "Spirit Parade",
+      "kind": "rabam",
+      "shortcodes": [
+        ":Spirit_Parade:"
+      ],
+      "inputs": [
+        "Shift+X",
+        "E/F during Flow: Hanpuri"
+      ],
+      "roles": [
+        "dps",
+        "repositioning"
+      ],
+      "locked": false,
+      "rabam": {
+        "level": 56,
+        "alternative": "heavenly-return"
+      },
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7246/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Flow: Hanpuri]\nPreceding Skill: [Soulsnare III]\nBreak free from the fetters restraining your soul.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7246/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7246,
+        "name_kr": null,
+        "input_text": "SHIFT + X\nE or F during Flow: Hanpuri\nCan be added to a Quick Slot",
+        "required_level": 56,
+        "mp_cost": "70",
+        "cooldown": "7s",
+        "effects": [
+          "Attack damage 4557% x2",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "Super Armor during the skill",
+          "Push the target on hits (PvE only)",
+          "Down Attack",
+          "47.57% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Push the target on hits (PvE only)"
+        ]
+      },
+      "dps_row_count": 2,
+      "notes": [
+        "Protected alternative at 56; PvP combos use it over Heavenly Return for protection (discord-pvp).",
+        "Can move you behind the opponent for guaranteed back attacks on Heavenward Dance (discord-pvp)."
+      ]
+    },
+    {
+      "id": "petal-snare",
+      "name": "Petal Snare",
+      "short_name": "Petal Snare",
+      "kind": "rabam",
+      "shortcodes": [
+        ":Petal_Snare:"
+      ],
+      "inputs": [
+        "Shift+Z"
+      ],
+      "roles": [
+        "dps"
+      ],
+      "locked": false,
+      "rabam": {
+        "level": 57,
+        "alternative": "constricting-charm"
+      },
+      "protection": {
+        "pve": "frontal_guard",
+        "pvp": "frontal_guard",
+        "tooltip_lines": [
+          "Forward Guard during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7247/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Petal Play III]\nPreceding Skill: [Petalblast III]\nMove backward, then send out consecutive charms that pierce through your foes.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7247/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7247,
+        "name_kr": null,
+        "input_text": "SHIFT + Z\nCan be added to a Quick Slot",
+        "required_level": 57,
+        "mp_cost": "70",
+        "cooldown": "9s",
+        "effects": [
+          "Attack 1 damage 3201% x2, max 2 hits",
+          "Attack 2 damage 3201% x2",
+          "Critical Hit Rate +30%",
+          "Maximum 10 targets",
+          "Forward Guard during the skill",
+          "Down Attack",
+          "42.16% damage in PvP only",
+          "Foxspirit charm's explosion damage 2686% x2, max 2 hits",
+          "Maximum 10 targets",
+          "58.38% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "Long animation, low DPS (discord-pve) — not the chosen rabam."
+      ]
+    },
+    {
+      "id": "constricting-charm",
+      "name": "Constricting Charm",
+      "short_name": "Constricting Charm",
+      "kind": "rabam",
+      "shortcodes": [
+        ":Constricting_Charm:"
+      ],
+      "inputs": [
+        "Shift+Z"
+      ],
+      "roles": [
+        "dps"
+      ],
+      "locked": false,
+      "rabam": {
+        "level": 57,
+        "alternative": "petal-snare"
+      },
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7248/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Petal Play III]\nPreceding Skill: [Spirit Swirl IV]\nWrap your charms to form a blooming peak of petals, then watch them explode.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7248/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7248,
+        "name_kr": null,
+        "input_text": "SHIFT + Z\nCan be added to a Quick Slot",
+        "required_level": 57,
+        "mp_cost": "80",
+        "cooldown": "15s",
+        "effects": [
+          "Attack 1 damage 4969% x2",
+          "Attack 2 damage 4969% x2",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "Super Armor during the skill",
+          "Floating on attack 1 hits (PvE only)",
+          "Down Attack",
+          "Air Attack",
+          "37.84% damage in PvP only"
+        ],
+        "cc_lines": [
+          "Floating on attack 1 hits (PvE only)"
+        ]
+      },
+      "dps_row_count": 2,
+      "notes": [
+        "Chosen at 57: decent filler with very high attack speed; flows into Spirit Sparks."
+      ]
+    },
+    {
+      "id": "spirit-sparks",
+      "name": "Spirit Sparks",
+      "short_name": "Spirit Sparks",
+      "kind": "rabam",
+      "shortcodes": [
+        ":Spirit_Sparks:"
+      ],
+      "inputs": [
+        "LMB (flow)",
+        "Quickslot"
+      ],
+      "roles": [
+        "dps"
+      ],
+      "locked": false,
+      "rabam": {
+        "level": 58,
+        "alternative": "soul-charm"
+      },
+      "protection": {
+        "pve": "frontal_guard",
+        "pvp": "frontal_guard",
+        "tooltip_lines": [
+          "Forward Guard during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7249/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Spirit Swirl IV]\nPreceding Skill: [Bristling Sparks IV]\nCast an incantation that burns away the remaining life force of your foes and absorb a portion of it for your own.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7249/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7249,
+        "name_kr": null,
+        "input_text": "Can be added to a Quick Slot\nLMB after Constricting Charm to perform attack 2",
+        "required_level": 58,
+        "mp_cost": "100",
+        "cooldown": "15s",
+        "effects": [
+          "Attack 1 damage 1682% x2",
+          "Attack 2 damage 4206% x2",
+          "Attack 3 damage 5888% x2",
+          "Critical Hit Rate +50%",
+          "Maximum 10 targets",
+          "Recover 82 HP per hit",
+          "Forward Guard during the skill",
+          "Down Attack",
+          "32.43% damage in PvP only"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 3,
+      "notes": [
+        "Chosen at 58: weak alone, decent follow-up from Constricting Charm; filler only."
+      ]
+    },
+    {
+      "id": "soul-charm",
+      "name": "Soul Charm",
+      "short_name": "Soul Charm",
+      "kind": "rabam",
+      "shortcodes": [
+        ":Soul_Charm:"
+      ],
+      "inputs": [
+        "Quickslot"
+      ],
+      "roles": [
+        "heal"
+      ],
+      "locked": false,
+      "rabam": {
+        "level": 58,
+        "alternative": "spirit-sparks"
+      },
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7250/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Spirit Swirl IV]\nPreceding Skill: [Spirited Away IV]\nLight a soul charm ablaze, burning a portion of your Stamina to heal you.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7250/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7250,
+        "name_kr": null,
+        "input_text": "Can be added to a Quick Slot",
+        "required_level": 58,
+        "mp_cost": null,
+        "cooldown": "40s",
+        "effects": [
+          "Recover +250 HP every 2 sec, max 4 times",
+          "Super Armor during the skill"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "Not useful in PvE: small out-of-combat HP recovery for stamina (discord-pve). 'If taken' → quickslot."
+      ]
+    },
+    {
+      "id": "foxspirit-deceiver",
+      "name": "Prime: Foxspirit: Deceiver",
+      "short_name": "Foxspirit: Deceiver",
+      "kind": "prime",
+      "shortcodes": [
+        ":13Foxspirit_Deceiver:"
+      ],
+      "inputs": [
+        "Q (while clone active)"
+      ],
+      "roles": [
+        "repositioning",
+        "utility"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "none",
+        "pvp": "none",
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7312/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Summon an illusory double of yourself with the power of the now fully-restored revered fox spirit.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7312/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7312,
+        "name_kr": "강 : 여우신령 : 현신",
+        "input_text": "Passive\nQ while illusory double is active to switch locations with your double",
+        "required_level": 56,
+        "mp_cost": null,
+        "cooldown": null,
+        "effects": [
+          "Summons an illusory double when using the following skills after learning the skill. (The summoned double will not damage enemies nor taunt monsters.)",
+          "- Bared Claws",
+          "- Soul Tear",
+          "- Flower Shroud (forward)",
+          "Use a skill command to switch locations with the summoned illusory double. (Unavailable at the start of Soul Tear and Foxflare.)",
+          "Only one illusory double can be summoned/active at a time.",
+          "You cannot summon a double while mounted."
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "Clone swap — THE unique succession mechanic. Clone spawns after Bared Claws (A/D+LMB), Soul Tear (W+Q), or W+E Flower Shroud (S+E does NOT spawn one).",
+        "One clone at a time, lasts 3s; swap usable during most other animations (cancels sheet, video).",
+        "PvP: kite grabs and bait skills onto the clone; don't default to Bared Claws spam (discord-pvp)."
+      ]
+    },
+    {
+      "id": "foxspirit-form",
+      "name": "Prime: Foxspirit: Form",
+      "short_name": "Foxspirit: Form",
+      "kind": "prime",
+      "shortcodes": [
+        ":Foxspirit_Form:"
+      ],
+      "inputs": [
+        "Quickslot only"
+      ],
+      "roles": [
+        "buff"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor during the skill"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7279/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Preceding Skill: [Predominance]\nThe revered fox spirit greatly amplifies your Do power.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7279/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7279,
+        "name_kr": "강 : 여우신령 : 차력",
+        "input_text": "Can be added to a Quick Slot",
+        "required_level": 56,
+        "mp_cost": "50",
+        "cooldown": "3m",
+        "effects": [
+          "All AP +25 for 30 sec when using the skill",
+          "Critical Hit Rate +30% for 30 sec when using the skill",
+          "All Damage Reduction +20 for 30 sec when using the skill",
+          "Max HP +1000 for 30 sec when using the skill",
+          "Super Armor during the skill"
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "+25 AP, 3-min CD; overwrites the +20 AP buffs (effectively +5 over them).",
+        "Weak vs other classes' 3-min buffs (video). Quickslot-only."
+      ]
+    },
+    {
+      "id": "bsr-heavenward-dance",
+      "name": "Black Spirit: Prime: Heavenward Dance",
+      "short_name": "Heavenward Dance",
+      "kind": "prime",
+      "shortcodes": [],
+      "inputs": [
+        "W+RMB (100% BSR)"
+      ],
+      "roles": [
+        "dps"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": "super_armor",
+        "pvp": "super_armor",
+        "tooltip_lines": [
+          "Super Armor"
+        ],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7324/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Black Spirit's Rage\nConjure up a storm of petals, then move behind your enemy to scatter them, inflicting great damage.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7324/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7324,
+        "name_kr": "흑정령 : 강 : 천도의 춤",
+        "input_text": "Auto-activated when using Heavenward Dance and consumes Black Spirit's Rage\nBlack Spirit's Rage - 100%",
+        "required_level": 1,
+        "mp_cost": null,
+        "cooldown": null,
+        "effects": [
+          "Attack 1 damage 5052% x1, max 5 hits",
+          "Attack 2 damage 8420% x3",
+          "Critical Hit Rate +100%",
+          "Maximum 10 targets",
+          "All AP +30 for 60 sec when using the skill",
+          "Casting Speed +25% for 60 sec when using the skill",
+          "Critical Hit Rate +30% for 60 sec when using the skill",
+          "Super Armor",
+          "Stun on attack 1 hits",
+          "Knockdown on attack 2 hits",
+          "Down Attack",
+          "33.08% damage in PvP only",
+          "Dismount target on hits.",
+          "Injures target with 50% of the damage of a hit."
+        ],
+        "cc_lines": [
+          "Stun on attack 1 hits",
+          "Knockdown on attack 2 hits"
+        ]
+      },
+      "dps_row_count": 1,
+      "notes": [
+        "100% Black Spirit's Rage version: lower DPS than normal Heavenward Dance but larger AoE (video).",
+        "Z absorb is typically preferred — absorb animation is fast (video)."
+      ]
+    },
+    {
+      "id": "predominance",
+      "name": "Predominance",
+      "short_name": "Predominance",
+      "kind": "passive",
+      "shortcodes": [],
+      "inputs": [
+        "Passive"
+      ],
+      "roles": [
+        "passive"
+      ],
+      "locked": false,
+      "rabam": null,
+      "protection": {
+        "pve": null,
+        "pvp": null,
+        "tooltip_lines": [],
+        "notes": null,
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7278/",
+        "pulled": "2026-06-11"
+      },
+      "description": {
+        "text": "Now able to wield the fully-restored might of the revered fox spirit, your incantations have become even more powerful.",
+        "source": "BDO Codex (mirrors live in-game skill text)",
+        "source_url": "https://bdocodex.com/us/skill/7278/",
+        "pulled": "2026-06-11"
+      },
+      "tooltip": {
+        "bdocodex_id": 7278,
+        "name_kr": null,
+        "input_text": "Passive",
+        "required_level": 1,
+        "mp_cost": null,
+        "cooldown": null,
+        "effects": [
+          "Attain Predominance as the pact with the revered fox spirit is complete. Use powerful magic to summon an illusory double.",
+          "- Succession: Predominance You must first reset your skills in order to learn the skill.",
+          "- Succession: Predominance You cannot learn or use awakening skills if you have learned.",
+          "- You cannot learn Succession skills if you have learned Absolute skills.",
+          "- You cannot learn Absolute skills if you have learned Succession skills."
+        ],
+        "cc_lines": []
+      },
+      "dps_row_count": 0,
+      "notes": [
+        "The succession unlock passive — prerequisite of all Prime skills."
+      ]
+    }
+  ]
+}

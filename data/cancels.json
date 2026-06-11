@@ -1,0 +1,831 @@
+{
+  "_meta": {
+    "curated": "2026-06-11",
+    "sheet_url": "https://docs.google.com/spreadsheets/d/115Q8_SoUFiCCZzoiWgkOeNKf0ERQk23ZFElSv6WC22s/edit#gid=864274794",
+    "sheet_semantics": "before_input = input that flows INTO the skill; after_input = input the skill flows into; descriptions are verbatim sheet text.",
+    "color_caveat": "Sheet cell colors (Avoid Using / Unusable / Impractical) are lost in CSV export."
+  },
+  "notable_cancels_pve": {
+    "sources": [
+      "sources/discord-pve.md#notable-cancels",
+      "sources/video-guide.md#animation-cancels"
+    ],
+    "entries": [
+      {
+        "skill": "petal-play",
+        "faster_after": [
+          "spirited-away",
+          "bared-claws"
+        ],
+        "note": "Bared Claws is asymmetrical: D+LMB attack 1 / A+LMB attack 2."
+      },
+      {
+        "skill": "foxspirit-tag",
+        "faster_after": [
+          "flower-shroud",
+          "bared-claws"
+        ],
+        "note": "Flower Shroud attack 1; Bared Claws asymmetrical as above."
+      },
+      {
+        "skill": "heavenly-return",
+        "faster_into": [
+          "heavenward-dance"
+        ],
+        "note": "Cancels a small linger; minor speedup."
+      },
+      {
+        "skill": "soulsnare",
+        "faster_into": [
+          "bared-claws",
+          "hanpuri"
+        ]
+      },
+      {
+        "skill": "flower-shroud",
+        "note": "Attack 2 cancellable by many skills — used to reposition or accelerate Foxspirit Tag."
+      },
+      {
+        "skill": "spirit-swirl",
+        "note": "Cancellable midway by Heavenward Dance, but generally not advisable (high DPS skill)."
+      },
+      {
+        "skill": "bared-claws",
+        "note": "Can cancel most things — notably Bristling Sparks."
+      },
+      {
+        "skill": "soul-tear",
+        "note": "Can cancel most things — notably any point of Path of Petals."
+      },
+      {
+        "skill": "ghost-bomb",
+        "note": "Can cancel most things — notably any point of Path of Petals."
+      },
+      {
+        "skill": "path-of-petals",
+        "note": "Can cancel most things."
+      }
+    ],
+    "slow_casts": [
+      {
+        "skill": "spirit-swirl",
+        "note": "Slow when cast from idle — use anything before it."
+      }
+    ],
+    "input_traps": [
+      {
+        "skill": "charmed",
+        "note": "Space without a skill before it makes you jump."
+      },
+      {
+        "skill": "lurking-claws",
+        "note": "Hold the input until you teleport behind the target of attack 2, or the teleport fails."
+      }
+    ]
+  },
+  "primary_cancels_pvp": {
+    "sources": [
+      "sources/discord-pvp.md#primary-cancels-pvp"
+    ],
+    "caveat": "Currency uncertain (PvP source).",
+    "entries": [
+      {
+        "skill": "foxspirit-tag",
+        "cancelled_into_from": [
+          "bared-claws",
+          "flower-shroud",
+          "spirit-step"
+        ],
+        "note": "Bared Claws: one hit to the right or two hits to the left. Spirit Step: one dash left."
+      },
+      {
+        "skill": "petal-play",
+        "cancelled_into_from": [
+          "bared-claws",
+          "spirited-away"
+        ]
+      },
+      {
+        "skill": "foxflare-fling",
+        "cancelled_into_from": [
+          "foxspirit-tag",
+          "spirited-away",
+          "foxflare",
+          "petal-play",
+          "flower-shroud"
+        ]
+      },
+      {
+        "skill": "ghost-bomb",
+        "cancelled_out_into": [
+          "spirit-step",
+          "chain-spirit-step",
+          "bared-claws",
+          "soul-tear"
+        ]
+      },
+      {
+        "skill": "bristling-sparks",
+        "cancelled_out_into": [
+          "spirit-step",
+          "chain-spirit-step",
+          "bared-claws",
+          "soul-tear"
+        ]
+      }
+    ],
+    "note": "Many smaller cancels occur naturally (most skills flow into Spirit Swirl and Bristling Sparks)."
+  },
+  "general_rules": {
+    "sources": [
+      "cancels sheet (research/cancels-sheet-raw.csv)"
+    ],
+    "instant_flows_from_everything": [
+      "spirit-swirl",
+      "bristling-sparks",
+      "charmed",
+      "spirit-step"
+    ],
+    "fast_recovery_cancellers": [
+      "bared-claws",
+      "ghost-bomb",
+      "soul-tear",
+      "charmed",
+      "spirit-step",
+      "path-of-petals"
+    ],
+    "spirit_step_vs_chain": "Spirit Step: iFrame into standing SA recovery, recovery fully cancellable (better protection). Chain: Spirit Step: SA into iframe while vanished into rolling SA recovery — always has the rolling recovery, but more distance and very long lingering SA if not cancelled. All skills flow into shift+W as Spirit Step (not Chain); holding LMB with W+shift forces Spirit Step forward.",
+    "clone_mechanic": "Clone spawns after Bared Claws (A/D+LMB), Soul Tear (W+Q), Flower Shroud W+E only (S+E does NOT work). One clone, lasts 3s; Q (Prime: Foxspirit: Deceiver) swaps position, usable during most animations."
+  },
+  "sheet_blocks": [
+    {
+      "skill": "foxspirit-tag",
+      "sheet_name": "Prime: Foxspirit: Tag",
+      "sheet_input": "RMB",
+      "entries": [
+        {
+          "before_input": "shift+A",
+          "description": "Flow into \"RMB\" going right into the attack."
+        },
+        {
+          "before_input": "A/D+LMB",
+          "description": "(Input: D+LMB) Flow into \"RMB\" after Attack 1 of \"D+LMB\" going right into the attack.\n(Input: A+LMB) Flow into \"RMB\" after Attack 2 of \"A+LMB\" going right into the attack."
+        },
+        {
+          "before_input": "W/S+E",
+          "description": "Flow into \"RMB\" after Attack 1 of \"W/S+E\", cancelling Attack 2 of \"W/S+E\", going right into the attack of \"RMB\"."
+        }
+      ]
+    },
+    {
+      "skill": "bared-claws",
+      "sheet_name": "Prime: Bared Claws",
+      "sheet_input": "A/D+LMB",
+      "entries": [
+        {
+          "after_input": "ALL",
+          "description": "Flow into all skills after Attack 1 & 2, cancelling the recovery animation of \"A/D+LMB\". (Lingering Forward Guard)"
+        },
+        {
+          "before_input": "shift+W/A/S/D",
+          "description": "Flow into \"A/D+LMB\", cancelling the SA recovery animation of \"shift+W/A/S/D\"."
+        },
+        {
+          "after_input": "RMB",
+          "description": "(Input: D+LMB) Flow into \"RMB\" after Attack 1 of \"D+LMB\" going right into the attack.\n(Input: A+LMB) Flow into \"RMB\" after Attack 2 of \"A+LMB\" going right into the attack."
+        },
+        {
+          "after_input": "> LMB",
+          "description": "Flow into \"Flow: Nether River\" after Attack 1 & 2 of \"A/D+LMB\"."
+        },
+        {
+          "before_input": "A/D+RMB",
+          "description": "Cancels the attack part of \"A/D+RMB\"."
+        },
+        {
+          "before_input": "E",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "before_input": "F",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "after_input": "shift+LMB",
+          "description": "(Input: D+LMB) Flow into \"shift+LMB\" after Attack 1 of \"D+LMB\" going right into the attack.\n(Input: A+LMB) Flow into \"shift+LMB\" after Attack 2 of \"A+LMB\" going right into the attack."
+        },
+        {
+          "before_input": "shift+F",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "before_input": "shift+RMB",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "before_input": "S+LMB",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "before_input": "W+C",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        }
+      ]
+    },
+    {
+      "skill": "nether-river",
+      "sheet_name": "Flow: Nether River",
+      "sheet_input": "> LMB",
+      "entries": [
+        {
+          "before_input": "shift+A/D",
+          "description": "Flow into \"Flow: Nether River\"."
+        },
+        {
+          "before_input": "shift+A/D",
+          "description": "Flow into \"Flow: Nether River\"."
+        },
+        {
+          "before_input": "A/D+LMB",
+          "description": "Flow into \"Flow: Nether River\" after Attack 1 & 2 of \"A/D+LMB\"."
+        }
+      ]
+    },
+    {
+      "skill": "ghost-bomb",
+      "sheet_name": "Prime: Ghost Bomb",
+      "sheet_input": "A/D+RMB",
+      "entries": [
+        {
+          "before_input": "shift+W/A/S/D",
+          "description": "Flow into \"A/D+RMB\", cancelling the SA recovery animation of \"shift+W/A/S/D\"."
+        },
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels the attack part of \"A/D+RMB\"."
+        },
+        {
+          "after_input": "shift+W",
+          "description": "Cancels the attack part of \"A/D+RMB\"."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Cancels the attack part of \"A/D+RMB\"."
+        },
+        {
+          "before_input": "E",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "after_input": "> E",
+          "description": "Flow into \"Flow: Hanpuri\"."
+        },
+        {
+          "before_input": "F",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "after_input": "W+Q",
+          "description": "Cancels the attack part of \"A/D+RMB\"."
+        },
+        {
+          "before_input": "shift+F",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "before_input": "shift+RMB",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "before_input": "S+LMB",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "before_input": "W+C",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        }
+      ]
+    },
+    {
+      "skill": "soulflame",
+      "sheet_name": "Absolute: Soulflame",
+      "sheet_input": "E",
+      "entries": [
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "after_input": "W+F",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "after_input": "A/D+RMB",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "after_input": "> E",
+          "description": "Flow into \"Flow: Hanpuri\"."
+        },
+        {
+          "after_input": "W+Q",
+          "description": "Cancels the recovery animation of \"E\"."
+        }
+      ]
+    },
+    {
+      "skill": "hanpuri",
+      "sheet_name": "Flow: Hanpuri",
+      "sheet_input": "> E | > F",
+      "entries": [
+        {
+          "after_input": "ALL",
+          "description": "Flow into all skills, cancelling the recovery animation of \"Flow: Hanpuri\". (Lingering Super Armor)"
+        },
+        {
+          "before_input": "A/D+RMB",
+          "description": "(Input: E) Flow into \"Flow: Hanpuri\"."
+        },
+        {
+          "before_input": "E",
+          "description": "(Input: E) Flow into \"Flow: Hanpuri\"."
+        },
+        {
+          "before_input": "F",
+          "description": "(Input: F) Flow into \"Flow: Hanpuri\"."
+        },
+        {
+          "after_input": "shift+X",
+          "description": "(Input: E or F) Flow into \"Heavenly Return\" and \"Spirit Parade\"."
+        }
+      ]
+    },
+    {
+      "skill": "soulsnare",
+      "sheet_name": "Absolute: Soulsnare",
+      "sheet_input": "F",
+      "entries": [
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "after_input": "W+F",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "after_input": "A/D+RMB",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "after_input": "> F",
+          "description": "Flow into \"Flow: Hanpuri\"."
+        },
+        {
+          "after_input": "W+Q",
+          "description": "Cancels the recovery animation of \"F\"."
+        }
+      ]
+    },
+    {
+      "skill": "soul-tear",
+      "sheet_name": "Prime: Soul Tear",
+      "sheet_input": "W+Q",
+      "entries": [
+        {
+          "before_input": "A/D+RMB",
+          "description": "Cancels the attack part of \"A/D+RMB\"."
+        },
+        {
+          "before_input": "E",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "before_input": "F",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "before_input": "shift+F",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "before_input": "shift+RMB",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "before_input": "S+LMB",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "before_input": "W+C",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        }
+      ]
+    },
+    {
+      "skill": "petalblast",
+      "sheet_name": "Absolute: Petalblast",
+      "sheet_input": "S+RMB",
+      "entries": []
+    },
+    {
+      "skill": "petal-play",
+      "sheet_name": "Prime: Petal Play",
+      "sheet_input": "shift+LMB",
+      "entries": [
+        {
+          "before_input": "A/D+LMB",
+          "description": "(Input: D+LMB) Flow into \"shift+LMB\" after Attack 1 of \"D+LMB\" going right into the attack.\n(Input: A+LMB) Flow into \"shift+LMB\" after Attack 2 of \"A+LMB\" going right into the attack."
+        },
+        {
+          "before_input": "S+LMB",
+          "description": "Flow into \"shift+LMB\" after Attack 2 of \"S+LMB\" going right into the attack."
+        }
+      ]
+    },
+    {
+      "skill": "foxflare",
+      "sheet_name": "Prime: Foxflare",
+      "sheet_input": "shift+Q",
+      "entries": []
+    },
+    {
+      "skill": "spirit-swirl",
+      "sheet_name": "Prime: Spirit Swirl",
+      "sheet_input": "shift+F",
+      "entries": [
+        {
+          "before_input": "ALL",
+          "description": "All skills flow into \"Prime: Spirit Swirl\", going right into the attack."
+        },
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "after_input": "shift+W",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "after_input": "W+F",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "after_input": "A/D+RMB",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "after_input": "W+Q",
+          "description": "Cancels \"shift+F\"."
+        }
+      ]
+    },
+    {
+      "skill": "flower-shroud",
+      "sheet_name": "Prime: Flower Shroud",
+      "sheet_input": "W+E | S+E",
+      "entries": [
+        {
+          "after_input": "ALL",
+          "description": "Flow into all skills after Attack 1 & 2, cancelling the recovery animation of \"W/S+E\". (Lingering Forward Guard)\nException: S+RMB after Attack 1."
+        },
+        {
+          "after_input": "RMB",
+          "description": "Flow into \"RMB\" after Attack 1 of \"W/S+E\", cancelling Attack 2 of \"W/S+E\", going right into the attack of \"RMB\"."
+        }
+      ]
+    },
+    {
+      "skill": "bristling-sparks",
+      "sheet_name": "Prime: Bristling Sparks",
+      "sheet_input": "shift+RMB",
+      "entries": [
+        {
+          "before_input": "ALL",
+          "description": "All skills flow into \"Prime: Bristling Sparks\", going right into the attack."
+        },
+        {
+          "after_input": "ALL",
+          "description": "Flow into all skills after Attack 3, cancelling the recovery animation of \"shift+RMB\". (Lingering Super Armor)"
+        },
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "after_input": "shift+W",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "after_input": "W+F",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "after_input": "A/D+RMB",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "after_input": "W+Q",
+          "description": "Cancels \"shift+RMB\"."
+        }
+      ]
+    },
+    {
+      "skill": "spirited-away",
+      "sheet_name": "Prime: Spirited Away",
+      "sheet_input": "S+LMB",
+      "entries": [
+        {
+          "after_input": "ALL",
+          "description": "Flow into all skills after Attack 2, cancelling the recovery animation of \"S+LMB\". (Lingering Forward Guard)"
+        },
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "after_input": "shift+W",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "after_input": "W+F",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "after_input": "A/D+RMB",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "after_input": "W+Q",
+          "description": "Cancels \"S+LMB\"."
+        }
+      ]
+    },
+    {
+      "skill": "charmed",
+      "sheet_name": "Absolute: Charmed",
+      "sheet_input": "S+SPACE | SPACE",
+      "entries": [
+        {
+          "before_input": "ALL",
+          "description": "All skills flow into \"Absolute: Charmed\", going right into the attack."
+        }
+      ]
+    },
+    {
+      "skill": "lurking-claws",
+      "sheet_name": "Prime: Lurking Claws",
+      "sheet_input": "S+F",
+      "entries": [
+        {
+          "after_input": "ALL",
+          "description": "Flow into all skills after Attack 2 & 3, cancelling the recovery animation of \"S+F\". (Lingering Super Armor)"
+        }
+      ]
+    },
+    {
+      "skill": "heavenward-dance",
+      "sheet_name": "Prime: Heavenward Dance",
+      "sheet_input": "W+RMB",
+      "entries": [
+        {
+          "after_input": "ALL",
+          "description": "Flow into all skills after Attack 2, cancelling the recovery animation of \"W+RMB\". (Lingering Super Armor)"
+        }
+      ]
+    },
+    {
+      "skill": "fan-of-flames",
+      "sheet_name": "Prime: Fan of Flames",
+      "sheet_input": "W+C",
+      "entries": [
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        },
+        {
+          "after_input": "shift+W",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        },
+        {
+          "after_input": "W+F",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        },
+        {
+          "after_input": "A/D+RMB",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        },
+        {
+          "after_input": "W+Q",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        }
+      ]
+    },
+    {
+      "skill": "nukduri-dance",
+      "sheet_name": "Prime: Nukduri Dance",
+      "sheet_input": "shift+C",
+      "entries": []
+    },
+    {
+      "skill": "heavenly-return",
+      "sheet_name": "Heavenly Return",
+      "sheet_input": "shift+X | > E | > F",
+      "entries": [
+        {
+          "before_input": "> E",
+          "description": "(Input: E or F) Flow into \"Heavenly Return\"."
+        }
+      ]
+    },
+    {
+      "skill": "spirit-parade",
+      "sheet_name": "Spirit Parade",
+      "sheet_input": "shift+X | > E | > F",
+      "entries": [
+        {
+          "before_input": "> E",
+          "description": "(Input: E or F) Flow into \"Spirit Parade\"."
+        }
+      ]
+    },
+    {
+      "skill": "petal-snare",
+      "sheet_name": "Petal Snare",
+      "sheet_input": "shift+Z",
+      "entries": [
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels \"shift+Z\"."
+        }
+      ]
+    },
+    {
+      "skill": "constricting-charm",
+      "sheet_name": "Constricting Charm",
+      "sheet_input": "shift+Z",
+      "entries": [
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels \"shift+Z\"."
+        },
+        {
+          "after_input": "> LMB",
+          "description": "Flow into \"Spirit Sparks\"."
+        }
+      ]
+    },
+    {
+      "skill": "spirit-sparks",
+      "sheet_name": "Spirit Sparks",
+      "sheet_input": "Quickslot | > LMB",
+      "entries": [
+        {
+          "after_input": "shift+W/A/S/D",
+          "description": "Cancels \"Spirit Sparks\"."
+        },
+        {
+          "before_input": "shift+Z",
+          "description": "(Constricting Charm only) Flow into \"Spirit Sparks\"."
+        }
+      ]
+    },
+    {
+      "skill": "spirit-step",
+      "sheet_name": "Spirit Step",
+      "sheet_input": "shift+W/A/S/D",
+      "entries": [
+        {
+          "before_input": "ALL",
+          "description": "All skills flow into \"shift+A/S/D\", going right into the disappearing animation. (\"shift+W\" has exceptions, see info on the right)"
+        },
+        {
+          "after_input": "RMB",
+          "description": "(Input: shift+A) Flow into \"RMB\" going right into the attack."
+        },
+        {
+          "after_input": "A/D+LMB",
+          "description": "Flow into \"A/D+LMB\", cancelling the SA recovery animation of \"shift+W/A/S/D\"."
+        },
+        {
+          "after_input": "> LMB",
+          "description": "(Input: shift+A/D) Flow into \"Flow: Nether River\"."
+        },
+        {
+          "after_input": "A/D+RMB",
+          "description": "Flow into \"A/D+RMB\", cancelling the SA recovery animation of \"shift+W/A/S/D\"."
+        },
+        {
+          "before_input": "shift+F",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "before_input": "shift+RMB",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "before_input": "S+LMB",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "before_input": "W+C",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        },
+        {
+          "before_input": "shift+Z",
+          "description": "Cancels \"shift+Z\". (Petal Snare and Constricting Charm)"
+        },
+        {
+          "before_input": "Spirit Sparks",
+          "description": "Cancels \"Spirit Sparks\"."
+        }
+      ]
+    },
+    {
+      "skill": "chain-spirit-step",
+      "sheet_name": "Chain: Spirit Step",
+      "sheet_input": "shift+W/A/S/D",
+      "entries": [
+        {
+          "after_input": "> LMB",
+          "description": "(Input: shift+A/D) Flow into \"Flow: Nether River\"."
+        },
+        {
+          "before_input": "A/D+RMB",
+          "description": "(Input: shift+W) Cancels the attack part of \"A/D+RMB\"."
+        },
+        {
+          "before_input": "shift+F",
+          "description": "(Input: shift+W) Cancels \"shift+F\"."
+        },
+        {
+          "before_input": "shift+RMB",
+          "description": "(Input: shift+W) Cancels \"shift+RMB\"."
+        },
+        {
+          "before_input": "S+LMB",
+          "description": "(Input: shift+W) Cancels \"S+LMB\"."
+        },
+        {
+          "before_input": "W+C",
+          "description": "(Input: shift+W) Cancels the recovery animation of \"W+C\"."
+        }
+      ]
+    },
+    {
+      "skill": "path-of-petals",
+      "sheet_name": "Absolute: Path of Petals",
+      "sheet_input": "W+F",
+      "entries": [
+        {
+          "before_input": "E",
+          "description": "Cancels the recovery animation of \"E\"."
+        },
+        {
+          "before_input": "F",
+          "description": "Cancels the recovery animation of \"F\"."
+        },
+        {
+          "before_input": "shift+F",
+          "description": "Cancels \"shift+F\"."
+        },
+        {
+          "before_input": "shift+RMB",
+          "description": "Cancels \"shift+RMB\"."
+        },
+        {
+          "before_input": "S+LMB",
+          "description": "Cancels \"S+LMB\"."
+        },
+        {
+          "before_input": "W+C",
+          "description": "Cancels the recovery animation of \"W+C\"."
+        }
+      ]
+    }
+  ]
+}

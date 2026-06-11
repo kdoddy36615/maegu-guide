@@ -1,0 +1,844 @@
+{
+  "7155": {
+    "bdocodex_id": 7155,
+    "url": "https://bdocodex.com/us/skill/7155/",
+    "name": "Evasion",
+    "name_kr": null,
+    "description": "Can evade in any direction.",
+    "input": "↑ + ↑\nSHIFT + ←\nSHIFT + ↓\nSHIFT + →\nCan be used with your foxtail fans",
+    "required_level": 1,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": null,
+    "effects": [
+      "Invincible during the skill (PvE only)"
+    ],
+    "protection_lines": [
+      "Invincible during the skill (PvE only)"
+    ]
+  },
+  "7178": {
+    "bdocodex_id": 7178,
+    "url": "https://bdocodex.com/us/skill/7178/",
+    "name": "Absolute: Petalblast",
+    "name_kr": null,
+    "description": "Preceding Skill: [Petalblast III]\nScatter your charms while gently moving backward, then explode them to damage your foes.",
+    "input": "↓ + RMB\nCan be added to a Quick Slot",
+    "required_level": 58,
+    "required_points": 20,
+    "mp_cost": "70",
+    "cooldown": "6s",
+    "effects": [
+      "Attack damage 3118% x2",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "Super Armor during the skill",
+      "Bound on hits (PvE only)",
+      "Down Attack",
+      "58.38% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7213": {
+    "bdocodex_id": 7213,
+    "url": "https://bdocodex.com/us/skill/7213/",
+    "name": "Spirit Step II",
+    "name_kr": null,
+    "description": "Move faster than an untrained eye can see.",
+    "input": "SHIFT + ←/ ↓/ →\nSHIFT + ↑ after the skill or when Chain: Spirit Step cannot be used\nSHIFT + ↑ during the skill\nCan be used with your foxtail fans",
+    "required_level": 31,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": "1.5s",
+    "effects": [
+      "Invincible -> Super Armor (Nullified during cooldown)",
+      "Invincible during the skill (PvE only)",
+      "No collision while moving"
+    ],
+    "protection_lines": [
+      "Invincible -> Super Armor (Nullified during cooldown)",
+      "Invincible during the skill (PvE only)"
+    ]
+  },
+  "7214": {
+    "bdocodex_id": 7214,
+    "url": "https://bdocodex.com/us/skill/7214/",
+    "name": "Chain: Spirit Step",
+    "name_kr": null,
+    "description": "Quickly spin your body to evade at ungodly speeds.",
+    "input": "SHIFT + ↑ while moving or standing\nSHIFT + ←/ ↓/ → after Spirit Step\nCan be used with your foxtail fans\nCannot be used backward with your foxtail fans",
+    "required_level": 10,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": "2.5s",
+    "effects": [
+      "Super Armor",
+      "Invincible when character disappears",
+      "Invincible during the skill (PvE only)",
+      "No collision while moving"
+    ],
+    "protection_lines": [
+      "Super Armor",
+      "Invincible when character disappears",
+      "Invincible during the skill (PvE only)"
+    ]
+  },
+  "7215": {
+    "bdocodex_id": 7215,
+    "url": "https://bdocodex.com/us/skill/7215/",
+    "name": "Flow: Nether River",
+    "name_kr": null,
+    "description": "Preceding Skill: [Bared Claws II]\nQuickly leap to the side as you toss your charm.",
+    "input": "LMB during lateral Chain: Spirit Step\nLMB during lateral Spirit Step\nLMB during Bared Claws",
+    "required_level": 30,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": "5s",
+    "effects": [
+      "Attack damage 3033% x2",
+      "Maximum 10 targets",
+      "All AP +20 for 10 sec when using the skill",
+      "Forward Guard during the skill",
+      "No collision while moving",
+      "86.49% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Forward Guard during the skill"
+    ]
+  },
+  "7217": {
+    "bdocodex_id": 7217,
+    "url": "https://bdocodex.com/us/skill/7217/",
+    "name": "Absolute: Charmed",
+    "name_kr": null,
+    "description": "Preceding Skill: [Charmed]\nToss your charm forward, then toss your binyeo knife through the previous charm to nail your foe.",
+    "input": "↓ + SPACE \nSPACE during other skills",
+    "required_level": 56,
+    "required_points": 12,
+    "mp_cost": "50",
+    "cooldown": "7s",
+    "effects": [
+      "Attack damage 2640% x2",
+      "Maximum 10 targets",
+      "All AP +20 for 10 sec when using the skill (Nullified during cooldown)",
+      "Recover 125 MP per hit (Nullified during cooldown)",
+      "Stiffness on hits (Nullified during cooldown)",
+      "75.68% damage in PvP only"
+    ],
+    "protection_lines": []
+  },
+  "7228": {
+    "bdocodex_id": 7228,
+    "url": "https://bdocodex.com/us/skill/7228/",
+    "name": "Flow: Hanpuri",
+    "name_kr": null,
+    "description": "Preceding Skill: [Soulflame II]\nInstantly approach a target and stab them with your binyeo knife.",
+    "input": "E during Soulflame\nF during Soulsnare\nE during Ghost Bomb",
+    "required_level": 25,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": "6s",
+    "effects": [
+      "All damage applies Soulflame's level damage x2",
+      "Super Armor",
+      "Stiffness on hits (PvE only)"
+    ],
+    "protection_lines": [
+      "Super Armor"
+    ]
+  },
+  "7230": {
+    "bdocodex_id": 7230,
+    "url": "https://bdocodex.com/us/skill/7230/",
+    "name": "Absolute: Path of Petals",
+    "name_kr": null,
+    "description": "Preceding Skill: [Path of Petals]\nDash forward as lithe as a fox.",
+    "input": "↑ + F\nHold F to continue the skill",
+    "required_level": 56,
+    "required_points": 10,
+    "mp_cost": null,
+    "cooldown": "13s",
+    "effects": [
+      "Super Armor during the skill",
+      "No collision while moving",
+      "Consumes 150 Stamina to continue the skill, then 100 Stamina to continue it once again."
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7234": {
+    "bdocodex_id": 7234,
+    "url": "https://bdocodex.com/us/skill/7234/",
+    "name": "Absolute: Soulflame",
+    "name_kr": null,
+    "description": "Preceding Skill: [Soulflame III]\nQuickly lower your stance and toss a charm that burns your target over time.",
+    "input": "E\nCan be added to a Quick Slot\n\nOnly available via Quick Slot after learning Foxflare Fling",
+    "required_level": 56,
+    "required_points": 13,
+    "mp_cost": "50",
+    "cooldown": "4s",
+    "effects": [
+      "Attack damage 1983% x2",
+      "Flow: Hanpuri's damage 3966%",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "130 burn damage every 3 sec for 18 sec on hits",
+      "70.27% damage in PvP only",
+      "Foxspirit charm's explosion damage 2149% x2",
+      "Maximum 7 targets",
+      "58.38% damage in PvP only"
+    ],
+    "protection_lines": []
+  },
+  "7238": {
+    "bdocodex_id": 7238,
+    "url": "https://bdocodex.com/us/skill/7238/",
+    "name": "Absolute: Soulsnare",
+    "name_kr": null,
+    "description": "Preceding Skill: [Soulsnare III]\nSpin forward while throwing your charm to disrupt your target's movements.",
+    "input": "F\nCan be added to a Quick Slot",
+    "required_level": 57,
+    "required_points": 14,
+    "mp_cost": "50",
+    "cooldown": "5s",
+    "effects": [
+      "Attack damage 1649% x2",
+      "Critical Hit Rate +30%",
+      "Maximum 10 targets",
+      "Movement Speed -10% for 5 sec on hits",
+      "75.68% damage in PvP only",
+      "Foxspirit charm's explosion damage 2686% x2",
+      "Maximum 7 targets",
+      "58.38% damage in PvP only"
+    ],
+    "protection_lines": []
+  },
+  "7245": {
+    "bdocodex_id": 7245,
+    "url": "https://bdocodex.com/us/skill/7245/",
+    "name": "Heavenly Return",
+    "name_kr": null,
+    "description": "Preceding Skill: [Flow: Hanpuri]\nPreceding Skill: [Soulflame III]\nSend forth a soul-burning charm and send souls to the afterlife.",
+    "input": "SHIFT + X\nE or F during Flow: Hanpuri\nCan be added to a Quick Slot",
+    "required_level": 56,
+    "required_points": null,
+    "mp_cost": "70",
+    "cooldown": "7s",
+    "effects": [
+      "Attack damage 5486% x2",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "Stun on hits",
+      "Down Attack",
+      "49.73% damage in PvP only"
+    ],
+    "protection_lines": []
+  },
+  "7246": {
+    "bdocodex_id": 7246,
+    "url": "https://bdocodex.com/us/skill/7246/",
+    "name": "Spirit Parade",
+    "name_kr": null,
+    "description": "Preceding Skill: [Flow: Hanpuri]\nPreceding Skill: [Soulsnare III]\nBreak free from the fetters restraining your soul.",
+    "input": "SHIFT + X\nE or F during Flow: Hanpuri\nCan be added to a Quick Slot",
+    "required_level": 56,
+    "required_points": null,
+    "mp_cost": "70",
+    "cooldown": "7s",
+    "effects": [
+      "Attack damage 4557% x2",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "Super Armor during the skill",
+      "Push the target on hits (PvE only)",
+      "Down Attack",
+      "47.57% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7247": {
+    "bdocodex_id": 7247,
+    "url": "https://bdocodex.com/us/skill/7247/",
+    "name": "Petal Snare",
+    "name_kr": null,
+    "description": "Preceding Skill: [Petal Play III]\nPreceding Skill: [Petalblast III]\nMove backward, then send out consecutive charms that pierce through your foes.",
+    "input": "SHIFT + Z\nCan be added to a Quick Slot",
+    "required_level": 57,
+    "required_points": null,
+    "mp_cost": "70",
+    "cooldown": "9s",
+    "effects": [
+      "Attack 1 damage 3201% x2, max 2 hits",
+      "Attack 2 damage 3201% x2",
+      "Critical Hit Rate +30%",
+      "Maximum 10 targets",
+      "Forward Guard during the skill",
+      "Down Attack",
+      "42.16% damage in PvP only",
+      "Foxspirit charm's explosion damage 2686% x2, max 2 hits",
+      "Maximum 10 targets",
+      "58.38% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Forward Guard during the skill"
+    ]
+  },
+  "7248": {
+    "bdocodex_id": 7248,
+    "url": "https://bdocodex.com/us/skill/7248/",
+    "name": "Constricting Charm",
+    "name_kr": null,
+    "description": "Preceding Skill: [Petal Play III]\nPreceding Skill: [Spirit Swirl IV]\nWrap your charms to form a blooming peak of petals, then watch them explode.",
+    "input": "SHIFT + Z\nCan be added to a Quick Slot",
+    "required_level": 57,
+    "required_points": null,
+    "mp_cost": "80",
+    "cooldown": "15s",
+    "effects": [
+      "Attack 1 damage 4969% x2",
+      "Attack 2 damage 4969% x2",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "Super Armor during the skill",
+      "Floating on attack 1 hits (PvE only)",
+      "Down Attack",
+      "Air Attack",
+      "37.84% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7249": {
+    "bdocodex_id": 7249,
+    "url": "https://bdocodex.com/us/skill/7249/",
+    "name": "Spirit Sparks",
+    "name_kr": null,
+    "description": "Preceding Skill: [Spirit Swirl IV]\nPreceding Skill: [Bristling Sparks IV]\nCast an incantation that burns away the remaining life force of your foes and absorb a portion of it for your own.",
+    "input": "Can be added to a Quick Slot\nLMB after Constricting Charm to perform attack 2",
+    "required_level": 58,
+    "required_points": null,
+    "mp_cost": "100",
+    "cooldown": "15s",
+    "effects": [
+      "Attack 1 damage 1682% x2",
+      "Attack 2 damage 4206% x2",
+      "Attack 3 damage 5888% x2",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "Recover 82 HP per hit",
+      "Forward Guard during the skill",
+      "Down Attack",
+      "32.43% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Forward Guard during the skill"
+    ]
+  },
+  "7250": {
+    "bdocodex_id": 7250,
+    "url": "https://bdocodex.com/us/skill/7250/",
+    "name": "Soul Charm",
+    "name_kr": null,
+    "description": "Preceding Skill: [Spirit Swirl IV]\nPreceding Skill: [Spirited Away IV]\nLight a soul charm ablaze, burning a portion of your Stamina to heal you.",
+    "input": "Can be added to a Quick Slot",
+    "required_level": 58,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": "40s",
+    "effects": [
+      "Recover +250 HP every 2 sec, max 4 times",
+      "Super Armor during the skill"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7251": {
+    "bdocodex_id": 7251,
+    "url": "https://bdocodex.com/us/skill/7251/",
+    "name": "Prime: Fan of Flames",
+    "name_kr": "강 : 화선",
+    "description": "Preceding Skill: [Predominance]\nUnleash several fox spirit charms with a powerful wind, spreading them out in the shape of a fan.",
+    "input": "↑ + C\nCan be added to a Quick Slot",
+    "required_level": 59,
+    "required_points": 10,
+    "mp_cost": "100",
+    "cooldown": "8s",
+    "effects": [
+      "Attack 1 damage 1442% x1, max 3 hits",
+      "Critical Hit Rate +30%",
+      "Maximum 10 targets",
+      "Movement Speed -15% for 5 sec on hits",
+      "Stiffness on center hits (PvE only)",
+      "Down Attack",
+      "79.89% damage in PvP only"
+    ],
+    "protection_lines": []
+  },
+  "7252": {
+    "bdocodex_id": 7252,
+    "url": "https://bdocodex.com/us/skill/7252/",
+    "name": "Prime: Nukduri Dance",
+    "name_kr": "강 : 넋두리",
+    "description": "Preceding Skill: [Predominance]\nEngage in a dance to appease spirits roaming the earth.",
+    "input": "SHIFT + C\nCan be added to a Quick Slot",
+    "required_level": 60,
+    "required_points": 10,
+    "mp_cost": "60",
+    "cooldown": "12s",
+    "effects": [
+      "Attack damage 6581% x3",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "All AP +20 for 10 sec when using the skill",
+      "Recover 167 HP per hit",
+      "Recover 30 MP per hit",
+      "Super Armor during the skill",
+      "40.91% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7278": {
+    "bdocodex_id": 7278,
+    "url": "https://bdocodex.com/us/skill/7278/",
+    "name": "Predominance",
+    "name_kr": null,
+    "description": "Now able to wield the fully-restored might of the revered fox spirit, your incantations have become even more powerful.",
+    "input": "Passive",
+    "required_level": 1,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": null,
+    "effects": [
+      "Attain Predominance as the pact with the revered fox spirit is complete. Use powerful magic to summon an illusory double.",
+      "- Succession: Predominance You must first reset your skills in order to learn the skill.",
+      "- Succession: Predominance You cannot learn or use awakening skills if you have learned.",
+      "- You cannot learn Succession skills if you have learned Absolute skills.",
+      "- You cannot learn Absolute skills if you have learned Succession skills."
+    ],
+    "protection_lines": []
+  },
+  "7279": {
+    "bdocodex_id": 7279,
+    "url": "https://bdocodex.com/us/skill/7279/",
+    "name": "Prime: Foxspirit: Form",
+    "name_kr": "강 : 여우신령 : 차력",
+    "description": "Preceding Skill: [Predominance]\nThe revered fox spirit greatly amplifies your Do power.",
+    "input": "Can be added to a Quick Slot",
+    "required_level": 56,
+    "required_points": 10,
+    "mp_cost": "50",
+    "cooldown": "3m",
+    "effects": [
+      "All AP +25 for 30 sec when using the skill",
+      "Critical Hit Rate +30% for 30 sec when using the skill",
+      "All Damage Reduction +20 for 30 sec when using the skill",
+      "Max HP +1000 for 30 sec when using the skill",
+      "Super Armor during the skill"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7280": {
+    "bdocodex_id": 7280,
+    "url": "https://bdocodex.com/us/skill/7280/",
+    "name": "Prime: Heavenward Dance",
+    "name_kr": "강 : 천도의 춤",
+    "description": "Preceding Skill: [Predominance], [Heavenward Dance IV]\nSpread out and explode your charms all at once, like flowers in bloom, to deal damage over a large area.",
+    "input": "↑ + RMB\nCan be added to a Quick Slot",
+    "required_level": 59,
+    "required_points": 33,
+    "mp_cost": "80",
+    "cooldown": "7s",
+    "effects": [
+      "Attack 1 damage 3573% x1, max 5 hits",
+      "Attack 2 damage 5360% x2",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "Super Armor during the skill",
+      "No collision while moving",
+      "Down Attack",
+      "36.74% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7281": {
+    "bdocodex_id": 7281,
+    "url": "https://bdocodex.com/us/skill/7281/",
+    "name": "Prime: Bared Claws",
+    "name_kr": "강 : 발톱빗",
+    "description": "Preceding Skill: [Predominance], [Bared Claws III]\nMove with spirit-like reflexes to cast a powerful incantation in front.",
+    "input": "→ or ← + LMB \nPerform from attack 1 when using this skill backward after attack 1",
+    "required_level": 56,
+    "required_points": 13,
+    "mp_cost": null,
+    "cooldown": "4s",
+    "effects": [
+      "Attack 1 damage 1470% x2",
+      "Attack 2 damage 2940% x1, max 2 hits",
+      "Critical Hit Rate +50% (Nullified during cooldown)",
+      "Maximum 10 targets",
+      "Recover 38 MP per hit",
+      "Forward Guard (Nullified during cooldown)",
+      "All Evasion -12 for 10 sec on hits (Nullified during cooldown)",
+      "Stiffness on attack 2 hits (PvE only) (Nullified during cooldown)",
+      "77.41% damage in PvP only",
+      "Damage -10% per each additional target hit from target 2 onward. (Max damage -50%.) (PvP only)",
+      "Consume 100 Stamina per attack"
+    ],
+    "protection_lines": [
+      "Forward Guard (Nullified during cooldown)"
+    ]
+  },
+  "7282": {
+    "bdocodex_id": 7282,
+    "url": "https://bdocodex.com/us/skill/7282/",
+    "name": "Prime: Lurking Claws",
+    "name_kr": "강 : 발톱긋기",
+    "description": "Preceding Skill: [Predominance], [Lurking Claws IV]\nToss your charm to mark your target, then take them down from behind with your binyeo knife.",
+    "input": "↓ + F\nF after attack 2 hits to move and perform attack 3 behind the target",
+    "required_level": 56,
+    "required_points": 17,
+    "mp_cost": "60",
+    "cooldown": "9s",
+    "effects": [
+      "Attack 1 damage 1814% x2",
+      "Attack 2 damage 1814% x2",
+      "Attack 3 damage 3626% x2",
+      "Critical Hit Rate +30%",
+      "Maximum 10 targets",
+      "Recover 100 HP per hit",
+      "Super Armor during the skill",
+      "Down Attack",
+      "46.45% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7283": {
+    "bdocodex_id": 7283,
+    "url": "https://bdocodex.com/us/skill/7283/",
+    "name": "Prime: Ghost Bomb",
+    "name_kr": "강 : 신령 던지기",
+    "description": "Preceding Skill: [Predominance], [Ghost Bomb IV]\nQuickly evade to the side, then toss a charm that explodes after a certain period of time.",
+    "input": "→ or ← + RMB",
+    "required_level": 58,
+    "required_points": 22,
+    "mp_cost": null,
+    "cooldown": "5s",
+    "effects": [
+      "Attack damage 3639% x2",
+      "Critical Hit Rate +40%",
+      "Maximum 10 targets",
+      "Invincible while moving",
+      "Down Attack",
+      "77.3% damage in PvP only",
+      "Foxspirit charm's explosion damage 2686% x2",
+      "Maximum 10 targets",
+      "58.38% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Invincible while moving"
+    ]
+  },
+  "7284": {
+    "bdocodex_id": 7284,
+    "url": "https://bdocodex.com/us/skill/7284/",
+    "name": "Prime: Foxspirit: Tag",
+    "name_kr": "강 : 여우신령 : 놀음",
+    "description": "Preceding Skill: [Predominance], [Foxspirit: Tag III]\nScatter your charms in front, then explode them over a large area to deal damage.",
+    "input": "RMB\nCan be added to a Quick Slot",
+    "required_level": 56,
+    "required_points": 17,
+    "mp_cost": "80",
+    "cooldown": "5s",
+    "effects": [
+      "Attack damage 6517% x2",
+      "Critical Hit Rate +30%",
+      "Maximum 10 targets",
+      "All Damage Reduction -20 for 10 sec on hits",
+      "Super Armor during the skill",
+      "Floating on hits (PvE only)",
+      "Down Attack",
+      "Air Attack",
+      "39% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7285": {
+    "bdocodex_id": 7285,
+    "url": "https://bdocodex.com/us/skill/7285/",
+    "name": "Prime: Spirited Away",
+    "name_kr": "강 : 혼비백산",
+    "description": "Preceding Skill: [Predominance], [Spirited Away IV]\nCast an incantation that charms the soul, then engulfs them in a path of flames.",
+    "input": "↓ + LMB",
+    "required_level": 58,
+    "required_points": 26,
+    "mp_cost": "90",
+    "cooldown": "7s",
+    "effects": [
+      "Attack 1 damage 5033% x1, max 5 hits",
+      "Attack 2 damage 4194% x2",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "Recover 51 HP per hit",
+      "Forward Guard during the skill",
+      "Down Attack",
+      "17.84% damage in PvP only",
+      "Damage -10% per each additional target hit from target 2 onward. (Max damage -50%.) (PvP only)"
+    ],
+    "protection_lines": [
+      "Forward Guard during the skill"
+    ]
+  },
+  "7289": {
+    "bdocodex_id": 7289,
+    "url": "https://bdocodex.com/us/skill/7289/",
+    "name": "Prime: Bristling Sparks IV",
+    "name_kr": "강 : 초롱불 IV",
+    "description": "Burn a charm to manifest a wall of spirit charms which deal damage over time. Stab the charms with your binyeo knife to deal great damage.",
+    "input": "SHIFT + RMB\nCan be added to a Quick Slot",
+    "required_level": 59,
+    "required_points": 34,
+    "mp_cost": "100",
+    "cooldown": "11s",
+    "effects": [
+      "Attack 1 damage 6588% x1",
+      "Attack 2 damage 6588% x1, max 4 hits",
+      "Attack 3 damage 7796% x2",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "Super Armor during the skill",
+      "Stun on attack 1 hits",
+      "Down Attack",
+      "23.93% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7293": {
+    "bdocodex_id": 7293,
+    "url": "https://bdocodex.com/us/skill/7293/",
+    "name": "Prime: Foxflare IV",
+    "name_kr": "강 : 화구 IV",
+    "description": "Concentrate your Do power, then explode it as a raging storm over a certain area.",
+    "input": "SHIFT + Q\nCan be added to a Quick Slot",
+    "required_level": 59,
+    "required_points": 36,
+    "mp_cost": "100",
+    "cooldown": "8s",
+    "effects": [
+      "Attack damage 10054% x2",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "Knockdown on hits",
+      "Down Attack",
+      "35.36% damage in PvP only",
+      "Damage -20% per each additional target hit from target 2 onward. (Max damage -20%.) (PvP only)"
+    ],
+    "protection_lines": []
+  },
+  "7297": {
+    "bdocodex_id": 7297,
+    "url": "https://bdocodex.com/us/skill/7297/",
+    "name": "Prime: Flower Shroud IV",
+    "name_kr": "강 : 꽃자욱 IV",
+    "description": "Cast an incantation that establishes a forbidden zone from which no soul can escape.",
+    "input": "↑ + E to perform forward attacks\n↓ + E to perform backward attacks",
+    "required_level": 59,
+    "required_points": 34,
+    "mp_cost": null,
+    "cooldown": "6.5s",
+    "effects": [
+      "Attack 1 damage 2584% x1, max 3 hits",
+      "Attack 2 damage 5167% x2",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "Forward Guard",
+      "Stun on hits",
+      "No collision while moving",
+      "Down Attack",
+      "Air Attack",
+      "20.45% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Forward Guard"
+    ]
+  },
+  "7300": {
+    "bdocodex_id": 7300,
+    "url": "https://bdocodex.com/us/skill/7300/",
+    "name": "Prime: Soul Tear III",
+    "name_kr": "강 : 섬돌뚫기 III",
+    "description": "Become possessed by a spirit, then quickly dash forward to attack enemies in front.",
+    "input": "↑ + Q\nCan be added to a Quick Slot",
+    "required_level": 60,
+    "required_points": 40,
+    "mp_cost": null,
+    "cooldown": "5s",
+    "effects": [
+      "Attack damage 5059% x2",
+      "Critical Hit Rate +50%",
+      "Maximum 10 targets",
+      "Super Armor before the attack hits",
+      "Stiffness on hits",
+      "Down Attack",
+      "50.39% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor before the attack hits"
+    ]
+  },
+  "7303": {
+    "bdocodex_id": 7303,
+    "url": "https://bdocodex.com/us/skill/7303/",
+    "name": "Prime: Petal Play III",
+    "name_kr": "강 : 꽃놀이패 III",
+    "description": "Gradually amplify your Do power until all enemies in front are swept away.",
+    "input": "SHIFT + LMB",
+    "required_level": 60,
+    "required_points": 41,
+    "mp_cost": "70",
+    "cooldown": "7s",
+    "effects": [
+      "Attack damage 9110% x2",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "Floating on hits",
+      "Down Attack",
+      "38.75% damage in PvP only",
+      "Damage -20% per each additional target hit from target 2 onward. (Max damage -20%.) (PvP only)"
+    ],
+    "protection_lines": []
+  },
+  "7306": {
+    "bdocodex_id": 7306,
+    "url": "https://bdocodex.com/us/skill/7306/",
+    "name": "Prime: Spirit Swirl III",
+    "name_kr": "강 : 귀신회오리 III",
+    "description": "Cast an incantation that burns wandering souls to their core, thereby guiding them to the afterlife.",
+    "input": "SHIFT + F\nCan be added to a Quick Slot",
+    "required_level": 60,
+    "required_points": 42,
+    "mp_cost": "150",
+    "cooldown": "13s",
+    "effects": [
+      "Attack 1 damage 7080% x1, max 6 hits",
+      "Attack 2 damage 5794% x2",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "Super Armor during the skill",
+      "Down Attack",
+      "28.25% damage in PvP only"
+    ],
+    "protection_lines": [
+      "Super Armor during the skill"
+    ]
+  },
+  "7311": {
+    "bdocodex_id": 7311,
+    "url": "https://bdocodex.com/us/skill/7311/",
+    "name": "Prime: Foxspirit: Phantom V",
+    "name_kr": "강 : 여우신령 : 강림 V",
+    "description": "The revered fox spirit's soul greatly amplifies the power of your incantations.",
+    "input": "Passive",
+    "required_level": 60,
+    "required_points": 10,
+    "mp_cost": null,
+    "cooldown": null,
+    "effects": [
+      "Magic AP +2"
+    ],
+    "protection_lines": []
+  },
+  "7312": {
+    "bdocodex_id": 7312,
+    "url": "https://bdocodex.com/us/skill/7312/",
+    "name": "Prime: Foxspirit: Deceiver",
+    "name_kr": "강 : 여우신령 : 현신",
+    "description": "Summon an illusory double of yourself with the power of the now fully-restored revered fox spirit.",
+    "input": "Passive\nQ while illusory double is active to switch locations with your double",
+    "required_level": 56,
+    "required_points": 10,
+    "mp_cost": null,
+    "cooldown": null,
+    "effects": [
+      "Summons an illusory double when using the following skills after learning the skill. (The summoned double will not damage enemies nor taunt monsters.)",
+      "- Bared Claws",
+      "- Soul Tear",
+      "- Flower Shroud (forward)",
+      "Use a skill command to switch locations with the summoned illusory double. (Unavailable at the start of Soul Tear and Foxflare.)",
+      "Only one illusory double can be summoned/active at a time.",
+      "You cannot summon a double while mounted."
+    ],
+    "protection_lines": []
+  },
+  "7324": {
+    "bdocodex_id": 7324,
+    "url": "https://bdocodex.com/us/skill/7324/",
+    "name": "Black Spirit: Prime: Heavenward Dance",
+    "name_kr": "흑정령 : 강 : 천도의 춤",
+    "description": "Black Spirit's Rage\nConjure up a storm of petals, then move behind your enemy to scatter them, inflicting great damage.",
+    "input": "Auto-activated when using Heavenward Dance and consumes Black Spirit's Rage\nBlack Spirit's Rage - 100%",
+    "required_level": 1,
+    "required_points": null,
+    "mp_cost": null,
+    "cooldown": null,
+    "effects": [
+      "Attack 1 damage 5052% x1, max 5 hits",
+      "Attack 2 damage 8420% x3",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "All AP +30 for 60 sec when using the skill",
+      "Casting Speed +25% for 60 sec when using the skill",
+      "Critical Hit Rate +30% for 60 sec when using the skill",
+      "Super Armor",
+      "Stun on attack 1 hits",
+      "Knockdown on attack 2 hits",
+      "Down Attack",
+      "33.08% damage in PvP only",
+      "Dismount target on hits.",
+      "Injures target with 50% of the damage of a hit."
+    ],
+    "protection_lines": [
+      "Super Armor"
+    ]
+  },
+  "7388": {
+    "bdocodex_id": 7388,
+    "url": "https://bdocodex.com/us/skill/7388/",
+    "name": "Foxflare Fling",
+    "name_kr": null,
+    "description": "Prerequisite: Use the [Secret Book] Abyssal Legacy ([The Magnus] Abyssal Revelation quest reward)\nScatter your charms into the air, then send them flying towards one point in front.",
+    "input": "E\nCan be added to a Quick Slot\nCan be used via a Quick slot with your foxtail fans\n\nSoulflame only available via a Quick Slot after learning this skill",
+    "required_level": 60,
+    "required_points": 5,
+    "mp_cost": "80",
+    "cooldown": "7s",
+    "effects": [
+      "Attack damage 4757% x1, max 3 hits",
+      "Critical Hit Rate +100%",
+      "Maximum 10 targets",
+      "Forward Guard at the start of the skill",
+      "Stiffness on hits"
+    ],
+    "protection_lines": [
+      "Forward Guard at the start of the skill"
+    ]
+  }
+}

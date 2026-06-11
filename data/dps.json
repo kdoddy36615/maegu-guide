@@ -1,0 +1,743 @@
+{
+  "_meta": {
+    "source": "sources/dps-data.md (locked PvE truth; author's sheet, tab '11/6/26')",
+    "sheet_url": "https://docs.google.com/spreadsheets/d/1F6D6zCWd7w0hgTnKrtvrPxVEqMj5qT2-sXdbXvXc1UQ/edit?gid=513999560",
+    "stat_assumptions": {
+      "crit_damage_pct": 279.5,
+      "attack_speed_pct": 37,
+      "attack_speed_bsr_pct": 62,
+      "crit_rate_pct": 63
+    },
+    "note": "DPS values are for relative priority at the sheet's stat assumptions, not absolute output."
+  },
+  "combo_summaries": [
+    {
+      "name": "Long Combo",
+      "pve_dps_non_bsr": 84983.0,
+      "pve_dps_bsr": 102077.0
+    },
+    {
+      "name": "Medium Combo",
+      "pve_dps_non_bsr": 92649.0,
+      "pve_dps_bsr": 110857.0
+    },
+    {
+      "name": "BSR Medium Combo",
+      "pve_dps_non_bsr": 87185.0,
+      "pve_dps_bsr": 104438.0
+    }
+  ],
+  "rows": [
+    {
+      "input": "S+LMB",
+      "sheet_label": "Spirited Away",
+      "ability_refs": [
+        "spirited-away"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 99716.0,
+      "pve_dps_bsr": 119357.0,
+      "pvp_dps": 12704.0,
+      "pvp_dmg_pct": 12.74
+    },
+    {
+      "input": "W+RMB",
+      "sheet_label": "Heavenward Dance",
+      "ability_refs": [
+        "heavenward-dance"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 98691.0,
+      "pve_dps_bsr": 117737.0,
+      "pvp_dps": 25907.0,
+      "pvp_dmg_pct": 26.25
+    },
+    {
+      "input": "SHIFT+F",
+      "sheet_label": "Spirit Swirl",
+      "ability_refs": [
+        "spirit-swirl"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 98405.0,
+      "pve_dps_bsr": 116461.0,
+      "pvp_dps": 19858.0,
+      "pvp_dmg_pct": 20.18
+    },
+    {
+      "input": "S+LMB→Shift+LMB",
+      "sheet_label": "Spirited Away → Petal Play",
+      "ability_refs": [
+        "spirited-away",
+        "petal-play"
+      ],
+      "variant": "cancel pair",
+      "type": "Prime",
+      "pve_dps_non_bsr": 96595.0,
+      "pve_dps_bsr": 115378.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "SHIFT+Q",
+      "sheet_label": "Foxflare",
+      "ability_refs": [
+        "foxflare"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 91967.0,
+      "pve_dps_bsr": 109960.0,
+      "pvp_dps": 21677.0,
+      "pvp_dmg_pct": 23.57
+    },
+    {
+      "input": "SHIFT+LMB",
+      "sheet_label": "Petal Play (Cancelled)",
+      "ability_refs": [
+        "petal-play"
+      ],
+      "variant": "cancelled",
+      "type": "Prime",
+      "pve_dps_non_bsr": 91665.0,
+      "pve_dps_bsr": 109125.0,
+      "pvp_dps": 23677.0,
+      "pvp_dmg_pct": 25.83
+    },
+    {
+      "input": "SHIFT+C",
+      "sheet_label": "Nukduri Dance",
+      "ability_refs": [
+        "nukduri-dance"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 84274.0,
+      "pve_dps_bsr": 100762.0,
+      "pvp_dps": 24625.0,
+      "pvp_dmg_pct": 29.22
+    },
+    {
+      "input": "SHIFT+RMB",
+      "sheet_label": "Bristling Sparks",
+      "ability_refs": [
+        "bristling-sparks"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 81386.0,
+      "pve_dps_bsr": 96560.0,
+      "pvp_dps": 13917.0,
+      "pvp_dmg_pct": 17.1
+    },
+    {
+      "input": "S+F",
+      "sheet_label": "Lurking Claw",
+      "ability_refs": [
+        "lurking-claws"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 81330.0,
+      "pve_dps_bsr": 103222.0,
+      "pvp_dps": 26993.0,
+      "pvp_dmg_pct": 33.19
+    },
+    {
+      "input": "RMB",
+      "sheet_label": "Foxspirit Tag (Cancelled)",
+      "ability_refs": [
+        "foxspirit-tag"
+      ],
+      "variant": "cancelled",
+      "type": "Prime",
+      "pve_dps_non_bsr": 76546.0,
+      "pve_dps_bsr": 96179.0,
+      "pvp_dps": 27143.0,
+      "pvp_dmg_pct": 35.46
+    },
+    {
+      "input": "D+LMB→Shift+LMB",
+      "sheet_label": "Bared Claws (1) → Petal Play",
+      "ability_refs": [
+        "bared-claws",
+        "petal-play"
+      ],
+      "variant": "cancel pair, claws attack 1",
+      "type": "Prime",
+      "pve_dps_non_bsr": 74275.0,
+      "pve_dps_bsr": 89381.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "W/S+E→RMB",
+      "sheet_label": "Flower Shroud (1) → Tag (Cancelled)",
+      "ability_refs": [
+        "flower-shroud",
+        "foxspirit-tag"
+      ],
+      "variant": "cancel pair, shroud attack 1",
+      "type": "Prime",
+      "pve_dps_non_bsr": 72221.0,
+      "pve_dps_bsr": 89887.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "S+E",
+      "sheet_label": "Flower Shroud (1) Back",
+      "ability_refs": [
+        "flower-shroud"
+      ],
+      "variant": "attack 1 only, backward",
+      "type": "Prime",
+      "pve_dps_non_bsr": 67415.0,
+      "pve_dps_bsr": 82737.0,
+      "pvp_dps": 9836.0,
+      "pvp_dmg_pct": 14.59
+    },
+    {
+      "input": "W+E",
+      "sheet_label": "Flower Shroud (1) Forward",
+      "ability_refs": [
+        "flower-shroud"
+      ],
+      "variant": "attack 1 only, forward",
+      "type": "Prime",
+      "pve_dps_non_bsr": 67415.0,
+      "pve_dps_bsr": 82737.0,
+      "pvp_dps": 9836.0,
+      "pvp_dmg_pct": 14.59
+    },
+    {
+      "input": "S+E",
+      "sheet_label": "Flower Shroud Back",
+      "ability_refs": [
+        "flower-shroud"
+      ],
+      "variant": "full, backward",
+      "type": "Prime",
+      "pve_dps_non_bsr": 65331.0,
+      "pve_dps_bsr": 78639.0,
+      "pvp_dps": 9532.0,
+      "pvp_dmg_pct": 14.59
+    },
+    {
+      "input": "W+E",
+      "sheet_label": "Flower Shroud Forward",
+      "ability_refs": [
+        "flower-shroud"
+      ],
+      "variant": "full, forward",
+      "type": "Prime",
+      "pve_dps_non_bsr": 65331.0,
+      "pve_dps_bsr": 78639.0,
+      "pvp_dps": 9532.0,
+      "pvp_dmg_pct": 14.59
+    },
+    {
+      "input": "W+RMB",
+      "sheet_label": "BSR: Heavenward Dance",
+      "ability_refs": [
+        "bsr-heavenward-dance"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 60951.0,
+      "pve_dps_bsr": 60951.0,
+      "pvp_dps": 20163.0,
+      "pvp_dmg_pct": 33.08
+    },
+    {
+      "input": "D+LMB→RMB",
+      "sheet_label": "Bared Claws (1) → Tag (Cancelled)",
+      "ability_refs": [
+        "bared-claws",
+        "foxspirit-tag"
+      ],
+      "variant": "cancel pair, claws attack 1",
+      "type": "Prime",
+      "pve_dps_non_bsr": 58562.0,
+      "pve_dps_bsr": 73684.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "HOLD E",
+      "sheet_label": "Flow: Hanpuri (Soulflame, Ghost Bomb)",
+      "ability_refs": [
+        "hanpuri"
+      ],
+      "variant": "after Soulflame / Ghost Bomb",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 57835.0,
+      "pve_dps_bsr": 70010.0,
+      "pvp_dps": 40640.0,
+      "pvp_dmg_pct": 70.27
+    },
+    {
+      "input": "A+LMB→RMB",
+      "sheet_label": "Bared Claws → Tag (Cancelled)",
+      "ability_refs": [
+        "bared-claws",
+        "foxspirit-tag"
+      ],
+      "variant": "cancel pair, full claws",
+      "type": "Prime",
+      "pve_dps_non_bsr": 57462.0,
+      "pve_dps_bsr": 71036.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "SHIFT+LMB",
+      "sheet_label": "Petal Play",
+      "ability_refs": [
+        "petal-play"
+      ],
+      "variant": "uncancelled",
+      "type": "Prime",
+      "pve_dps_non_bsr": 57291.0,
+      "pve_dps_bsr": 68407.0,
+      "pvp_dps": 14798.0,
+      "pvp_dmg_pct": 25.83
+    },
+    {
+      "input": "F",
+      "sheet_label": "Soulsnare (Bared Claws, Hanpuri)",
+      "ability_refs": [
+        "soulsnare"
+      ],
+      "variant": "cancelled by Bared Claws / Hanpuri",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 52827.0,
+      "pve_dps_bsr": 74393.0,
+      "pvp_dps": 28558.0,
+      "pvp_dmg_pct": 54.06
+    },
+    {
+      "input": "RMB",
+      "sheet_label": "Foxspirit Tag",
+      "ability_refs": [
+        "foxspirit-tag"
+      ],
+      "variant": "uncancelled",
+      "type": "Prime",
+      "pve_dps_non_bsr": 51031.0,
+      "pve_dps_bsr": 63276.0,
+      "pvp_dps": 18096.0,
+      "pvp_dmg_pct": 35.46
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (3 hit, cancelled fast)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "3 hits, cancelled fast",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 48123.0,
+      "pve_dps_bsr": 58254.0,
+      "pvp_dps": 48123.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "E→E",
+      "sheet_label": "Soulflame → Hanpuri",
+      "ability_refs": [
+        "soulflame",
+        "hanpuri"
+      ],
+      "variant": "flow pair",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 46269.0,
+      "pve_dps_bsr": 58341.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "A/D+LMB",
+      "sheet_label": "Bared Claws",
+      "ability_refs": [
+        "bared-claws"
+      ],
+      "variant": "full",
+      "type": "Prime",
+      "pve_dps_non_bsr": 45017.0,
+      "pve_dps_bsr": 54494.0,
+      "pvp_dps": 24894.0,
+      "pvp_dmg_pct": 55.3
+    },
+    {
+      "input": "F→F",
+      "sheet_label": "Soulsnare → Hanpuri",
+      "ability_refs": [
+        "soulsnare",
+        "hanpuri"
+      ],
+      "variant": "flow pair",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 44653.0,
+      "pve_dps_bsr": 58376.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "SHIFT+X",
+      "sheet_label": "Heavenly Return (fast)",
+      "ability_refs": [
+        "heavenly-return"
+      ],
+      "variant": "fast (cancelled)",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 43810.0,
+      "pve_dps_bsr": 52572.0,
+      "pvp_dps": 21787.0,
+      "pvp_dmg_pct": 49.73
+    },
+    {
+      "input": "F→D+LMB",
+      "sheet_label": "Soulsnare → Bared Claws (1)",
+      "ability_refs": [
+        "soulsnare",
+        "bared-claws"
+      ],
+      "variant": "cancel pair",
+      "type": "Mixed",
+      "pve_dps_non_bsr": 43302.0,
+      "pve_dps_bsr": 58436.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "W+Q",
+      "sheet_label": "Soul Tear",
+      "ability_refs": [
+        "soul-tear"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 42422.0,
+      "pve_dps_bsr": 50545.0,
+      "pvp_dps": 15268.0,
+      "pvp_dmg_pct": 35.99
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (3 hit, cancelled)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "3 hits, cancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 40993.0,
+      "pve_dps_bsr": 49192.0,
+      "pvp_dps": 40993.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "LMB",
+      "sheet_label": "Spirit Sparks (2+3)",
+      "ability_refs": [
+        "spirit-sparks"
+      ],
+      "variant": "hits 2+3 (from flow)",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 39367.0,
+      "pve_dps_bsr": 47021.0,
+      "pvp_dps": 12767.0,
+      "pvp_dmg_pct": 32.43
+    },
+    {
+      "input": "SHIFT+X",
+      "sheet_label": "Spirit Parade (fast)",
+      "ability_refs": [
+        "spirit-parade"
+      ],
+      "variant": "fast (cancelled)",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 39190.0,
+      "pve_dps_bsr": 47763.0,
+      "pvp_dps": 18643.0,
+      "pvp_dmg_pct": 47.57
+    },
+    {
+      "input": "HOLD E",
+      "sheet_label": "Flow: Hanpuri (Soulsnare)",
+      "ability_refs": [
+        "hanpuri"
+      ],
+      "variant": "after Soulsnare",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 39123.0,
+      "pve_dps_bsr": 47507.0,
+      "pvp_dps": 27492.0,
+      "pvp_dmg_pct": 70.27
+    },
+    {
+      "input": "E",
+      "sheet_label": "Soulflame",
+      "ability_refs": [
+        "soulflame"
+      ],
+      "variant": null,
+      "type": "Preawk",
+      "pve_dps_non_bsr": 37956.0,
+      "pve_dps_bsr": 50129.0,
+      "pvp_dps": 26672.0,
+      "pvp_dmg_pct": 70.27
+    },
+    {
+      "input": "Shift+Z→LMB",
+      "sheet_label": "Constricting Charm → Spirit Sparks",
+      "ability_refs": [
+        "constricting-charm",
+        "spirit-sparks"
+      ],
+      "variant": "flow pair",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 36122.0,
+      "pve_dps_bsr": 43069.0,
+      "pvp_dps": null,
+      "pvp_dmg_pct": null
+    },
+    {
+      "input": "SHIFT+X",
+      "sheet_label": "Spirit Parade",
+      "ability_refs": [
+        "spirit-parade"
+      ],
+      "variant": "uncancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 35545.0,
+      "pve_dps_bsr": 42456.0,
+      "pvp_dps": 16909.0,
+      "pvp_dmg_pct": 47.57
+    },
+    {
+      "input": "SHIFT+X",
+      "sheet_label": "Heavenly Return",
+      "ability_refs": [
+        "heavenly-return"
+      ],
+      "variant": "uncancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 35385.0,
+      "pve_dps_bsr": 42791.0,
+      "pvp_dps": 17597.0,
+      "pvp_dmg_pct": 49.73
+    },
+    {
+      "input": "A/D+RMB",
+      "sheet_label": "Ghost Bomb",
+      "ability_refs": [
+        "ghost-bomb"
+      ],
+      "variant": null,
+      "type": "Prime",
+      "pve_dps_non_bsr": 35182.0,
+      "pve_dps_bsr": 45690.0,
+      "pvp_dps": 21735.0,
+      "pvp_dmg_pct": 61.78
+    },
+    {
+      "input": "Shift+Z",
+      "sheet_label": "Petal Snare",
+      "ability_refs": [
+        "petal-snare"
+      ],
+      "variant": null,
+      "type": "Preawk",
+      "pve_dps_non_bsr": 34228.0,
+      "pve_dps_bsr": 45336.0,
+      "pvp_dps": 14431.0,
+      "pvp_dmg_pct": 42.16
+    },
+    {
+      "input": "SHIFT+Z",
+      "sheet_label": "Constricting Charm",
+      "ability_refs": [
+        "constricting-charm"
+      ],
+      "variant": null,
+      "type": "Preawk",
+      "pve_dps_non_bsr": 33332.0,
+      "pve_dps_bsr": 39681.0,
+      "pvp_dps": 12613.0,
+      "pvp_dmg_pct": 37.84
+    },
+    {
+      "input": "A/D+LMB",
+      "sheet_label": "Bared Claws (1)",
+      "ability_refs": [
+        "bared-claws"
+      ],
+      "variant": "attack 1 only",
+      "type": "Prime",
+      "pve_dps_non_bsr": 32869.0,
+      "pve_dps_bsr": 40603.0,
+      "pvp_dps": 18177.0,
+      "pvp_dmg_pct": 55.3
+    },
+    {
+      "input": "Space",
+      "sheet_label": "Charmed",
+      "ability_refs": [
+        "charmed"
+      ],
+      "variant": null,
+      "type": "Preawk",
+      "pve_dps_non_bsr": 32589.0,
+      "pve_dps_bsr": 49330.0,
+      "pvp_dps": 17617.0,
+      "pvp_dmg_pct": 54.06
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (2 hit, cancelled fast)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "2 hits, cancelled fast",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 32082.0,
+      "pve_dps_bsr": 38836.0,
+      "pvp_dps": 32082.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "F",
+      "sheet_label": "Soulsnare",
+      "ability_refs": [
+        "soulsnare"
+      ],
+      "variant": null,
+      "type": "Preawk",
+      "pve_dps_non_bsr": 31974.0,
+      "pve_dps_bsr": 44171.0,
+      "pvp_dps": 17285.0,
+      "pvp_dmg_pct": 54.06
+    },
+    {
+      "input": "LMB",
+      "sheet_label": "Spirit Sparks (full from slot)",
+      "ability_refs": [
+        "spirit-sparks"
+      ],
+      "variant": "full, from quickslot",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 27815.0,
+      "pve_dps_bsr": 32914.0,
+      "pvp_dps": 9020.0,
+      "pvp_dmg_pct": 32.43
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (2 hit, cancelled)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "2 hits, cancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 27329.0,
+      "pve_dps_bsr": 32795.0,
+      "pvp_dps": 27329.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "LMB",
+      "sheet_label": "Flow: Nether River",
+      "ability_refs": [
+        "nether-river"
+      ],
+      "variant": null,
+      "type": "Preawk",
+      "pve_dps_non_bsr": 20409.0,
+      "pve_dps_bsr": 30361.0,
+      "pvp_dps": 17652.0,
+      "pvp_dmg_pct": 86.49
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (1 hit, cancelled fast)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "1 hit, cancelled fast",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 16041.0,
+      "pve_dps_bsr": 19418.0,
+      "pvp_dps": 16041.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "S+RMB",
+      "sheet_label": "Petalblast",
+      "ability_refs": [
+        "petalblast"
+      ],
+      "variant": null,
+      "type": "Preawk",
+      "pve_dps_non_bsr": 14729.0,
+      "pve_dps_bsr": 17430.0,
+      "pvp_dps": 8599.0,
+      "pvp_dmg_pct": 58.38
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (3 hit)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "3 hits, uncancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 14010.0,
+      "pve_dps_bsr": 16644.0,
+      "pvp_dps": 14010.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (1 hit, cancelled)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "1 hit, cancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 13664.0,
+      "pve_dps_bsr": 16397.0,
+      "pvp_dps": 13664.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (2 hit)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "2 hits, uncancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 9340.0,
+      "pve_dps_bsr": 11096.0,
+      "pvp_dps": 9340.0,
+      "pvp_dmg_pct": 100.0
+    },
+    {
+      "input": "E",
+      "sheet_label": "Foxflare Fling (1 hit)",
+      "ability_refs": [
+        "foxflare-fling"
+      ],
+      "variant": "1 hit, uncancelled",
+      "type": "Preawk",
+      "pve_dps_non_bsr": 4670.0,
+      "pve_dps_bsr": 5548.0,
+      "pvp_dps": 4670.0,
+      "pvp_dmg_pct": 100.0
+    }
+  ]
+}

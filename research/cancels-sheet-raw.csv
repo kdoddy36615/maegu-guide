@@ -1,0 +1,194 @@
+4,Skill,Input after,Description,,!!!   Read the info to understand special interactions & color codes.   !!!
+shift+A,"Prime: Foxspirit: Tag
+(RMB)",-,"Flow into ""RMB"" going right into the attack.",,Spirit Step vs Chain: Spirit Step
+A/D+LMB,,-,"(Input: D+LMB) Flow into ""RMB"" after Attack 1 of ""D+LMB"" going right into the attack.
+(Input: A+LMB) Flow into ""RMB"" after Attack 2 of ""A+LMB"" going right into the attack.",,"The skills ""Spirit Step"" and ""Chain: Spirit Step"" are similar but not quite the same.
+- Spirit Step (iFrame into standing SA recovery)
+- Chain: Spirit Step (SA into iFrame when disappeared into rolling SA recovery)
+
+The ""Spirit Step"" version is better for protection, as it allows you to completely cancel the SA recovery animation, going into an other iFrame or Forward Guard. The ""Chain: Spirit Step"" version will always have a short rolling SA recovery animation, however it does have increased movement distance and very long lingering SA if not cancelled.
+
+shift+W
+Forward movement with this skill usually uses ""Chain: Spirit Step"" first, which you might not want to do. However all skills flow into ""shift+W"", using ""Spirit Step"" rather than ""Chain: Spirit Step"".
+Tip: You can hold down LMB for forward ""Spirit Step"", as LMB is a skill. Just make sure to input ""W+LMB+shift"" or ""LMB+W+shift"" in that order.
+
+
+Note:
+
+For some cancels it will matter if you use ""Spirit Step"" or ""Chain: Spirit Step"", as well as the input direction that you use. The color of the skills in this info will be the same as in the table, make sure to also pay attention to the inputs for these skills!"
+W/S+E,,-,"Flow into ""RMB"" after Attack 1 of ""W/S+E"", cancelling Attack 2 of ""W/S+E"", going right into the attack of ""RMB"".",,
+-,"Prime: Bared Claws
+(A/D+LMB)",ALL,"Flow into all skills after Attack 1 & 2, cancelling the recovery animation of ""A/D+LMB"". (Lingering Forward Guard)",,
+shift+W/A/S/D,,-,"Flow into ""A/D+LMB"", cancelling the SA recovery animation of ""shift+W/A/S/D"".",,
+-,,RMB,"(Input: D+LMB) Flow into ""RMB"" after Attack 1 of ""D+LMB"" going right into the attack.
+(Input: A+LMB) Flow into ""RMB"" after Attack 2 of ""A+LMB"" going right into the attack.",,
+-,,> LMB,"Flow into ""Flow: Nether River"" after Attack 1 & 2 of ""A/D+LMB"".",,
+A/D+RMB,,-,"Cancels the attack part of ""A/D+RMB"".",,
+E,,-,"Cancels the recovery animation of ""E"".",,
+F,,-,"Cancels the recovery animation of ""F"".",,
+-,,shift+LMB,"(Input: D+LMB) Flow into ""shift+LMB"" after Attack 1 of ""D+LMB"" going right into the attack.
+(Input: A+LMB) Flow into ""shift+LMB"" after Attack 2 of ""A+LMB"" going right into the attack.",,
+shift+F,,-,"Cancels ""shift+F"".",,
+shift+RMB,,-,"Cancels ""shift+RMB"".",,
+S+LMB,,-,"Cancels ""S+LMB"".",,
+W+C,,-,"Cancels the recovery animation of ""W+C"".",,
+shift+A/D,"Flow: Nether River
+(> LMB)",-,"Flow into ""Flow: Nether River"".",,
+shift+A/D,,-,"Flow into ""Flow: Nether River"".",,
+A/D+LMB,,-,"Flow into ""Flow: Nether River"" after Attack 1 & 2 of ""A/D+LMB"".",,Prime: Foxspirit: Deceiver
+shift+W/A/S/D,"Prime: Ghost Bomb
+(A/D+RMB)",-,"Flow into ""A/D+RMB"", cancelling the SA recovery animation of ""shift+W/A/S/D"".",,"This is the unique mechanic of Succession Maegu, which allows you to create a clone of yourself after the following skills:
+
+- Bared Claws (A/D+LMB)
+- Soul Tear (W+Q)
+- Flower Shroud (W+E)
+  Note: S+E does not work!
+
+You can only ever have 1 clone active at a given time and they last 3s. While a clone is active you can swap positions with it using ""Prime: Foxspirit: Deceiver (Q)"". You can even swap positions while you are using other skills, finishing the cast where you teleport to. Do however pay attention to ""Q"", as it is unprotected and will cause a very short unprotected frame, even if using protected skills.
+
+All of this is important for Cancels & Flows, as this mechanic simply changes your location but does not interfere with skill interactions. Meaning you can use Q at any time and Cancels & Flows will work normally. As it does not affect any Cancels or Flows, it is not listed for each skill, but is important to know."
+-,,shift+W/A/S/D,"Cancels the attack part of ""A/D+RMB"".",,
+-,,shift+W,"Cancels the attack part of ""A/D+RMB"".",,
+-,,A/D+LMB,"Cancels the attack part of ""A/D+RMB"".",,
+E,,-,"Cancels the recovery animation of ""E"".",,
+-,,> E,"Flow into ""Flow: Hanpuri"".",,
+F,,-,"Cancels the recovery animation of ""F"".",,
+-,,W+Q,"Cancels the attack part of ""A/D+RMB"".",,
+shift+F,,-,"Cancels ""shift+F"".",,
+shift+RMB,,-,"Cancels ""shift+RMB"".",,
+S+LMB,,-,"Cancels ""S+LMB"".",,
+W+C,,-,"Cancels the recovery animation of ""W+C"".",,
+-,"Absolute: Soulflame
+(E)",shift+W/A/S/D,"Cancels the recovery animation of ""E"".",,
+-,,W+F,"Cancels the recovery animation of ""E"".",,
+-,,A/D+LMB,"Cancels the recovery animation of ""E"".",,
+-,,A/D+RMB,"Cancels the recovery animation of ""E"".",,"Every skill can flow into the following skills, activating them instantly, without starting animations:
+
+- Prime: Spirit Swirl (shift+F)
+- Prime: Bristling Sparks (shift+RMB)
+- Absolute: Charmed (SPACE)
+- Spirit Step (shift+A/S/D)
+
+Note: These interactions are only mentioned for these skills, as every skill works."
+-,,> E,"Flow into ""Flow: Hanpuri"".",,
+-,,W+Q,"Cancels the recovery animation of ""E"".",,
+-,"Flow: Hanpuri
+(> E | > F)",ALL,"Flow into all skills, cancelling the recovery animation of ""Flow: Hanpuri"". (Lingering Super Armor)",,
+A/D+RMB,,-,"(Input: E) Flow into ""Flow: Hanpuri"".",,
+E,,-,"(Input: E) Flow into ""Flow: Hanpuri"".",,
+F,,-,"(Input: F) Flow into ""Flow: Hanpuri"".",,
+-,,shift+X,"(Input: E or F) Flow into ""Heavenly Return"" and ""Spirit Parade"".",,
+-,"Absolute: Soulsnare
+(F)",shift+W/A/S/D,"Cancels the recovery animation of ""F"".",,"While all skills can cancel recovery animations of highlighted skills, the following skills provide faster cancels to recovery animations than other skills:
+
+- Prime: Bared Claws (A/D+LMB)
+- Prime: Ghost Bomb (A/D+RMB)
+- Prime: Soul Tear (W+Q)
+- Absolute: Charmed (SPACE)
+- Spirit Step (shift+W/A/S/D)
+- Absolute: Path of Petals (W+F)
+
+Note: These interactions are only mentioned on the skills with a recovery animation, as every skill can cancel them."
+-,,W+F,"Cancels the recovery animation of ""F"".",,
+-,,A/D+LMB,"Cancels the recovery animation of ""F"".",,
+-,,A/D+RMB,"Cancels the recovery animation of ""F"".",,
+-,,> F,"Flow into ""Flow: Hanpuri"".",,
+-,,W+Q,"Cancels the recovery animation of ""F"".",,
+A/D+RMB,"Prime: Soul Tear
+(W+Q)",-,"Cancels the attack part of ""A/D+RMB"".",,
+E,,-,"Cancels the recovery animation of ""E"".",,
+F,,-,"Cancels the recovery animation of ""F"".",,
+shift+F,,-,"Cancels ""shift+F"".",,
+shift+RMB,,-,"Cancels ""shift+RMB"".",,
+S+LMB,,-,"Cancels ""S+LMB"".",,
+W+C,,-,"Cancels the recovery animation of ""W+C"".",,
+-,"Absolute: Petalblast
+(S+RMB)",-,-,,
+A/D+LMB,"Prime: Petal Play
+(shift+LMB)",-,"(Input: D+LMB) Flow into ""shift+LMB"" after Attack 1 of ""D+LMB"" going right into the attack.
+(Input: A+LMB) Flow into ""shift+LMB"" after Attack 2 of ""A+LMB"" going right into the attack.",,
+S+LMB,,-,"Flow into ""shift+LMB"" after Attack 2 of ""S+LMB"" going right into the attack.",,
+-,"Prime: Foxflare
+(shift+Q)",-,-,,
+ALL,"Prime: Spirit Swirl
+(shift+F)",-,"All skills flow into ""Prime: Spirit Swirl"", going right into the attack.",,
+-,,shift+W/A/S/D,"Cancels ""shift+F"".",,
+-,,shift+W,"Cancels ""shift+F"".",,
+-,,W+F,"Cancels ""shift+F"".",,
+-,,A/D+LMB,"Cancels ""shift+F"".",,
+-,,A/D+RMB,"Cancels ""shift+F"".",,
+-,,W+Q,"Cancels ""shift+F"".",,
+-,"Prime: Flower Shroud
+(W+E | S+E)",ALL,"Flow into all skills after Attack 1 & 2, cancelling the recovery animation of ""W/S+E"". (Lingering Forward Guard)
+Exception: S+RMB after Attack 1.",,
+-,,RMB,"Flow into ""RMB"" after Attack 1 of ""W/S+E"", cancelling Attack 2 of ""W/S+E"", going right into the attack of ""RMB"".",,
+ALL,"Prime: Bristling Sparks
+(shift+RMB)",-,"All skills flow into ""Prime: Bristling Sparks"", going right into the attack.",,
+-,,ALL,"Flow into all skills after Attack 3, cancelling the recovery animation of ""shift+RMB"". (Lingering Super Armor)",,
+-,,shift+W/A/S/D,"Cancels ""shift+RMB"".",,
+-,,shift+W,"Cancels ""shift+RMB"".",,
+-,,W+F,"Cancels ""shift+RMB"".",,
+-,,A/D+LMB,"Cancels ""shift+RMB"".",,
+-,,A/D+RMB,"Cancels ""shift+RMB"".",,
+-,,W+Q,"Cancels ""shift+RMB"".",,
+-,"Prime: Spirited Away
+(S+LMB)",ALL,"Flow into all skills after Attack 2, cancelling the recovery animation of ""S+LMB"". (Lingering Forward Guard)",,
+-,,shift+W/A/S/D,"Cancels ""S+LMB"".",,
+-,,shift+W,"Cancels ""S+LMB"".",,
+-,,W+F,"Cancels ""S+LMB"".",,
+-,,A/D+LMB,"Cancels ""S+LMB"".",,
+-,,A/D+RMB,"Cancels ""S+LMB"".",,
+-,,W+Q,"Cancels ""S+LMB"".",,
+ALL,"Absolute: Charmed
+(S+SPACE | SPACE)",-,"All skills flow into ""Absolute: Charmed"", going right into the attack.",,
+-,"Prime: Lurking Claws
+(S+F)",ALL,"Flow into all skills after Attack 2 & 3, cancelling the recovery animation of ""S+F"". (Lingering Super Armor)",,
+-,"Prime: Heavenward Dance
+(W+RMB)",ALL,"Flow into all skills after Attack 2, cancelling the recovery animation of ""W+RMB"". (Lingering Super Armor)",,
+-,"Prime: Fan of Flames
+(W+C)",shift+W/A/S/D,"Cancels the recovery animation of ""W+C"".",,
+-,,shift+W,"Cancels the recovery animation of ""W+C"".",,
+-,,W+F,"Cancels the recovery animation of ""W+C"".",,
+-,,A/D+LMB,"Cancels the recovery animation of ""W+C"".",,
+-,,A/D+RMB,"Cancels the recovery animation of ""W+C"".",,
+-,,W+Q,"Cancels the recovery animation of ""W+C"".",,
+-,"Prime: Nukduri Dance
+(shift+C)",-,-,,
+> E,"Heavenly Return
+(shift+X | > E | > F)",-,"(Input: E or F) Flow into ""Heavenly Return"".",,
+> E,"Spirit Parade
+(shift+X | > E | > F)",-,"(Input: E or F) Flow into ""Spirit Parade"".",,
+-,"Petal Snare
+(shift+Z)",shift+W/A/S/D,"Cancels ""shift+Z"".",,
+-,"Constricting Charm
+(shift+Z)",shift+W/A/S/D,"Cancels ""shift+Z"".",,
+-,,> LMB,"Flow into ""Spirit Sparks"".",,
+-,"Spirit Sparks
+(Quickslot | > LMB)",shift+W/A/S/D,"Cancels ""Spirit Sparks"".",,
+shift+Z,,-,"(Constricting Charm only) Flow into ""Spirit Sparks"".",,
+ALL,"Spirit Step
+(shift+W/A/S/D)",-,"All skills flow into ""shift+A/S/D"", going right into the disappearing animation. (""shift+W"" has exceptions, see info on the right)",,
+-,,RMB,"(Input: shift+A) Flow into ""RMB"" going right into the attack.",,
+-,,A/D+LMB,"Flow into ""A/D+LMB"", cancelling the SA recovery animation of ""shift+W/A/S/D"".",,
+-,,> LMB,"(Input: shift+A/D) Flow into ""Flow: Nether River"".",,
+-,,A/D+RMB,"Flow into ""A/D+RMB"", cancelling the SA recovery animation of ""shift+W/A/S/D"".",,
+shift+F,,-,"Cancels ""shift+F"".",,
+shift+RMB,,-,"Cancels ""shift+RMB"".",,
+S+LMB,,-,"Cancels ""S+LMB"".",,
+W+C,,-,"Cancels the recovery animation of ""W+C"".",,
+shift+Z,,-,"Cancels ""shift+Z"". (Petal Snare and Constricting Charm)",,
+Spirit Sparks,,-,"Cancels ""Spirit Sparks"".",,
+-,"Chain: Spirit Step
+(shift+W/A/S/D)",> LMB,"(Input: shift+A/D) Flow into ""Flow: Nether River"".",,
+A/D+RMB,,-,"(Input: shift+W) Cancels the attack part of ""A/D+RMB"".",,
+shift+F,,-,"(Input: shift+W) Cancels ""shift+F"".",,
+shift+RMB,,-,"(Input: shift+W) Cancels ""shift+RMB"".",,
+S+LMB,,-,"(Input: shift+W) Cancels ""S+LMB"".",,
+W+C,,-,"(Input: shift+W) Cancels the recovery animation of ""W+C"".",,
+E,"Absolute: Path of Petals
+(W+F)",-,"Cancels the recovery animation of ""E"".",,
+F,,-,"Cancels the recovery animation of ""F"".",,
+shift+F,,-,"Cancels ""shift+F"".",,
+shift+RMB,,-,"Cancels ""shift+RMB"".",,
+S+LMB,,-,"Cancels ""S+LMB"".",,
+W+C,,-,"Cancels the recovery animation of ""W+C"".",,
