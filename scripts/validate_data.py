@@ -24,7 +24,8 @@ def walk(node, where):
                  "cancelled_into_from", "cancelled_out_into", "ability_refs",
                  "skills_with_addons", "instant_flows_from_everything",
                  "fast_recovery_cancellers", "ranged", "big_frontal_aoe", "close_aoe",
-                 "between_packs", "advanced_between_packs", "pve_pick", "alternative"}
+                 "between_packs", "advanced_between_packs", "pve_pick", "aos_pick",
+                 "alternative"}
     if isinstance(node, dict):
         for k, v in node.items():
             if k in id_fields:

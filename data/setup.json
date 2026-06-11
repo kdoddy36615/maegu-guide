@@ -24,11 +24,13 @@
     "sources": ["sources/discord-pve.md#skill-enhancements-aka-rabams", "sources/video-guide.md#rabams-skill-enhancements"],
     "image": "sources/discord-images/pve/rabams-lv56-58.png",
     "choices": [
-      { "level": 56, "pve_pick": "heavenly-return", "alternative": "spirit-parade",
+      { "level": 56, "pve_pick": "heavenly-return", "aos_pick": "spirit-parade", "alternative": "spirit-parade",
         "rationale": "Heavenly Return: fast, decent damage, quick backstep; unprotected but fast enough that it rarely matters in PvE. Spirit Parade: less damage, longer animation, but Super Armor — the protected option, and the PvP pick (all Bantalope combos use it)." },
-      { "level": 57, "pve_pick": "constricting-charm", "alternative": "petal-snare",
+      { "level": 57, "pve_pick": "constricting-charm", "aos_pick": null, "alternative": "petal-snare",
+        "aos_pick_note": "AOS pick unknown — sources only settle level 56 (ADR 0004 open gap); surfaced as unknown, not guessed.",
         "rationale": "Constricting Charm: decent filler with very high attack speed; flows into Spirit Sparks. Petal Snare: long animation, low DPS." },
-      { "level": 58, "pve_pick": "spirit-sparks", "alternative": "soul-charm",
+      { "level": 58, "pve_pick": "spirit-sparks", "aos_pick": null, "alternative": "soul-charm",
+        "aos_pick_note": "AOS pick unknown — sources only settle level 56 (ADR 0004 open gap); surfaced as unknown, not guessed.",
         "rationale": "Spirit Sparks: weak alone but decent follow-up from Constricting Charm. Soul Charm: not useful in PvE (small HP recovery, costs stamina, out-of-combat)." }
     ],
     "tree": "Lv56 from Soulflame III; Lv57 from Spirit Swirl IV; Lv58 from Bristling Sparks IV."
