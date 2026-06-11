@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AbilityIcon from "./AbilityIcon";
 import type { Mode, Protection } from "../data/types";
 import { PROTECTION_LABEL, TIER_LABEL, ability, ccBadges, priorityTierByAbility } from "../data";
 import type { CcBadge, TierName } from "../data";
@@ -52,6 +53,7 @@ export function AbilityLink({ id, mode = "pve" }: { id: string; mode?: Mode }) {
   const a = ability(id);
   return (
     <Link className="ability-link" to={`/study/${mode === "pvp" ? "aos" : "pve"}#${id}`}>
+      <AbilityIcon id={id} />
       {a.short_name}
     </Link>
   );

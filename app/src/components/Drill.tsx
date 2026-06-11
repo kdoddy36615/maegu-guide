@@ -2,6 +2,29 @@ import { useEffect, useMemo, useState } from "react";
 import type { Combo, ComboStep, Mode } from "../data/types";
 import { ability, loadouts } from "../data";
 import { Kbd } from "./badges";
+import AbilityIcon from "./AbilityIcon";
+
+function NameWithIcon({ id }: { id: string }) {
+  return (
+    <span style={{ whiteSpace: "nowrap" }}>
+      <AbilityIcon id={id} />
+      {ability(id).short_name}
+    </span>
+  );
+}
+
+function NameList({ ids }: { ids: string[] }) {
+  return (
+    <>
+      {ids.map((id, i) => (
+        <span key={id}>
+          {i > 0 && <span className="dim"> or </span>}
+          <NameWithIcon id={id} />
+        </span>
+      ))}
+    </>
+  );
+}
 
 /**
  * Flashcard recall drill over a combo's sequence ("what comes next?") — ADR 0003.
@@ -132,9 +155,7 @@ export default function Drill({ combo, mode }: { combo: Combo; mode: Mode }) {
         {combo.steps.slice(0, stepIndex).map((s, i) => (
           <span key={i} className={`combo-step${s.optional ? " optional" : ""}`}>
             <span className="step-abilities">
-              {acceptedIds(s)
-                .map((id) => ability(id).short_name)
-                .join(" or ")}
+              <NameList ids={acceptedIds(s)} />
             </span>
             <span className="step-input">
               <Kbd>{s.input}</Kbd>
@@ -168,7 +189,7 @@ export default function Drill({ combo, mode }: { combo: Combo; mode: Mode }) {
                   onClick={() => pick(id)}
                   disabled={picked != null}
                 >
-                  {ability(id).short_name}
+                  <NameWithIcon id={id} />
                 </button>
               );
             })}
@@ -180,8 +201,7 @@ export default function Drill({ combo, mode }: { combo: Combo; mode: Mode }) {
                   <span style={{ color: "var(--ok)" }}>Correct.</span>
                 ) : (
                   <span style={{ color: "var(--none)" }}>
-                    Not quite — it's{" "}
-                    {accepted.map((id) => ability(id).short_name).join(" or ")}.
+                    Not quite — it's <NameList ids={accepted} />.
                   </span>
                 )}{" "}
                 Input: <Kbd>{step.input}</Kbd>

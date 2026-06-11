@@ -91,6 +91,14 @@ a { color: var(--accent); }
 .badge.unknown { color: var(--warn); border-color: var(--warn); }
 .badge.optional { color: var(--text-dim); border-color: var(--text-dim); }
 
+.ability-icon {
+  border-radius: 4px;
+  vertical-align: -4px;
+  margin-right: 5px;
+}
+.ability-icon.sm { width: 19px; height: 19px; }
+.ability-icon.lg { width: 26px; height: 26px; vertical-align: -7px; }
+
 .kbd {
   font-family: Consolas, monospace;
   font-size: 12.5px;

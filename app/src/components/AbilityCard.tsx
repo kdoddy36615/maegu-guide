@@ -11,6 +11,7 @@ import {
   loadouts,
 } from "../data";
 import { AbilityBadges, AbilityLink, Kbd } from "./badges";
+import AbilityIcon from "./AbilityIcon";
 import DpsTable from "./DpsTable";
 
 const fmt = (v: number | null) =>
@@ -44,6 +45,7 @@ export default function AbilityCard({ a, mode }: { a: Ability; mode: Mode }) {
   return (
     <div className="ability-card" id={a.id} ref={ref}>
       <button className="ability-head" onClick={() => setOpen(!open)} aria-expanded={open}>
+        <AbilityIcon id={a.id} size="lg" />
         <span className="name">{a.short_name}</span>
         {a.inputs.map((inp) => (
           <Kbd key={inp}>{inp}</Kbd>

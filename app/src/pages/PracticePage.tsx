@@ -10,6 +10,7 @@ import {
   setup,
 } from "../data";
 import { CcBadges, Kbd, ProtBadge } from "../components/badges";
+import AbilityIcon from "../components/AbilityIcon";
 import Drill from "../components/Drill";
 import ComboSteps from "../components/ComboSteps";
 
@@ -19,7 +20,10 @@ function Slot({ a, mode, section }: { a: Ability; mode: Mode; section: string })
   const unknownRabam = loadouts[mode].unknownRabamIds.has(a.id);
   return (
     <div className={`hotbar-slot sec-${section}`}>
-      <span className="slot-name">{a.short_name}</span>
+      <span className="slot-name">
+        <AbilityIcon id={a.id} />
+        {a.short_name}
+      </span>
       {a.inputs.map((inp) => (
         <Kbd key={inp}>{inp}</Kbd>
       ))}
