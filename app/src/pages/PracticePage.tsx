@@ -4,6 +4,7 @@ import {
   IDEAL_COMBOS,
   ccBadges,
   comboById,
+  combos,
   combosFile,
   loadouts,
   sectionsFor,
@@ -11,8 +12,7 @@ import {
 } from "../data";
 import { CcBadges, Kbd, ProtBadge } from "../components/badges";
 import AbilityIcon from "../components/AbilityIcon";
-import Drill from "../components/Drill";
-import ComboSteps from "../components/ComboSteps";
+import ComboStrip from "../components/ComboStrip";
 
 const MODE_TITLE: Record<Mode, string> = { pve: "Practice — PvE", pvp: "Practice — AOS" };
 
@@ -38,17 +38,17 @@ function Slot({ a, mode, section }: { a: Ability; mode: Mode; section: string })
 
 export default function PracticePage({ mode }: { mode: Mode }) {
   const sections = sectionsFor(mode);
-  const drillIds = IDEAL_COMBOS[mode];
-  const [drillId, setDrillId] = useState(drillIds[0]);
-  const combo = comboById.get(drillId)!;
+  const modeCombos = combos.filter((c) => c.mode === mode);
+  const [comboId, setComboId] = useState(IDEAL_COMBOS[mode][0]);
+  const combo = comboById.get(comboId)!;
+  const ideal = IDEAL_COMBOS[mode];
 
   return (
     <div>
       <h1>{MODE_TITLE[mode]}</h1>
       <p className="page-sub">
-        Visual reference + recall trainer — it never captures key input; actual key practice happens
-        in-game. The layout mirrors the in-game hotbar scheme: movement/utility on top, DPS abilities
-        in DPS-priority order below.
+        Pick a combo and keep the strip up next to the game while you practice — input above, skill
+        icon below, skill after skill. It never captures key input; the keys happen in-game.
       </p>
 
       {mode === "pvp" && (
@@ -56,6 +56,21 @@ export default function PracticePage({ mode }: { mode: Mode }) {
           <b>Staleness disclaimer:</b> {combosFile._meta.pvp_caveat}
         </div>
       )}
+
+      <h2>Combos</h2>
+      <div className="drill-select">
+        {modeCombos.map((c) => (
+          <button
+            key={c.id}
+            className={c.id === comboId ? "active" : ""}
+            onClick={() => setComboId(c.id)}
+          >
+            {c.name}
+            {c.id === ideal[0] && <span className="badge tier-top" style={{ marginLeft: 6 }}>Ideal</span>}
+          </button>
+        ))}
+      </div>
+      <ComboStrip combo={combo} />
 
       <h2>Section layout</h2>
       <p className="section-desc">{setup.ui_reference.scheme}</p>
@@ -84,46 +99,6 @@ export default function PracticePage({ mode }: { mode: Mode }) {
           ))}
         </div>
       </div>
-
-      <h2>Drill</h2>
-      {mode === "pve" ? (
-        <p className="section-desc">
-          The Infinite Combo — the loopable lazy/beginner loop. Optional steps (high attack speed:
-          BSR / Shai buffs) are marked.
-        </p>
-      ) : (
-        <p className="section-desc">
-          One drill per combo family. Flower Shroud #1 is <i>the</i> ideal if you only learn one.
-        </p>
-      )}
-
-      {drillIds.length > 1 && (
-        <div className="drill-select">
-          {drillIds.map((id) => (
-            <button
-              key={id}
-              className={id === drillId ? "active" : ""}
-              onClick={() => setDrillId(id)}
-            >
-              {comboById.get(id)!.name}
-            </button>
-          ))}
-        </div>
-      )}
-
-      <Drill combo={combo} mode={mode} />
-
-      <details className="sub">
-        <summary>Peek at the full sequence ({combo.name})</summary>
-        <ComboSteps steps={combo.steps} mode={mode} />
-        {combo.notes && (
-          <ul className="notes small">
-            {combo.notes.map((n, i) => (
-              <li key={i}>{n}</li>
-            ))}
-          </ul>
-        )}
-      </details>
     </div>
   );
 }

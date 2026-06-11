@@ -9,7 +9,13 @@ export function iconUrl(abilityId: string): string | undefined {
   return icons[`../assets/icons/${abilityId}.webp`];
 }
 
-export default function AbilityIcon({ id, size = "sm" }: { id: string; size?: "sm" | "lg" }) {
+export default function AbilityIcon({
+  id,
+  size = "sm",
+}: {
+  id: string;
+  size?: "sm" | "lg" | "xl";
+}) {
   const url = iconUrl(id);
   if (!url) return null;
   // alt is empty: the icon always accompanies the ability name.

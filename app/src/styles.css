@@ -98,6 +98,7 @@ a { color: var(--accent); }
 }
 .ability-icon.sm { width: 19px; height: 19px; }
 .ability-icon.lg { width: 26px; height: 26px; vertical-align: -7px; }
+.ability-icon.xl { width: 56px; height: 56px; margin: 0; vertical-align: middle; }
 
 .kbd {
   font-family: Consolas, monospace;
@@ -244,6 +245,54 @@ details.sub summary { cursor: pointer; color: var(--text-dim); font-size: 13px; 
 .hotbar-slot.sec-protected { border-top: 3px solid var(--sa); }
 .hotbar-slot.sec-unprotected { border-top: 3px solid var(--none); }
 .hotbar-slot.sec-movement { border-top: 3px solid var(--tier-core); }
+
+/* ---- combo strip (in-game-style practice reference) ---- */
+.combo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 18px 26px;
+  background: #000;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px 26px;
+  margin: 14px 0;
+}
+.strip-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 64px;
+}
+.strip-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.strip-input {
+  font-family: Consolas, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  white-space: nowrap;
+}
+.strip-or {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+.strip-optional {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--warn);
+}
 
 /* ---- drill ---- */
 .drill {

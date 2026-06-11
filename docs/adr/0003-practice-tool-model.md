@@ -11,3 +11,10 @@ Maegu's CC skills are almost all also top DPS skills, so a CC section would dupl
 members. Drills: PvE = the Infinite Combo (with optional skills marked); AOS = one combo per
 family (Flower Shroud #1 is the single ideal); priority-order drills are a later addition.
 Decided 2026-06-11 in the Phase 1 grill.
+
+**Amended 2026-06-11 (Phase 2 iteration):** after using the v1 flashcard quiz, the user replaced
+recall quizzing with **combo strips** — every combo of the mode listed by name, each opening an
+in-game-style strip (input above skill icon, skill after skill, "or" stacks for choice steps,
+OPTIONAL captions) meant to be kept up next to the game while practicing. The no-input-capture
+stance and the section layout are unchanged; ideal-combo designations still mark the default
+selection.

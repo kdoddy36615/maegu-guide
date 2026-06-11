@@ -77,13 +77,15 @@ silently merged).
 The visual marker (KD / Stun / Float / Stiff / Bound) on any ability that crowd-controls. There
 is no separate CC section.
 
-**Drill**:
-A flashcard-style recall exercise over a combo's sequence ("what comes next?"). No keyboard/mouse
-input capture — actual key practice happens in-game.
+**Combo strip**:
+The practice-tool's in-game-style rendering of a combo: input above skill icon, skill after
+skill, "or" stacks for choice steps, OPTIONAL captions — pulled up next to the game while
+practicing. No keyboard/mouse input capture — actual key practice happens in-game.
+_Avoid_: drill (the v1 flashcard quiz this replaced; see ADR 0003 amendment)
 
 **Ideal combo**:
-The combo a mode's drill teaches. PvE: the Infinite Combo. PvP: one representative per combo
-family (Flower Shroud #1 is *the* single ideal if only one is shown).
+The combo a mode's practice page selects by default. PvE: the Infinite Combo. PvP: one
+representative per combo family (Flower Shroud #1 is *the* single ideal if only one is shown).
 
 **Priority drill** (planned, later):
 A drill over the DPS Priority List ordering itself, built from the Discord tier list.

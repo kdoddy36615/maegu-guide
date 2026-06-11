@@ -15,13 +15,13 @@ Other commands:
 npm run build      # typecheck + production build to dist/
 npm run preview    # serve the production build
 npm run validate   # data referential-integrity check (python scripts/validate_data.py)
-node scripts/smoke.mjs       # headless render check of every route (needs Chrome/Edge; dev server running)
-node scripts/drill-test.mjs  # headless end-to-end run of the PvE drill
+node scripts/smoke.mjs          # headless render check of every route (needs Chrome/Edge; dev server running)
+node scripts/practice-test.mjs  # headless check that every combo renders its practice strip
 ```
 
 The app is fully static (Vite + React + TypeScript, no backend): the study guide (PvE / AOS /
-Setup / Combos) and the practice tool (per-mode section layouts + flashcard combo drills) render
-straight from `data/*.json`. A data refresh (see `HANDOFF.md` §1) needs no code changes.
+Setup / Combos) and the practice tool (per-mode section layouts + in-game-style combo strips)
+render straight from `data/*.json`. A data refresh (see `HANDOFF.md` §1) needs no code changes.
 
 ## 👉 Start here
 **Read [`BRIEF.md`](./BRIEF.md) first.** It's the shared context for every Claude instance and
