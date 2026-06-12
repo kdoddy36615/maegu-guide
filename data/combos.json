@@ -361,7 +361,7 @@
         { "ability": "petal-play", "input": "Shift+LMB" },
         { "ability": "spirit-step", "input": "Shift+Dir" },
         { "ability": "foxflare", "input": "Shift+Q" },
-        { "ability": "foxspirit-deceiver", "input": "Q", "annotation": "clone swap" },
+        { "ability": "foxspirit-tag", "input": "RMB", "annotation": "-20 DP; logged 'foxspirit:' — identified as Tag by the user" },
         { "ability": "spirit-step", "input": "Shift+Dir" },
         { "ability": "spirit-parade", "input": "Shift+X" },
         { "ability": "spirit-step", "input": "Shift+Dir" },
@@ -372,7 +372,7 @@
         { "ability": "soul-tear", "input": "W+Q" },
         { "ability": "petal-play", "input": "Shift+LMB" },
         { "ability": "foxflare", "input": "Shift+Q" },
-        { "ability": "foxspirit-deceiver", "input": "Q", "annotation": "clone swap" },
+        { "ability": "foxspirit-tag", "input": "RMB", "annotation": "-20 DP; logged 'foxspirit:' — identified as Tag by the user" },
         { "ability": "flower-shroud", "input": "W/S+E" },
         { "ability": "bristling-sparks", "input": "Shift+RMB" },
         { "ability": "charmed", "input": "SPACE", "annotation": "the catch — punish opens here" },
@@ -411,12 +411,12 @@
           { "ability": "bristling-sparks", "input": "Shift+RMB" }
         ] }
       ],
-      "abilities": ["spirit-step", "chain-spirit-step", "petalblast", "petal-snare", "flower-shroud", "bristling-sparks", "spirit-parade", "nukduri-dance", "bared-claws", "petal-play", "foxflare", "foxspirit-deceiver", "ghost-bomb", "soul-tear", "charmed", "heavenward-dance", "lurking-claws", "soulsnare", "hanpuri", "spirit-swirl", "nether-river", "spirited-away", "path-of-petals"],
+      "abilities": ["spirit-step", "chain-spirit-step", "petalblast", "petal-snare", "flower-shroud", "bristling-sparks", "spirit-parade", "nukduri-dance", "bared-claws", "petal-play", "foxflare", "foxspirit-tag", "ghost-bomb", "soul-tear", "charmed", "heavenward-dance", "lurking-claws", "soulsnare", "hanpuri", "spirit-swirl", "nether-river", "spirited-away", "path-of-petals"],
       "ui_groups": [
-        { "label": "1 · Movement & utility", "why": "The weave layer — Spirit Step's PvP Invincible→SA makes it the glue between every cast; clone swap (Q) works during other animations.",
-          "abilities": ["spirit-step", "chain-spirit-step", "soul-tear", "path-of-petals", "ghost-bomb", "foxspirit-deceiver"] },
-        { "label": "2 · Frequent pool — pokes, CC fishing, rotation", "why": "What he cycled constantly from safe range while fishing for a hit: protected CC pokes and the bread-and-butter pressure skills.",
-          "abilities": ["petalblast", "petal-snare", "flower-shroud", "bristling-sparks", "spirit-parade", "bared-claws", "petal-play", "spirited-away", "soulsnare", "hanpuri", "nether-river"] },
+        { "label": "1 · Movement & utility", "why": "The weave layer — Spirit Step's PvP Invincible→SA makes it the glue between every cast.",
+          "abilities": ["spirit-step", "chain-spirit-step", "soul-tear", "path-of-petals", "ghost-bomb"] },
+        { "label": "2 · Frequent pool — pokes, CC fishing, rotation", "why": "What he cycled constantly from safe range while fishing for a hit: protected CC pokes, the bread-and-butter pressure skills, and Tag's -20 DP applied right after a Foxflare attempt.",
+          "abilities": ["petalblast", "petal-snare", "flower-shroud", "bristling-sparks", "spirit-parade", "bared-claws", "petal-play", "foxspirit-tag", "spirited-away", "soulsnare", "hanpuri", "nether-river"] },
         { "label": "3 · Burst punish — after the catch", "why": "Only committed after a confirmed CC: Charmed → Foxflare → Heavenward Dance was the observed punish, and the fragment finishers (Nukduri, Swirl, Lurking) are the sheet's top PvP DPS skills.",
           "abilities": ["charmed", "foxflare", "heavenward-dance", "nukduri-dance", "spirit-swirl", "lurking-claws"] }
       ],
@@ -435,8 +435,8 @@
         "Openers come from range with hard CC: the match opener was Spirit Step weave → Petalblast (the kit's only Bound) → Bared Claws → Spirited Away → Bristling Sparks; fragment 3 also opens on Petalblast. This matches the Discord line that Succession PvP centres on long-range AoE CCs into melee burst.",
         "Fragment 3 (Petalblast → Lurking → Soulsnare → Flow: Hanpuri → Heavenward → Spirit Swirl) is recognisably the Hanpuri family shape with a different opener; fragments 2 and 4 are repositioning/DPS glue, not combos.",
         "The addon loadout leans on the capped-mode advice (self buffs/debuffs count from the cap): a -20 DR/-20 Evasion debuff on Bared Claws, +20 self DR on Spirit Swirl, accuracy/attack speed on Foxflare, crit on Flower Shroud, back-attack/crit-damage on the two big finishers (Lurking Claws, Heavenward Dance).",
-        "Recurring micro-chains inside the freestyle (the only sequences that repeat): Flower Shroud → Bristling (3×, the poke pair), Bared Claws → Petal Play (2×, a taught cancel), Petal Play → Foxflare → clone swap (2×), and Heavenward Dance as the burst ender after whichever connector landed (Foxflare / Lurking / Hanpuri, 3×). Long sequences never repeat — priorities pick the next cast, these cells drop in when the moment fits.",
-        "Foxspirit Tag was never used, despite being the spine of every taught Bantalope combo and the kit's -20 DP debuff — the observed catch sequence is the Bristling-family combo with the Bared → Tag spine deleted."
+        "Recurring micro-chains inside the freestyle (the only sequences that repeat): Flower Shroud → Bristling (3×, the poke pair), Bared Claws → Petal Play (2×, a taught cancel), Petal Play → Foxflare → Foxspirit Tag (2×, the -20 DP debuff applied right after the KD attempt), and Heavenward Dance as the burst ender after whichever connector landed (Foxflare / Lurking / Hanpuri, 3×). Long sequences never repeat — priorities pick the next cast, these cells drop in when the moment fits.",
+        "The clone swap (Foxspirit: Deceiver, Q) was never logged — the one notable divergence from the Discord guidance, which leans hard on clone swaps. It may genuinely be unused, or it's easy to miss: Q is instant and works during other animations."
       ],
       "notes": [
         "After the main log the session repeated the same pool, with constant Spirit Step weaving between casts.",
@@ -444,7 +444,7 @@
         "Lurking Claws, Soulsnare→Hanpuri, Spirit Swirl, Flow: Nether River, and Spirited Away only appeared in the later fragments — not in the main rotation pool first logged.",
         "Path of Petals (W+F) was also seen, used purely for movement (not logged in a sequence).",
         "The match opener is not addon pre-buffing (hypothesis raised and retracted 2026-06-12: the opener skills carry no self-buff addons — only Bared Claws has one, a to-target debuff). It reads as ranged CC fishing while the gap closes.",
-        "Not observed (one session — weak evidence): Foxspirit Tag, Foxflare Fling, Heavenly Return, Spirit Sparks."
+        "Not observed (one session — weak evidence): Foxspirit: Deceiver (the clone swap), Foxflare Fling, Heavenly Return, Spirit Sparks."
       ]
     }
   ],

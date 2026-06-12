@@ -37,6 +37,9 @@
 
 > i think he might have done that match opener just to apply skill addon buffs
 
+> i think in my initial prompt with his inputs i wrote, every time i wrote "foxspirit:" that was
+> likely foxspirit: tag
+
 (Resolved — hypothesis retracted by the user: the opener skills carry no self-buff addons (only
 Bared Claws has one, a to-target debuff), so addon application wasn't the motive. The opener
 stands as ranged CC fishing while the gap closes.)
@@ -67,7 +70,7 @@ stands as ranged CC fishing while the gap closes.)
 | bared claw | `bared-claws` | high |
 | petal play | `petal-play` | high |
 | foxflare | `foxflare` | high (`foxflare-fling` was never logged as such) |
-| foxspirit: | `foxspirit-deceiver` | high — only ability named "Foxspirit: …" (the clone swap, Q) |
+| foxspirit: | `foxspirit-tag` | **user-corrected 2026-06-12** — initially read as Foxspirit: Deceiver; the user identified it as Foxspirit Tag |
 | ghost bo | `ghost-bomb` | high |
 | soul tear | `soul-tear` | high |
 | charmed | `charmed` | high |
@@ -91,9 +94,10 @@ stands as ranged CC fishing while the gap closes.)
   `aos_unlock` in `data/setup.json` (2026-06-12).
 - **Constant Spirit Step weaving** between casts — in PvP, Spirit Step is Invincible → Super
   Armor (nullified during cooldown), so the weaving is rolling protection, not just movement.
-- Clone swap (`foxspirit-deceiver`) used mid-sequence; the punish after a catch was
-  Charmed → Foxflare → Heavenward Dance.
+- The punish after a catch was Charmed → Foxflare → Heavenward Dance. Foxspirit Tag's -20 DP
+  was applied right after Foxflare attempts (2×). The clone swap (Foxspirit: Deceiver) was
+  never logged — initially misread from "foxspirit:", corrected by the user.
 - Lurking Claws, Soulsnare → Flow: Hanpuri, Spirit Swirl, Flow: Nether River, and Spirited Away
   appeared only in the later fragments, not the first-logged rotation pool.
-- **Not observed** (weak evidence, one session): Foxspirit Tag, Foxflare Fling, Heavenly
-  Return, Spirit Sparks.
+- **Not observed** (weak evidence, one session): Foxspirit: Deceiver (clone swap), Foxflare
+  Fling, Heavenly Return, Spirit Sparks.
