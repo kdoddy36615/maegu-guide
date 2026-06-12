@@ -37,10 +37,9 @@
 
 > i think he might have done that match opener just to apply skill addon buffs
 
-(Assessment: the visible addon list argues against the buff-application reading — of the opener
-skills only Bared Claws carries an addon, and it's a to-target debuff; the long self-buffs are
-on Spirit Swirl / Foxflare / Flower Shroud, which weren't in the opener. Plausible only if the
-addon screenshot is cropped.)
+(Resolved — hypothesis retracted by the user: the opener skills carry no self-buff addons (only
+Bared Claws has one, a to-target debuff), so addon application wasn't the motive. The opener
+stands as ranged CC fishing while the gap closes.)
 
 ## Observed addons (screenshot transcription — text was clearly legible)
 
