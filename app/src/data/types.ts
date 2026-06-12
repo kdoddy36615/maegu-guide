@@ -221,6 +221,8 @@ export interface SetupFile {
     /** Locked for grinding but learned in the AOS loadout (observed rank-1 play). */
     aos_unlock: { ability: string; reason: string }[];
     quickslot: { ability: string; reason: string }[];
+    /** Why nothing else belongs on the quickslot bar (slot casts lose chain cancels). */
+    quickslot_note: string;
   };
   rabams: {
     sources: string[];

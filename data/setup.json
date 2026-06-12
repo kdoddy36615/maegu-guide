@@ -21,7 +21,8 @@
     "quickslot": [
       { "ability": "foxspirit-form", "reason": "Can only be used from quickslot (slot 0 in author's setup)." },
       { "ability": "soul-charm", "reason": "If taken (rabam 58 alternative) — quickslot only." }
-    ]
+    ],
+    "quickslot_note": "Keep combat skills OFF the quickslot bar: casting from a slot plays the skill from neutral, losing the chained/cancelled versions the kit is built on — the sheet measures Spirit Sparks at 27,815 DPS from slot vs 39,367 via its Constricting Charm flow. Quickslot only what has no keyboard input."
   },
   "rabams": {
     "sources": ["sources/discord-pve.md#skill-enhancements-aka-rabams", "sources/video-guide.md#rabams-skill-enhancements"],

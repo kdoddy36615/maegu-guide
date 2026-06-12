@@ -95,6 +95,7 @@ export default function SetupPage({ mode }: { mode: Mode }) {
                 </li>
               ))}
             </ul>
+            <p className="note">{s.skill_choices.quickslot_note}</p>
           </div>
         </div>
       </Section>
