@@ -16,7 +16,7 @@
       { "ability": "foxflare-fling", "reason": "Magnus skill: useless in PvE (inconsistent line multihit; 1–2 hits are bad). Leaving it unlearned keeps Soulflame (E) usable. PvP combos that use it require learning it — trade-off to settle in grill." }
     ],
     "aos_unlock": [
-      { "ability": "petalblast", "reason": "Locked for grinding, but the rank 1 AOS Maegu uses it — the kit's only Bound, seen as a ranged opener (sources/rank1-aos-observation.md, 2026-06-12)." }
+      { "ability": "petalblast", "reason": "Locked for grinding, but the rank 1 AOS Maegu opens with it — a Super-Armor-protected long-range AoE poke. Its Bound is PvE-only, so the PvE lock reasoning doesn't carry to AOS (sources/rank1-aos-observation.md, 2026-06-12)." }
     ],
     "quickslot": [
       { "ability": "foxspirit-form", "reason": "Can only be used from quickslot (slot 0 in author's setup)." },
@@ -33,11 +33,12 @@
       { "level": 57, "pve_pick": "constricting-charm", "aos_pick": "petal-snare", "alternative": "petal-snare",
         "aos_pick_note": "AOS pick set from observed rank-1 gameplay (sources/rank1-aos-observation.md, 2026-06-12), matching BDFoundry — not from the original locked sources.",
         "rationale": "Constricting Charm: decent filler with very high attack speed; flows into Spirit Sparks (the grinding pick). Petal Snare: low PvE DPS, but the rank 1 AOS Maegu plays it — a ranged CC poke fits the AOS pattern." },
-      { "level": 58, "pve_pick": "spirit-sparks", "aos_pick": null, "alternative": "soul-charm",
-        "aos_pick_note": "AOS pick unknown — sources only settle level 56 (ADR 0004 open gap); surfaced as unknown, not guessed.",
-        "rationale": "Spirit Sparks: weak alone but decent follow-up from Constricting Charm. Soul Charm: not useful in PvE (small HP recovery, costs stamina, out-of-combat)." }
+      { "level": 58, "pve_pick": "spirit-sparks", "aos_pick": "soul-charm", "alternative": "soul-charm",
+        "aos_pick_note": "AOS pick read directly off the rank-1 player's skill enhancement tree screenshot (sources/rank1-images/skill-enhancements.png, 2026-06-12).",
+        "rationale": "Spirit Sparks: weak alone but decent follow-up from Constricting Charm (the grinding pick — useless in AOS where 57 = Petal Snare kills its flow). Soul Charm: not useful in PvE, but a quickslot self-heal has real value in AOS where consumables are limited — and it is what rank 1 runs." }
     ],
-    "tree": "Lv56 from Soulflame III; Lv57 from Spirit Swirl IV; Lv58 from Bristling Sparks IV."
+    "tree": "Each level branches from one of two parent skills: Lv56 Soulflame III → Heavenly Return / Soulsnare III → Spirit Parade; Lv57 Petalblast III → Petal Snare / Spirit Swirl IV → Constricting Charm; Lv58 Bristling Sparks IV → Spirit Sparks / Spirited Away IV → Soul Charm.",
+    "aos_image": "sources/rank1-images/skill-enhancements.png"
   },
   "addons": {
     "pve_general": {

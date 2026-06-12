@@ -27,9 +27,9 @@ qualifies; the Absolute rank is the distinguishing fact (user decision, 2026-06-
 
 **Rabam**:
 A level 56/57/58 skill enhancement where you pick one of two skills. Picks are per loadout:
-Grinding takes Heavenly Return at 56; AOS takes Spirit Parade. 57 = Constricting Charm,
-58 = Spirit Sparks for grinding; AOS takes Petal Snare at 57 (from the rank-1 observation,
-2026-06-12); the AOS 58 pick remains an open gap.
+Grinding takes Heavenly Return / Constricting Charm / Spirit Sparks; AOS takes Spirit Parade /
+Petal Snare / Soul Charm (all three confirmed from the rank-1 observation, 2026-06-12 — the
+ADR 0004 open gap is resolved).
 _Avoid_: skill enhancement (use only when explaining what a rabam is)
 
 **Loadout**:

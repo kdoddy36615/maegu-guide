@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 import { Navigate } from "react-router-dom";
 import type { Ability, Mode } from "../data/types";
-import { ability, bestDps, ccBadges, observations } from "../data";
-import { CcBadges, Kbd, ProtMeter } from "../components/badges";
+import { ability, bestDps, ccBadges, observations, setup } from "../data";
+import { AbilityLink, CcBadges, Kbd, ProtMeter } from "../components/badges";
 import AbilityIcon from "../components/AbilityIcon";
 import ComboStrip from "../components/ComboStrip";
+import SourceImage from "../components/SourceImage";
 import { Callout, PageHeader, Section } from "../components/Section";
 
 const fmt = (v: number | null) =>
@@ -60,16 +61,21 @@ function KitGroups({ groups }: { groups: { label: string; why: string; abilities
   );
 }
 
-/** PvP-only: what the rank 1 AOS Succession Maegu actually plays, and what it implies. */
+/**
+ * PvP-only: what the rank 1 AOS Succession Maegu actually plays. Reading order:
+ * the conclusions first (analysis → setup → suggested UI), the raw log as the
+ * reference behind them, and the drillable chains at the bottom.
+ */
 export default function Rank1Page({ mode }: { mode: Mode }) {
   if (mode === "pve") return <Navigate to="/pvp/rank1" replace />;
   const obs = observations.filter((o) => o.mode === "pvp");
+  const aosRabams = setup.rabams.choices.filter((c) => c.aos_pick);
 
   return (
     <div>
       <PageHeader title="Rank 1" mode={mode}>
-        What the rank 1 AOS Succession Maegu was actually seen playing — a usage record with a
-        reading of the pattern behind it. Setup implications are applied on the Setup page.
+        What the rank 1 AOS Succession Maegu was actually seen playing — the pattern, the setup
+        worth copying, and the chains worth drilling. Everything traces to the observed session.
       </PageHeader>
 
       {obs.map((o) => (
@@ -92,6 +98,68 @@ export default function Rank1Page({ mode }: { mode: Mode }) {
           </Section>
 
           <Section
+            id={`${o.id}-setup`}
+            title="Setup takeaways"
+            count="§2"
+            desc="Already applied to the AOS loadout — the Setup page carries the same picks."
+          >
+            <div className="rabams">
+              {aosRabams.map((c) => (
+                <div className="rabam" key={c.level}>
+                  <span className="lv">LV {c.level}</span>
+                  <span className="pick">
+                    <AbilityIcon id={c.aos_pick!} size="row" />
+                    {ability(c.aos_pick!).short_name}
+                  </span>
+                  <span className="rnote">{c.aos_pick_note}</span>
+                </div>
+              ))}
+            </div>
+            <ul className="notes">
+              {setup.skill_choices.aos_unlock.map((u) => (
+                <li key={u.ability}>
+                  Unlocked for AOS: <AbilityLink id={u.ability} mode="pvp" /> — {u.reason}
+                </li>
+              ))}
+            </ul>
+            {o.observed_addons && (
+              <div className="hotbar-section">
+                <h4 className="micro">His addons (screenshot transcription)</h4>
+                <div className="hotbar-row">
+                  {o.observed_addons.map((row) => (
+                    <div key={row.ability} className="hotbar-slot sec-observed">
+                      <span className="slot-name">
+                        <AbilityIcon id={row.ability} />
+                        {ability(row.ability).short_name}
+                      </span>
+                      {row.effects.map((e) => (
+                        <div key={e} className="note">
+                          {e}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {setup.rabams.aos_image && (
+              <SourceImage
+                path={setup.rabams.aos_image}
+                alt="The rank 1 player's skill enhancement tree (observed)"
+              />
+            )}
+          </Section>
+
+          <Section
+            id={`${o.id}-kit`}
+            title="Suggested in-game UI"
+            count={o.abilities.length}
+            desc="The observed kit grouped by how he used it — set your hotbar rows to these groups, higher DPS left."
+          >
+            {o.ui_groups ? <KitGroups groups={o.ui_groups} /> : null}
+          </Section>
+
+          <Section
             id={`${o.id}-log`}
             title="Observed log"
             count={o.sequences.length}
@@ -110,37 +178,20 @@ export default function Rank1Page({ mode }: { mode: Mode }) {
             </ul>
           </Section>
 
-          <Section
-            id={`${o.id}-kit`}
-            title="Suggested in-game UI"
-            count={o.abilities.length}
-            desc="The observed kit grouped by how he used it — set your hotbar rows to these groups, higher DPS left."
-          >
-            {o.ui_groups ? <KitGroups groups={o.ui_groups} /> : null}
-          </Section>
-
-          {o.observed_addons && (
+          {o.practice_chains && (
             <Section
-              id={`${o.id}-addons`}
-              title="Observed addons"
-              count={o.observed_addons.length}
-              desc="Transcribed from the user's screenshot of the player's addon window."
+              id={`${o.id}-chains`}
+              title="Chains to practice"
+              count={o.practice_chains.length}
+              desc="The only sequences that repeated — drill these cells, weave Spirit Step between everything else."
             >
-              <div className="hotbar-row">
-                {o.observed_addons.map((row) => (
-                  <div key={row.ability} className="hotbar-slot sec-observed">
-                    <span className="slot-name">
-                      <AbilityIcon id={row.ability} />
-                      {ability(row.ability).short_name}
-                    </span>
-                    {row.effects.map((e) => (
-                      <div key={e} className="note">
-                        {e}
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </div>
+              {o.practice_chains.map((c) => (
+                <div key={c.label} className="hotbar-section">
+                  <h4 className="micro">{c.label}</h4>
+                  <ComboStrip combo={{ steps: c.steps }} />
+                  {c.note && <p className="note">{c.note}</p>}
+                </div>
+              ))}
             </Section>
           )}
         </Fragment>

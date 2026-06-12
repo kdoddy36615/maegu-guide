@@ -80,10 +80,11 @@ export function tocFor(page: Page, mode: Mode): TocEntry[] {
         .filter((o) => o.mode === "pvp")
         .flatMap((o) => [
           { id: `${o.id}-summary`, label: "The order in the chaos" },
-          { id: `${o.id}-log`, label: "Observed log", count: o.sequences.length },
+          { id: `${o.id}-setup`, label: "Setup takeaways" },
           { id: `${o.id}-kit`, label: "Suggested in-game UI", count: o.abilities.length },
-          ...(o.observed_addons
-            ? [{ id: `${o.id}-addons`, label: "Observed addons", count: o.observed_addons.length }]
+          { id: `${o.id}-log`, label: "Observed log", count: o.sequences.length },
+          ...(o.practice_chains
+            ? [{ id: `${o.id}-chains`, label: "Chains to practice", count: o.practice_chains.length }]
             : []),
         ]);
   }

@@ -40,6 +40,18 @@
 > i think in my initial prompt with his inputs i wrote, every time i wrote "foxspirit:" that was
 > likely foxspirit: tag
 
+> [skill enhancement tree screenshot] ok so this is rank 1 skill enhancments.
+
+## Skill enhancement tree (screenshot: `rank1-images/skill-enhancements.png`)
+
+The rank-1 player's own rabam tree, all three picks visible directly:
+
+| Level | Selected | Locked out |
+|---|---|---|
+| 56 | **Spirit Parade** (from Soulsnare III) | Heavenly Return |
+| 57 | **Petal Snare** (from Petalblast III) | Constricting Charm |
+| 58 | **Soul Charm** (from Spirited Away IV) | Spirit Sparks |
+
 (Resolved — hypothesis retracted by the user: the opener skills carry no self-buff addons (only
 Bared Claws has one, a to-target debuff), so addon application wasn't the motive. The opener
 stands as ranged CC fishing while the gap closes.)
@@ -84,14 +96,18 @@ stands as ranged CC fishing while the gap closes.)
 
 ## What the observation implies
 
-- **Rabam 56 = Spirit Parade** (seen) — matches the locked AOS pick.
-- **Rabam 57 = Petal Snare** (seen) — first gameplay evidence for the open 57 gap; also matches
-  BDFoundry's suggestion. **Applied** to `data/setup.json` as the AOS pick on 2026-06-12 at the
-  user's direction.
-- **Rabam 58 — still no evidence** (neither Spirit Sparks nor Soul Charm observed). Stays unknown.
-- **Petalblast is unlocked and used** — the grinding loadout locks it, but its Bound CC earns a
-  slot at rank 1 AOS; the match opener and fragment 3 both start with it. **Applied** as an
-  `aos_unlock` in `data/setup.json` (2026-06-12).
+- **Rabam 56 = Spirit Parade** (seen in play; confirmed by the tree screenshot) — matches the
+  locked AOS pick.
+- **Rabam 57 = Petal Snare** (seen in play; confirmed by the tree screenshot; matches
+  BDFoundry). **Applied** to `data/setup.json` on 2026-06-12.
+- **Rabam 58 = Soul Charm** (tree screenshot — never seen cast, as expected for a downtime
+  quickslot heal; matches BDFoundry). **Applied** to `data/setup.json` on 2026-06-12. The
+  AOS rabam gap from ADR 0004 is fully resolved.
+- **Petalblast is unlocked and used** — the grinding loadout locks it, but at rank 1 AOS it
+  earns a slot as a Super-Armor-protected long-range AoE poke (note: its Bound is **PvE-only**
+  per the tooltip, so the "only Bound in kit" lock reasoning doesn't carry to AOS); the match
+  opener and fragment 3 both start with it. **Applied** as an `aos_unlock` in `data/setup.json`
+  (2026-06-12).
 - **Constant Spirit Step weaving** between casts — in PvP, Spirit Step is Invincible → Super
   Armor (nullified during cooldown), so the weaving is rolling protection, not just movement.
 - The punish after a catch was Charmed → Foxflare → Heavenward Dance. Foxspirit Tag's -20 DP

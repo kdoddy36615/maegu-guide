@@ -37,9 +37,9 @@ export default function SetupPage({ mode }: { mode: Mode }) {
           </>
         ) : (
           <>
-            The AOS loadout: Magnus learned, Spirit Parade at rabam 56, Petal Snare at 57 and
-            Petalblast unlocked (both from observed rank-1 play) — re-spec when switching from
-            grinding.
+            The AOS loadout: Magnus learned, rabams Spirit Parade / Petal Snare / Soul Charm
+            (56/57/58, all confirmed from the rank-1 observation) and Petalblast unlocked —
+            re-spec when switching from grinding.
           </>
         )}
       </PageHeader>
@@ -138,7 +138,14 @@ export default function SetupPage({ mode }: { mode: Mode }) {
           })}
         </div>
         <p className="note">{s.rabams.tree}</p>
-        <SourceImage path={s.rabams.image} alt="Rabam choices, levels 56–58" />
+        <SourceImage
+          path={!pve && s.rabams.aos_image ? s.rabams.aos_image : s.rabams.image}
+          alt={
+            !pve && s.rabams.aos_image
+              ? "The rank 1 AOS player's skill enhancement tree (observed)"
+              : "Rabam choices, levels 56–58"
+          }
+        />
       </Section>
 
       <Section

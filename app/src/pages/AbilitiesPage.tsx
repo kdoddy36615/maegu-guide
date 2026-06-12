@@ -36,9 +36,9 @@ export default function AbilitiesPage({ mode }: { mode: Mode }) {
           </>
         ) : (
           <>
-            The AOS loadout: Foxflare Fling (Magnus) learned, Spirit Parade at rabam 56, Petal
-            Snare at 57 and Petalblast unlocked (observed rank-1 play). PvP always means AOS
-            (capped 3v3) here.
+            The AOS loadout: Foxflare Fling (Magnus) learned, rabams Spirit Parade / Petal Snare /
+            Soul Charm (confirmed from the rank-1 observation), Petalblast unlocked. PvP always
+            means AOS (capped 3v3) here.
           </>
         )}
       </PageHeader>

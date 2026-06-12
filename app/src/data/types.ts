@@ -152,6 +152,8 @@ export interface Observation {
   abilities: string[];
   /** Suggested in-game UI/hotbar grouping derived from how the player used the kit. */
   ui_groups?: { label: string; why: string; abilities: string[] }[];
+  /** The recurring micro-chains — the only sequences that repeated — as practice strips. */
+  practice_chains?: { label: string; steps: ComboStep[]; note?: string }[];
   /** Per-skill addon effects transcribed from a screenshot of the observed player's setup. */
   observed_addons?: { ability: string; effects: string[] }[];
   /** The reading of the session: what pattern the chaos follows, grounded in the sources. */
@@ -227,6 +229,8 @@ export interface SetupFile {
   rabams: {
     sources: string[];
     image: string;
+    /** The rank-1 player's own enhancement tree (screenshot) — shown on the PvP Setup page. */
+    aos_image?: string;
     choices: {
       level: number;
       pve_pick: string;
