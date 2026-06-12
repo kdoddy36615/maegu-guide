@@ -337,6 +337,114 @@
       "notes": []
     }
   ],
+  "observations": [
+    {
+      "id": "obs-rank1-aos",
+      "mode": "pvp",
+      "name": "Rank 1 AOS gameplay (observed)",
+      "observed": "2026-06-12",
+      "sources": ["sources/rank1-aos-observation.md"],
+      "caveat": "One observed session of the rank 1 AOS Succession Maegu (user-logged, 2026-06-12) — a usage record, not a taught combo. Order is faithful, but some Spirit Steps between entries were left out of the log; abbreviated names mapped per the source file; absences are weak evidence.",
+      "sequences": [
+        { "label": "Main log (in order)", "steps": [
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "petalblast", "input": "S+RMB", "annotation": "locked in the grinding loadout — rank 1 unlocks it for its Bound in AOS" },
+        { "ability": "petal-snare", "input": "Shift+Z", "annotation": "rabam 57 — implies the rank-1 pick is Petal Snare" },
+        { "ability": "chain-spirit-step", "input": "Shift+W" },
+        { "ability": "flower-shroud", "input": "W/S+E", "annotation": "logged as 'flow sh' — identification probable, not certain" },
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "bristling-sparks", "input": "Shift+RMB" },
+        { "ability": "spirit-parade", "input": "Shift+X" },
+        { "ability": "nukduri-dance", "input": "Shift+C" },
+        { "ability": "spirit-step", "input": "Shift+Dir x2" },
+        { "ability": "bared-claws", "input": "A/D+LMB" },
+        { "ability": "petal-play", "input": "Shift+LMB" },
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "foxspirit-deceiver", "input": "Q", "annotation": "clone swap" },
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "spirit-parade", "input": "Shift+X" },
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "flower-shroud", "input": "W/S+E" },
+        { "ability": "spirit-step", "input": "Shift+Dir" },
+        { "ability": "bristling-sparks", "input": "Shift+RMB" },
+        { "ability": "ghost-bomb", "input": "A/D+RMB" },
+        { "ability": "soul-tear", "input": "W+Q" },
+        { "ability": "petal-play", "input": "Shift+LMB" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "foxspirit-deceiver", "input": "Q", "annotation": "clone swap" },
+        { "ability": "flower-shroud", "input": "W/S+E" },
+        { "ability": "bristling-sparks", "input": "Shift+RMB" },
+        { "ability": "charmed", "input": "SPACE", "annotation": "the catch — punish opens here" },
+        { "ability": "foxflare", "input": "Shift+Q" },
+        { "ability": "heavenward-dance", "input": "W+RMB" },
+        { "ability": "bared-claws", "input": "A/D+LMB", "annotation": "after repositioning away" },
+        { "ability": "petal-play", "input": "Shift+LMB" },
+        { "ability": "flower-shroud", "input": "W/S+E" }
+        ] },
+        { "label": "Fragment 2 (seen once)", "steps": [
+          { "ability": "petal-play", "input": "Shift+LMB" },
+          { "ability": "soul-tear", "input": "W+Q" },
+          { "ability": "lurking-claws", "input": "S+F" },
+          { "ability": "heavenward-dance", "input": "W+RMB" }
+        ] },
+        { "label": "Fragment 3 (Petalblast opener)", "steps": [
+          { "ability": "petalblast", "input": "S+RMB", "annotation": "Bound opener" },
+          { "ability": "lurking-claws", "input": "S+F" },
+          { "ability": "soulsnare", "input": "F (hold)" },
+          { "ability": "hanpuri", "input": "(flow)" },
+          { "ability": "heavenward-dance", "input": "W+RMB" },
+          { "ability": "spirit-step", "input": "Shift+Dir" },
+          { "ability": "spirit-swirl", "input": "Shift+F" }
+        ] },
+        { "label": "Fragment 4", "steps": [
+          { "ability": "bared-claws", "input": "A/D+LMB" },
+          { "ability": "nether-river", "input": "(LMB flow)" },
+          { "ability": "spirit-step", "input": "Shift+Dir" }
+        ] },
+        { "label": "Match opener (lots of Spirit Steps in between)", "steps": [
+          { "ability": "spirit-step", "input": "Shift+Dir" },
+          { "ability": "petalblast", "input": "S+RMB" },
+          { "ability": "spirit-step", "input": "Shift+Dir" },
+          { "ability": "bared-claws", "input": "A/D+LMB" },
+          { "ability": "spirited-away", "input": "S+LMB" },
+          { "ability": "bristling-sparks", "input": "Shift+RMB" }
+        ] }
+      ],
+      "abilities": ["spirit-step", "chain-spirit-step", "petalblast", "petal-snare", "flower-shroud", "bristling-sparks", "spirit-parade", "nukduri-dance", "bared-claws", "petal-play", "foxflare", "foxspirit-deceiver", "ghost-bomb", "soul-tear", "charmed", "heavenward-dance", "lurking-claws", "soulsnare", "hanpuri", "spirit-swirl", "nether-river", "spirited-away", "path-of-petals"],
+      "ui_groups": [
+        { "label": "1 · Movement & utility", "why": "The weave layer — Spirit Step's PvP Invincible→SA makes it the glue between every cast; clone swap (Q) works during other animations.",
+          "abilities": ["spirit-step", "chain-spirit-step", "soul-tear", "path-of-petals", "ghost-bomb", "foxspirit-deceiver"] },
+        { "label": "2 · Frequent pool — pokes, CC fishing, rotation", "why": "What he cycled constantly from safe range while fishing for a hit: protected CC pokes and the bread-and-butter pressure skills.",
+          "abilities": ["petalblast", "petal-snare", "flower-shroud", "bristling-sparks", "spirit-parade", "bared-claws", "petal-play", "spirited-away", "soulsnare", "hanpuri", "nether-river"] },
+        { "label": "3 · Burst punish — after the catch", "why": "Only committed after a confirmed CC: Charmed → Foxflare → Heavenward Dance was the observed punish, and the fragment finishers (Nukduri, Swirl, Lurking) are the sheet's top PvP DPS skills.",
+          "abilities": ["charmed", "foxflare", "heavenward-dance", "nukduri-dance", "spirit-swirl", "lurking-claws"] }
+      ],
+      "observed_addons": [
+        { "ability": "bared-claws", "effects": ["All Damage Reduction -20 for 7 sec to target", "All Evasion -20 for 7 sec to target"] },
+        { "ability": "foxflare", "effects": ["All Accuracy +20 for 12 sec", "Attack/Casting Speed +10% for 12 sec"] },
+        { "ability": "spirit-swirl", "effects": ["All Damage Reduction +20 for 25 sec", "Critical Hit Rate +30% for 20 sec"] },
+        { "ability": "flower-shroud", "effects": ["Critical Hit Rate +30% for 12 sec", "Attack/Casting Speed +10% for 12 sec"] },
+        { "ability": "lurking-claws", "effects": ["Back Attack damage +5% for 7 sec", "Critical Hit Damage +5% for 7 sec"] },
+        { "ability": "heavenward-dance", "effects": ["Back Attack damage +5% for 7 sec", "Critical Hit Damage +5% for 7 sec"] }
+      ],
+      "analysis": [
+        "There IS order to the chaos, but it is priority-driven freestyle, not fixed combos — exactly what the Discord playstyle section teaches (rotate protected CCs and ranged DPS, stay protected, clone-swap). The taught full combos almost never appear verbatim; pieces of the combo families show up as the situation allows.",
+        "The constant Spirit Step weaving is protection upkeep, not just movement: in PvP, Spirit Step gives Invincible → Super Armor (nullified during its cooldown), so dashing between every cast keeps a protection layer rolling while CC skills come off cooldown.",
+        "The visible loop: cycle protected CC pokes (Bristling Sparks, Flower Shroud, Petal Snare, Charmed) from safe range while weaving Spirit Step, fish for a hit — and only commit to burst after a confirmed catch: Charmed → Foxflare → Heavenward Dance, a shortened Stiff/Foxflare-family punish.",
+        "Openers come from range with hard CC: the match opener was Spirit Step weave → Petalblast (the kit's only Bound) → Bared Claws → Spirited Away → Bristling Sparks; fragment 3 also opens on Petalblast. This matches the Discord line that Succession PvP centres on long-range AoE CCs into melee burst.",
+        "Fragment 3 (Petalblast → Lurking → Soulsnare → Flow: Hanpuri → Heavenward → Spirit Swirl) is recognisably the Hanpuri family shape with a different opener; fragments 2 and 4 are repositioning/DPS glue, not combos.",
+        "The addon loadout leans on the capped-mode advice (self buffs/debuffs count from the cap): a -20 DR/-20 Evasion debuff on Bared Claws, +20 self DR on Spirit Swirl, accuracy/attack speed on Foxflare, crit on Flower Shroud, back-attack/crit-damage on the two big finishers (Lurking Claws, Heavenward Dance)."
+      ],
+      "notes": [
+        "After the main log the session repeated the same pool, with constant Spirit Step weaving between casts.",
+        "Setup evidence applied to the AOS loadout (2026-06-12, user's call): rabam 57 = Petal Snare (seen in play; matches BDFoundry) and Petalblast unlocked for AOS. Spirit Parade confirms the 56 pick. Rabam 58 still has no evidence — stays unknown.",
+        "Lurking Claws, Soulsnare→Hanpuri, Spirit Swirl, Flow: Nether River, and Spirited Away only appeared in the later fragments — not in the main rotation pool first logged.",
+        "Path of Petals (W+F) was also seen, used purely for movement (not logged in a sequence).",
+        "Not observed (one session — weak evidence): Foxspirit Tag, Foxflare Fling, Heavenly Return, Spirit Sparks."
+      ]
+    }
+  ],
   "priority_lists": {
     "pve_discord": {
       "sources": ["sources/discord-pve.md#dps-priority-list"],

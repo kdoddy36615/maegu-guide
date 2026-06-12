@@ -28,7 +28,8 @@ qualifies; the Absolute rank is the distinguishing fact (user decision, 2026-06-
 **Rabam**:
 A level 56/57/58 skill enhancement where you pick one of two skills. Picks are per loadout:
 Grinding takes Heavenly Return at 56; AOS takes Spirit Parade. 57 = Constricting Charm,
-58 = Spirit Sparks for grinding; AOS picks for 57/58 are an open gap.
+58 = Spirit Sparks for grinding; AOS takes Petal Snare at 57 (from the rank-1 observation,
+2026-06-12); the AOS 58 pick remains an open gap.
 _Avoid_: skill enhancement (use only when explaining what a rabam is)
 
 **Loadout**:
@@ -125,3 +126,9 @@ Evasion, Rage Transfer).
 **-DP / -DR**:
 Foxspirit Tag's defense debuff (apply at fight start) / damage-reduction debuff from addons.
 The sources write both; they stack.
+
+**Observation**:
+A logged record of watched gameplay (the rank 1 AOS Maegu, 2026-06-12) kept as fragments — a
+usage record, not a taught combo. Absences are weak evidence. Lives on the PvP-only "Rank 1"
+page; source in `sources/rank1-aos-observation.md`.
+_Avoid_: combo (for observed sequences — they were played, not taught)

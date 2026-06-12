@@ -647,6 +647,7 @@ table.dps-table {
 .hotbar-slot.sec-protected { border-top: 2px solid color-mix(in srgb, var(--sa) 70%, transparent); }
 .hotbar-slot.sec-unprotected { border-top: 2px solid color-mix(in srgb, var(--none) 70%, transparent); }
 .hotbar-slot.sec-movement { border-top: 2px solid color-mix(in srgb, var(--tier-core) 70%, transparent); }
+.hotbar-slot.sec-observed { border-top: 2px solid color-mix(in srgb, var(--accent) 70%, transparent); }
 
 /* ================= responsive (desktop first; ≤960px collapses) ================= */
 

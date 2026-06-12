@@ -138,9 +138,31 @@ export interface PriorityList {
   tiers: PriorityTier[];
 }
 
+/** An observed-gameplay log (e.g. watching the rank 1 AOS Maegu) — a usage record, not a taught combo. */
+export interface Observation {
+  id: string;
+  mode: Mode;
+  name: string;
+  observed: string;
+  sources: string[];
+  caveat: string;
+  /** Labeled fragments of the session, each rendered as its own strip. */
+  sequences: { label: string; steps: ComboStep[] }[];
+  /** Distinct ability ids seen in the session. */
+  abilities: string[];
+  /** Suggested in-game UI/hotbar grouping derived from how the player used the kit. */
+  ui_groups?: { label: string; why: string; abilities: string[] }[];
+  /** Per-skill addon effects transcribed from a screenshot of the observed player's setup. */
+  observed_addons?: { ability: string; effects: string[] }[];
+  /** The reading of the session: what pattern the chaos follows, grounded in the sources. */
+  analysis: string[];
+  notes: string[];
+}
+
 export interface CombosFile {
   _meta: { schema: string; pve_truth: string; pvp_caveat: string; curated: string };
   combos: Combo[];
+  observations: Observation[];
   priority_lists: { pve_discord: PriorityList; pve_video_freestyle: PriorityList };
 }
 
@@ -196,6 +218,8 @@ export interface SetupFile {
     general: string;
     locked: { ability: string | null; name?: string; reason: string }[];
     do_not_learn: { ability: string; reason: string }[];
+    /** Locked for grinding but learned in the AOS loadout (observed rank-1 play). */
+    aos_unlock: { ability: string; reason: string }[];
     quickslot: { ability: string; reason: string }[];
   };
   rabams: {

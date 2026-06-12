@@ -10,6 +10,7 @@ import AbilitiesPage from "./pages/AbilitiesPage";
 import SetupPage from "./pages/SetupPage";
 import CombosPage from "./pages/CombosPage";
 import PracticePage from "./pages/PracticePage";
+import Rank1Page from "./pages/Rank1Page";
 
 const MODE_KEY = "maegu.mode";
 
@@ -90,7 +91,7 @@ function Sidebar({
 
       <div className="nav-area">
         <span className="grp">Pages</span>
-        {PAGES.map((p) => (
+        {PAGES.filter((p) => !p.pvpOnly || mode === "pvp").map((p) => (
           <div key={p.slug}>
             <NavLink className="nav" to={`/${mode}/${p.slug}`} onClick={close}>
               {p.label}
@@ -174,6 +175,7 @@ function Shell() {
         {page === "setup" && <SetupPage key={mode} mode={mode} />}
         {page === "combos" && <CombosPage key={mode} mode={mode} />}
         {page === "practice" && <PracticePage key={mode} mode={mode} />}
+        {page === "rank1" && <Rank1Page key={mode} mode={mode} />}
       </main>
     </div>
   );

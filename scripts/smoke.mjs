@@ -14,6 +14,7 @@ const routes = [
   ["combos", "/#/study/combos"],
   ["practice-pve", "/#/practice/pve"],
   ["practice-aos", "/#/practice/aos"],
+  ["rank1", "/#/pvp/rank1"],
 ];
 
 const candidates = [

@@ -130,6 +130,14 @@ export function ccBadges(a: Ability, mode: Mode): CcBadge[] {
 
 // ---- Loadouts (ADR 0004: Grinding vs AOS are different specs) ----
 
+/** Locked-for-grinding skills that the AOS loadout learns anyway (observed rank-1 play). */
+export const AOS_UNLOCKED = new Set(setup.skill_choices.aos_unlock.map((u) => u.ability));
+
+/** Whether an ability is locked in this mode's loadout — Petalblast is locked for grinding only. */
+export function isLockedIn(a: Ability, mode: Mode): boolean {
+  return a.locked && !(mode === "pvp" && AOS_UNLOCKED.has(a.id));
+}
+
 export interface Loadout {
   mode: Mode;
   /** Ability ids available in this mode's spec (locked skills excluded). */
@@ -160,7 +168,7 @@ function buildLoadout(mode: Mode): Loadout {
 
   const ids = new Set(
     abilities
-      .filter((a) => a.kind !== "passive" && !a.locked && !excluded.has(a.id))
+      .filter((a) => a.kind !== "passive" && !isLockedIn(a, mode) && !excluded.has(a.id))
       .map((a) => a.id),
   );
   return { mode, ids, unknownRabamIds };
@@ -247,6 +255,9 @@ for (const tier of combosFile.priority_lists.pve_discord.tiers) {
 
 export const combos: Combo[] = combosFile.combos;
 export const comboById = new Map(combos.map((c) => [c.id, c]));
+
+/** Observed-gameplay logs (usage records, not taught combos). */
+export const observations = combosFile.observations;
 
 /** Ideal combos (CONTEXT.md): PvE = the Infinite Combo; AOS = one drill per family. */
 export const IDEAL_COMBOS: Record<Mode, string[]> = {

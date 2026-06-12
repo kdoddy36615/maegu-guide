@@ -8,6 +8,7 @@ import {
   TIER_LABEL,
   ability,
   ccBadges,
+  isLockedIn,
   priorityTierByAbility,
 } from "../data";
 import type { CcBadge, TierName } from "../data";
@@ -69,7 +70,7 @@ export function AbilityBadges({ id, mode, showTier }: { id: string; mode: Mode; 
     <>
       {showTier && mode === "pve" && <TierBadge tier={priorityTierByAbility.get(id)} />}
       <CcBadges badges={ccBadges(a, mode)} />
-      {a.locked && <span className="badge locked" title="Deliberately locked in the skill window">Locked</span>}
+      {isLockedIn(a, mode) && <span className="badge locked" title="Deliberately locked in the skill window">Locked</span>}
     </>
   );
 }

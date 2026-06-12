@@ -16,6 +16,7 @@ const routes = [
   ["combos-pvp", "/#/pvp/combos"],
   ["practice-pve", "/#/pve/practice"],
   ["practice-pvp", "/#/pvp/practice"],
+  ["rank1", "/#/pvp/rank1"],
 ];
 const candidates = [
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",

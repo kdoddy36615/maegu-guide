@@ -2,16 +2,17 @@
  * Page registry + per-page/per-mode tables of contents for the sidebar.
  * ToC entries scroll to in-page section anchors (ids rendered by the pages).
  */
-import { COMBO_FAMILIES, combos, sectionsFor } from "./data";
+import { COMBO_FAMILIES, combos, observations, sectionsFor } from "./data";
 import type { Mode } from "./data/types";
 
-export type Page = "abilities" | "setup" | "combos" | "practice";
+export type Page = "abilities" | "setup" | "combos" | "practice" | "rank1";
 
-export const PAGES: { slug: Page; label: string }[] = [
+export const PAGES: { slug: Page; label: string; pvpOnly?: boolean }[] = [
   { slug: "abilities", label: "Abilities" },
   { slug: "setup", label: "Setup" },
   { slug: "combos", label: "Combos" },
   { slug: "practice", label: "Practice" },
+  { slug: "rank1", label: "Rank 1", pvpOnly: true },
 ];
 
 export function isPage(p: string | undefined): p is Page {
@@ -74,5 +75,16 @@ export function tocFor(page: Page, mode: Mode): TocEntry[] {
         { id: "sec-combos", label: "Combos", count: combos.filter((c) => c.mode === mode).length },
         { id: "sec-layout", label: "Section layout" },
       ];
+    case "rank1":
+      return observations
+        .filter((o) => o.mode === "pvp")
+        .flatMap((o) => [
+          { id: `${o.id}-summary`, label: "The order in the chaos" },
+          { id: `${o.id}-log`, label: "Observed log", count: o.sequences.length },
+          { id: `${o.id}-kit`, label: "Suggested in-game UI", count: o.abilities.length },
+          ...(o.observed_addons
+            ? [{ id: `${o.id}-addons`, label: "Observed addons", count: o.observed_addons.length }]
+            : []),
+        ]);
   }
 }

@@ -46,7 +46,7 @@ function Step({ step }: { step: ComboStep }) {
   );
 }
 
-export default function ComboStrip({ combo }: { combo: Combo }) {
+export default function ComboStrip({ combo }: { combo: Pick<Combo, "steps" | "notes"> }) {
   return (
     <div>
       <div className="combo-strip">

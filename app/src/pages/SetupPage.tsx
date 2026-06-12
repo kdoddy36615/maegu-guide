@@ -1,5 +1,5 @@
 import type { Mode } from "../data/types";
-import { ability, setup } from "../data";
+import { AOS_UNLOCKED, ability, setup } from "../data";
 import { AbilityLink } from "../components/badges";
 import AbilityIcon from "../components/AbilityIcon";
 import SourceImage from "../components/SourceImage";
@@ -37,8 +37,9 @@ export default function SetupPage({ mode }: { mode: Mode }) {
           </>
         ) : (
           <>
-            The AOS loadout: Magnus learned, Spirit Parade at rabam 56 — re-spec when switching
-            from grinding.
+            The AOS loadout: Magnus learned, Spirit Parade at rabam 56, Petal Snare at 57 and
+            Petalblast unlocked (both from observed rank-1 play) — re-spec when switching from
+            grinding.
           </>
         )}
       </PageHeader>
@@ -50,14 +51,29 @@ export default function SetupPage({ mode }: { mode: Mode }) {
           <div className="card">
             <h3>Locked skills</h3>
             <ul>
-              {s.skill_choices.locked.map((l, i) => (
-                <li key={i}>
-                  {l.ability ? <AbilityLink id={l.ability} /> : <b>{l.name}</b>}
-                  <span className="why">{l.reason}</span>
-                </li>
-              ))}
+              {s.skill_choices.locked
+                .filter((l) => pve || !l.ability || !AOS_UNLOCKED.has(l.ability))
+                .map((l, i) => (
+                  <li key={i}>
+                    {l.ability ? <AbilityLink id={l.ability} /> : <b>{l.name}</b>}
+                    <span className="why">{l.reason}</span>
+                  </li>
+                ))}
             </ul>
           </div>
+          {!pve && s.skill_choices.aos_unlock.length > 0 && (
+            <div className="card">
+              <h3>Unlocked for AOS</h3>
+              <ul>
+                {s.skill_choices.aos_unlock.map((l) => (
+                  <li key={l.ability}>
+                    <AbilityLink id={l.ability} mode="pvp" />
+                    <span className="why">{l.reason}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           <div className="card">
             <h3>{pve ? "Do not learn" : "Magnus — learned"}</h3>
             <ul>

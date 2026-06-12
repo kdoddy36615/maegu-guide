@@ -15,6 +15,9 @@
     "do_not_learn": [
       { "ability": "foxflare-fling", "reason": "Magnus skill: useless in PvE (inconsistent line multihit; 1–2 hits are bad). Leaving it unlearned keeps Soulflame (E) usable. PvP combos that use it require learning it — trade-off to settle in grill." }
     ],
+    "aos_unlock": [
+      { "ability": "petalblast", "reason": "Locked for grinding, but the rank 1 AOS Maegu uses it — the kit's only Bound, seen as a ranged opener (sources/rank1-aos-observation.md, 2026-06-12)." }
+    ],
     "quickslot": [
       { "ability": "foxspirit-form", "reason": "Can only be used from quickslot (slot 0 in author's setup)." },
       { "ability": "soul-charm", "reason": "If taken (rabam 58 alternative) — quickslot only." }
@@ -26,9 +29,9 @@
     "choices": [
       { "level": 56, "pve_pick": "heavenly-return", "aos_pick": "spirit-parade", "alternative": "spirit-parade",
         "rationale": "Heavenly Return: fast, decent damage, quick backstep; unprotected but fast enough that it rarely matters in PvE. Spirit Parade: less damage, longer animation, but Super Armor — the protected option, and the PvP pick (all Bantalope combos use it)." },
-      { "level": 57, "pve_pick": "constricting-charm", "aos_pick": null, "alternative": "petal-snare",
-        "aos_pick_note": "AOS pick unknown — sources only settle level 56 (ADR 0004 open gap); surfaced as unknown, not guessed.",
-        "rationale": "Constricting Charm: decent filler with very high attack speed; flows into Spirit Sparks. Petal Snare: long animation, low DPS." },
+      { "level": 57, "pve_pick": "constricting-charm", "aos_pick": "petal-snare", "alternative": "petal-snare",
+        "aos_pick_note": "AOS pick set from observed rank-1 gameplay (sources/rank1-aos-observation.md, 2026-06-12), matching BDFoundry — not from the original locked sources.",
+        "rationale": "Constricting Charm: decent filler with very high attack speed; flows into Spirit Sparks (the grinding pick). Petal Snare: low PvE DPS, but the rank 1 AOS Maegu plays it — a ranged CC poke fits the AOS pattern." },
       { "level": 58, "pve_pick": "spirit-sparks", "aos_pick": null, "alternative": "soul-charm",
         "aos_pick_note": "AOS pick unknown — sources only settle level 56 (ADR 0004 open gap); surfaced as unknown, not guessed.",
         "rationale": "Spirit Sparks: weak alone but decent follow-up from Constricting Charm. Soul Charm: not useful in PvE (small HP recovery, costs stamina, out-of-combat)." }
@@ -57,6 +60,7 @@
         "DR build: addons on Spirited Away fill combos from Foxflare that skip Bared Claws.",
         "Evasion build: HP regen on Nukduri Dance is a big chunk (it already regens and hits 10 targets); eva setups rotating SA exploit it better than DR setups.",
         "Capped modes: self buffs/debuffs count against caps — upkeeping DR/evasion/accuracy and applying DP debuffs matters more than before.",
+        "Rank 1 observed addon loadout (2026-06-12, sources/rank1-aos-observation.md): Bared Claws -20 DR/-20 Evasion to target; Foxflare +20 Accuracy/+10% Attack Speed; Spirit Swirl +20 DR/+30% Crit Rate; Flower Shroud +30% Crit Rate/+10% Attack Speed; Lurking Claws and Heavenward Dance +5% Back Attack/+5% Crit Damage.",
         "Standalone DR / Evasion / Capped profiles exist but are intentionally out of scope (user plays AOS only)."
       ]
     }

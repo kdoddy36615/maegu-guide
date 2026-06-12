@@ -31,8 +31,9 @@ for (const route of ["pve", "aos"]) {
   }
   for (let i = 0; i < buttons.length; i++) {
     await buttons[i].click();
-    const steps = await page.$$eval(".combo-strip .strip-step", (els) => els.length);
-    const icons = await page.$$eval(".combo-strip img", (els) => els.length);
+    // Scope to the Combos section — observation strips elsewhere on the page have their own steps.
+    const steps = await page.$$eval("#sec-combos .combo-strip .strip-step", (els) => els.length);
+    const icons = await page.$$eval("#sec-combos .combo-strip img", (els) => els.length);
     const expectSteps = modeCombos[i].steps.length;
     const expectIcons = modeCombos[i].steps.reduce(
       (n, s) => n + (s.choices ? s.choices.length : 1),
