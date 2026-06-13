@@ -168,7 +168,7 @@ export default function Rank1Page({ mode }: { mode: Mode }) {
             {o.sequences.map((s) => (
               <div key={s.label} className="hotbar-section">
                 <h4 className="micro">{s.label}</h4>
-                <ComboStrip combo={{ steps: s.steps }} />
+                <ComboStrip combo={{ steps: s.steps }} dpsMode="pvp" />
               </div>
             ))}
             <ul className="notes strip-notes">
@@ -188,7 +188,7 @@ export default function Rank1Page({ mode }: { mode: Mode }) {
               {o.practice_chains.map((c) => (
                 <div key={c.label} className="hotbar-section">
                   <h4 className="micro">{c.label}</h4>
-                  <ComboStrip combo={{ steps: c.steps }} />
+                  <ComboStrip combo={{ steps: c.steps }} dpsMode="pvp" />
                   {c.note && <p className="note">{c.note}</p>}
                 </div>
               ))}
