@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import type { Combo, ComboStep, Mode } from "../data/types";
-import { ability, bestDps } from "../data";
+import { ability, bestDps, ccBadges } from "../data";
 import AbilityIcon from "./AbilityIcon";
 
 const fmt = (v: number | null) =>
@@ -14,6 +14,7 @@ const fmt = (v: number | null) =>
 
 function Choice({ id, input, dpsMode }: { id: string; input?: string; dpsMode?: Mode }) {
   const dps = dpsMode ? fmt(bestDps(id, dpsMode)) : null;
+  const cc = dpsMode ? ccBadges(ability(id), dpsMode) : [];
   return (
     <span className="strip-choice">
       {input && <span className="strip-input">{input}</span>}
@@ -21,6 +22,11 @@ function Choice({ id, input, dpsMode }: { id: string; input?: string; dpsMode?: 
         <AbilityIcon id={id} size="xl" />
       </span>
       {dps && <span className="strip-dps">{dps}</span>}
+      {cc.length > 0 && (
+        <span className="strip-cc" title={cc.map((b) => b.line).join("; ")}>
+          {cc.map((b) => b.label).join(" · ")}
+        </span>
+      )}
     </span>
   );
 }

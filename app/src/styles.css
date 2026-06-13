@@ -626,6 +626,7 @@ table.dps-table {
 }
 .strip-or { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; color: var(--text-faint); }
 .strip-dps { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); }
+.strip-cc { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--cc); }
 .strip-optional { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; color: var(--warn); }
 .strip-notes { max-width: 860px; margin-top: 16px; }
 
