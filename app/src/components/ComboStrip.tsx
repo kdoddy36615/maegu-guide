@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import type { Combo, ComboStep, Mode } from "../data/types";
-import { ability, bestDps, ccBadges } from "../data";
+import { ability, bestDps, ccBadges, protectionIn } from "../data";
+import { ProtMeter } from "./badges";
 import AbilityIcon from "./AbilityIcon";
 
 const fmt = (v: number | null) =>
@@ -13,14 +14,17 @@ const fmt = (v: number | null) =>
  */
 
 function Choice({ id, input, dpsMode }: { id: string; input?: string; dpsMode?: Mode }) {
+  const a = ability(id);
   const dps = dpsMode ? fmt(bestDps(id, dpsMode)) : null;
-  const cc = dpsMode ? ccBadges(ability(id), dpsMode) : [];
+  const cc = dpsMode ? ccBadges(a, dpsMode) : [];
+  const prot = dpsMode ? protectionIn(a, dpsMode) : null;
   return (
     <span className="strip-choice">
       {input && <span className="strip-input">{input}</span>}
-      <span title={ability(id).short_name}>
+      <span title={a.short_name}>
         <AbilityIcon id={id} size="xl" />
       </span>
+      {prot && <ProtMeter prot={prot} title={a.protection.tooltip_lines.join("; ")} />}
       {dps && <span className="strip-dps">{dps}</span>}
       {cc.length > 0 && (
         <span className="strip-cc" title={cc.map((b) => b.line).join("; ")}>
