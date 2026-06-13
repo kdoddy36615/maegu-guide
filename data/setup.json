@@ -62,7 +62,7 @@
         "DR build: addons on Spirited Away fill combos from Foxflare that skip Bared Claws.",
         "Evasion build: HP regen on Nukduri Dance is a big chunk (it already regens and hits 10 targets); eva setups rotating SA exploit it better than DR setups.",
         "Capped modes: self buffs/debuffs count against caps — upkeeping DR/evasion/accuracy and applying DP debuffs matters more than before.",
-        "Rank 1 observed addon loadout (2026-06-12, sources/rank1-aos-observation.md): Bared Claws -20 DR/-20 Evasion to target; Foxflare +20 Accuracy/+10% Attack Speed; Spirit Swirl +20 DR/+30% Crit Rate; Flower Shroud +30% Crit Rate/+10% Attack Speed; Lurking Claws and Heavenward Dance +5% Back Attack/+5% Crit Damage.",
+        "Observed evasion-build #1 addon loadout (2026-06-13, sources/rank1-aos-observation.md): Bared Claws +30% Crit Rate/+5% Crit Dmg (self, on his most-woven cancel = cheap uptime); Foxflare -20 DR/-20 Evasion to target; Spirit Swirl +20 DR/+20 Evasion (self); Flower Shroud +10% Attack Speed/-20 DR to target; Spirited Away +20 Accuracy/+5% Down Atk; Heavenward Dance -20 Accuracy to target/+5% Back Atk. Built around the accuracy/evasion war. (Earlier DR-build #1 ran raw-crit addons with the -DR/-Eva debuff on Bared Claws instead.)",
         "Standalone DR / Evasion / Capped profiles exist but are intentionally out of scope (user plays AOS only)."
       ]
     }

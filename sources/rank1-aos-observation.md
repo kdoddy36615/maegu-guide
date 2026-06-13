@@ -74,16 +74,36 @@ The rank-1 player's own rabam tree, all three picks visible directly:
 Bared Claws has one, a to-target debuff), so addon application wasn't the motive. The opener
 stands as ranged CC fishing while the gap closes.)
 
-## Observed addons (screenshot transcription — text was clearly legible)
+## Observed addons
+
+Two different players observed. **The app displays the evasion-build #1's set** (the current
+top player, 2026-06-13); the earlier DR-build #1's set is kept below for the comparison.
+
+### Evasion-build #1 (current top, 2026-06-13) — *this is what the app shows*
 
 | Skill | Add-on effects |
 |---|---|
-| Bared Claws I | All Damage Reduction −20 for 7 sec to target · All Evasion −20 for 7 sec to target |
-| Foxflare I | All Accuracy +20 for 12 sec · Attack/Casting Speed +10% for 12 sec |
-| Spirit Swirl I | All Damage Reduction +20 for 25 sec · Critical Hit Rate +30% for 20 sec |
-| Flower Shroud I | Critical Hit Rate +30% for 12 sec · Attack/Casting Speed +10% for 12 sec |
-| Lurking Claws I | Back Attack damage +5% for 7 sec · Critical Hit Damage +5% for 7 sec |
-| Heavenward Dance I | Back Attack damage +5% for 7 sec · Critical Hit Damage +5% for 7 sec |
+| Bared Claws I | Critical Hit Rate +30% for 7 sec · Critical Hit Damage +5% for 5 sec (self) |
+| Foxflare I | All Damage Reduction −20 · All Evasion −20 for 10 sec to target |
+| Spirit Swirl I | All Damage Reduction +20 · All Evasion +20 for 25 sec (self) |
+| Flower Shroud I | Attack/Casting Speed +10% for 12 sec (self) · All Damage Reduction −20 to target |
+| Spirited Away I | All Accuracy +20 for 12 sec (self) · Down Attack damage +5% for 7 sec |
+| Heavenward Dance I | All Accuracy −20 for 10 sec to target · Back Attack damage +5% for 7 sec |
+
+Built around the accuracy/evasion war: pumps own evasion + accuracy, debuffs enemy evasion +
+accuracy. Self crit on Bared Claws (his most-woven cancel = near-free uptime); finishers carry
+the conditional Down/Back-attack bonuses.
+
+### Earlier DR-build #1 (2026-06-12) — for comparison
+
+| Skill | Add-on effects |
+|---|---|
+| Bared Claws I | All Damage Reduction −20 · All Evasion −20 for 7 sec to target |
+| Foxflare I | All Accuracy +20 · Attack/Casting Speed +10% for 12 sec (self) |
+| Spirit Swirl I | All Damage Reduction +20 · Critical Hit Rate +30% (self) |
+| Flower Shroud I | Critical Hit Rate +30% · Attack/Casting Speed +10% (self) |
+| Lurking Claws I | Back Attack damage +5% · Critical Hit Damage +5% |
+| Heavenward Dance I | Back Attack damage +5% · Critical Hit Damage +5% |
 
 ## Identification mapping
 

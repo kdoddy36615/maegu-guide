@@ -124,7 +124,8 @@ export default function Rank1Page({ mode }: { mode: Mode }) {
             </ul>
             {o.observed_addons && (
               <div className="hotbar-section">
-                <h4 className="micro">His addons (screenshot transcription)</h4>
+                <h4 className="micro">Addons (screenshot transcription)</h4>
+                {o.addons_label && <p className="note">{o.addons_label}</p>}
                 <div className="hotbar-row">
                   {o.observed_addons.map((row) => (
                     <div key={row.ability} className="hotbar-slot sec-observed">

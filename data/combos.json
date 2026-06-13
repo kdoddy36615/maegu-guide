@@ -577,13 +577,14 @@
           ],
           "note": "The Stiff/Foxflare family with the middle removed. He disengaged after Heavenward, then continued with the Claws → Petal Play cancel from the new angle." }
       ],
+      "addons_label": "Current #1 (evasion-gear build) — addon screenshot 2026-06-13. NOTE: the observed logs above are the earlier DR-build #1; only these addons are the evasion player's.",
       "observed_addons": [
-        { "ability": "bared-claws", "effects": ["All Damage Reduction -20 for 7 sec to target", "All Evasion -20 for 7 sec to target"] },
-        { "ability": "foxflare", "effects": ["All Accuracy +20 for 12 sec", "Attack/Casting Speed +10% for 12 sec"] },
-        { "ability": "spirit-swirl", "effects": ["All Damage Reduction +20 for 25 sec", "Critical Hit Rate +30% for 20 sec"] },
-        { "ability": "flower-shroud", "effects": ["Critical Hit Rate +30% for 12 sec", "Attack/Casting Speed +10% for 12 sec"] },
-        { "ability": "lurking-claws", "effects": ["Back Attack damage +5% for 7 sec", "Critical Hit Damage +5% for 7 sec"] },
-        { "ability": "heavenward-dance", "effects": ["Back Attack damage +5% for 7 sec", "Critical Hit Damage +5% for 7 sec"] }
+        { "ability": "bared-claws", "effects": ["Critical Hit Rate +30% for 7 sec", "Critical Hit Damage +5% for 5 sec"] },
+        { "ability": "foxflare", "effects": ["All Damage Reduction -20 for 10 sec to target", "All Evasion -20 for 10 sec to target"] },
+        { "ability": "spirit-swirl", "effects": ["All Damage Reduction +20 for 25 sec", "All Evasion +20 for 25 sec"] },
+        { "ability": "flower-shroud", "effects": ["Attack/Casting Speed +10% for 12 sec", "All Damage Reduction -20 for 10 sec to target"] },
+        { "ability": "spirited-away", "effects": ["All Accuracy +20 for 12 sec", "Down Attack damage +5% for 7 sec"] },
+        { "ability": "heavenward-dance", "effects": ["All Accuracy -20 for 10 sec to target", "Back Attack damage +5% for 7 sec"] }
       ],
       "analysis": [
         "There IS order to the chaos, but it is priority-driven freestyle, not fixed combos — exactly what the Discord playstyle section teaches (rotate protected CCs and ranged DPS, stay protected, clone-swap). The taught full combos almost never appear verbatim; pieces of the combo families show up as the situation allows.",
@@ -591,7 +592,7 @@
         "The visible loop: cycle protected pokes — Bristling Sparks (SA, stun), Flower Shroud (FG, stun), Petalblast (SA), Petal Snare (FG) — from safe range while weaving Spirit Step, and fish for a hit. Charmed is the exception he risks up close: unprotected, but its stiff starts the punish. Burst only gets committed after a confirmed catch: Charmed → Foxflare → Heavenward Dance, a shortened Stiff/Foxflare-family punish.",
         "Openers come from range behind protection: the match opener was Spirit Step weave → Petalblast (SA poke — its Bound is PvE-only) → Bared Claws → Spirited Away → Bristling Sparks; fragment 3 also opens on Petalblast. This matches the Discord line that Succession PvP centres on long-range AoE CCs into melee burst.",
         "Fragment 3 (Petalblast → Lurking → Soulsnare → Flow: Hanpuri → Heavenward → Spirit Swirl) is recognisably the Hanpuri family shape with a different opener; fragments 2 and 4 are repositioning/DPS glue, not combos.",
-        "The addon loadout leans on the capped-mode advice (self buffs/debuffs count from the cap): a -20 DR/-20 Evasion debuff on Bared Claws, +20 self DR on Spirit Swirl, accuracy/attack speed on Foxflare, crit on Flower Shroud, back-attack/crit-damage on the two big finishers (Lurking Claws, Heavenward Dance).",
+        "The displayed addons are the current #1's evasion build, and they're built entirely around the accuracy/evasion war that decides capped fights: he pumps his own evasion (Spirit Swirl +20 Eva, on a rotatable SA skill) while crushing enemy accuracy (Heavenward -20 Acc) and evasion (Foxflare -20 Eva). Self crit sits on Bared Claws — his most-woven cancel tool, so a buff there has near-100% uptime for free; the finishers (Spirited Away, Heavenward) carry the conditional Down/Back-attack bonuses. Contrast the earlier DR #1, whose addons were raw-crit flavored with the -DR/-Eva debuff on Bared Claws instead.",
         "Recurring micro-chains inside the freestyle (the only sequences that repeat): Flower Shroud → Bristling (3×, the poke pair), Bared Claws → Petal Play (2×, a taught cancel), Petal Play → Foxflare → Foxspirit Tag (2×, the -20 DP debuff applied right after the KD attempt), and Heavenward Dance as the burst ender after whichever connector landed (Foxflare / Lurking / Hanpuri, 3×). Long sequences never repeat — priorities pick the next cast, these cells drop in when the moment fits.",
         "The clone swap (Foxspirit: Deceiver, Q) was never logged — the one notable divergence from the Discord guidance, which leans hard on clone swaps. It may genuinely be unused, or it's easy to miss: Q is instant and works during other animations."
       ],
@@ -600,7 +601,7 @@
         "Setup evidence applied to the AOS loadout (2026-06-12, user's call): all three rabams confirmed — 56 Spirit Parade and 57 Petal Snare seen in play, 58 Soul Charm read off his skill-enhancement tree screenshot — plus Petalblast unlocked for AOS.",
         "Lurking Claws, Soulsnare→Hanpuri, Spirit Swirl, Flow: Nether River, and Spirited Away only appeared in the later fragments — not in the main rotation pool first logged.",
         "Path of Petals (W+F) was also seen, used purely for movement (not logged in a sequence).",
-        "The match opener is not addon pre-buffing (hypothesis raised and retracted 2026-06-12: the opener skills carry no self-buff addons — only Bared Claws has one, a to-target debuff). It reads as ranged CC fishing while the gap closes.",
+        "The match opener (DR-#1 log) is not addon pre-buffing — hypothesis raised and retracted 2026-06-12; it reads as ranged CC fishing while the gap closes.",
         "Not observed (one session — weak evidence): Foxspirit: Deceiver (the clone swap), Foxflare Fling, Heavenly Return, Spirit Sparks."
       ]
     }

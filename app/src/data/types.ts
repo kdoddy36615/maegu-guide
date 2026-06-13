@@ -154,6 +154,8 @@ export interface Observation {
   ui_groups?: { label: string; why: string; abilities: string[] }[];
   /** The recurring micro-chains — the only sequences that repeated — as practice strips. */
   practice_chains?: { label: string; steps: ComboStep[]; note?: string }[];
+  /** Provenance line for the addon set (which player / build it belongs to). */
+  addons_label?: string;
   /** Per-skill addon effects transcribed from a screenshot of the observed player's setup. */
   observed_addons?: { ability: string; effects: string[] }[];
   /** The reading of the session: what pattern the chaos follows, grounded in the sources. */
