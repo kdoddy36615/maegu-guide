@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { Link, Navigate, NavLink, Route, Routes, useLocation, useParams } from "react-router-dom";
 import type { Mode } from "./data/types";
 import { PAGES, isPage, tocFor } from "./toc";
@@ -7,10 +7,10 @@ import netheraxImg from "./assets/credits/netherax.png";
 import bantalopeImg from "./assets/credits/bantalope.png";
 import FeedbackModal from "./components/FeedbackModal";
 import AbilitiesPage from "./pages/AbilitiesPage";
-import SetupPage from "./pages/SetupPage";
-import CombosPage from "./pages/CombosPage";
-import PracticePage from "./pages/PracticePage";
-import Rank1Page from "./pages/Rank1Page";
+const SetupPage = lazy(() => import("./pages/SetupPage"));
+const CombosPage = lazy(() => import("./pages/CombosPage"));
+const PracticePage = lazy(() => import("./pages/PracticePage"));
+const Rank1Page = lazy(() => import("./pages/Rank1Page"));
 
 const MODE_KEY = "maegu.mode";
 
@@ -171,11 +171,13 @@ function Shell() {
       />
       {feedbackOpen && <FeedbackModal onClose={() => setFeedbackOpen(false)} />}
       <main className="main">
+        <Suspense fallback={<p role="status">Loading guide…</p>}>
         {page === "abilities" && <AbilitiesPage key={mode} mode={mode} />}
         {page === "setup" && <SetupPage key={mode} mode={mode} />}
         {page === "combos" && <CombosPage key={mode} mode={mode} />}
         {page === "practice" && <PracticePage key={mode} mode={mode} />}
         {page === "rank1" && <Rank1Page key={mode} mode={mode} />}
+        </Suspense>
       </main>
     </div>
   );

@@ -6,12 +6,13 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   root: "app",
-  publicDir: false,
+  publicDir: "public",
   server: {
     fs: { allow: [".."] },
   },
   build: {
     outDir: "../dist",
+    assetsInlineLimit: 0,
     emptyOutDir: true,
   },
 });
