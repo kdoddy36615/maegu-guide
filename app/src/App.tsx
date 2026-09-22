@@ -171,7 +171,7 @@ function Shell() {
       />
       {feedbackOpen && <FeedbackModal onClose={() => setFeedbackOpen(false)} />}
       <main className="main">
-        <Suspense fallback={<p role="status">Loading guide…</p>}>
+        <Suspense fallback={<p role="status">Loading guide...</p>}>
         {page === "abilities" && <AbilitiesPage key={mode} mode={mode} />}
         {page === "setup" && <SetupPage key={mode} mode={mode} />}
         {page === "combos" && <CombosPage key={mode} mode={mode} />}
